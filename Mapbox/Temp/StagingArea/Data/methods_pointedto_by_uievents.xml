@@ -1,8 +1,0 @@
-<linker>
-	<assembly fullname="Assembly-CSharp">
-		<type fullname="UIManagerScript">
-			<method name="StartMap"/>
-			<method name="StartMenu"/>
-		</type>
-	</assembly>
-</linker>
