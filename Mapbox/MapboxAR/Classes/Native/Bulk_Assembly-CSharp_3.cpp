@@ -16,52 +16,66 @@
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
-#include "AssemblyU2DCSharp_TriangleNet_LocateResult4168096189.h"
-#include "AssemblyU2DCSharp_TriangleNet_Log587848786.h"
+#include "AssemblyU2DCSharp_TriangleNet_IO_TriangleWriter4239728233.h"
 #include "mscorlib_System_Void1841601450.h"
-#include "mscorlib_System_Collections_Generic_List_1_gen1337637597.h"
 #include "mscorlib_System_Object2689449295.h"
-#include "mscorlib_System_Boolean3825574718.h"
-#include "AssemblyU2DCSharp_TriangleNet_Logging_LogItem1968516465.h"
-#include "mscorlib_System_String2029220233.h"
-#include "AssemblyU2DCSharp_TriangleNet_Logging_LogLevel842636714.h"
-#include "mscorlib_System_DateTime693205669.h"
 #include "AssemblyU2DCSharp_TriangleNet_Mesh1414352559.h"
-#include "AssemblyU2DCSharp_TriangleNet_Configuration3096111654.h"
+#include "mscorlib_System_String2029220233.h"
+#include "mscorlib_System_IO_Stream3255436806.h"
+#include "mscorlib_System_IO_StreamWriter3858580635.h"
+#include "mscorlib_System_IO_FileStream1695958676.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_V4124359417.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_V3383807694.h"
+#include "mscorlib_System_Int322071877448.h"
 #include "AssemblyU2DCSharp_TriangleNet_Behavior3353801546.h"
-#include "mscorlib_System_Double4078015681.h"
+#include "AssemblyU2DCSharp_TriangleNet_Geometry_Vertex3430001018.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g2437826653.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_g4221418462.h"
-#include "System_Core_System_Func_1_gen1252071010.h"
+#include "mscorlib_System_Boolean3825574718.h"
+#include "mscorlib_System_IO_TextWriter4027217640.h"
+#include "AssemblyU2DCSharp_TriangleNet_NodeNumbering59217167.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_V1140886496.h"
+#include "AssemblyU2DCSharp_TriangleNet_Geometry_Point124225758.h"
+#include "AssemblyU2DCSharp_TriangleNet_VertexType1410000526.h"
+#include "mscorlib_System_Double4078015681.h"
+#include "mscorlib_System_Globalization_NumberFormatInfo104580544.h"
+#include "AssemblyU2DCSharp_TriangleNet_Topology_Otri174839988.h"
+#include "AssemblyU2DCSharp_TriangleNet_Topology_Triangle3965613618.h"
 #include "AssemblyU2DCSharp_TriangleNet_TrianglePool3592645624.h"
-#include "System_System_Collections_Generic_Stack_1_gen1262568142.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumerato62918606.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera1593300101.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera3323043860.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera1145763427.h"
+#include "AssemblyU2DCSharp_TriangleNet_Geometry_RegionPoint2241912621.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen2799122150.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen528188932.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen3788314186.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1611033753.h"
-#include "mscorlib_System_Int322071877448.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_V1612983930.h"
+#include "AssemblyU2DCSharp_TriangleNet_Topology_Osub2903723171.h"
+#include "AssemblyU2DCSharp_TriangleNet_Topology_SubSegment918625531.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g4221418462.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_V2924478305.h"
+#include "mscorlib_System_Int64909078037.h"
+#include "AssemblyU2DCSharp_TriangleNet_LocateResult4168096189.h"
+#include "AssemblyU2DCSharp_TriangleNet_Log587848786.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen1337637597.h"
+#include "AssemblyU2DCSharp_TriangleNet_Logging_LogItem1968516465.h"
+#include "AssemblyU2DCSharp_TriangleNet_Logging_LogLevel842636714.h"
+#include "mscorlib_System_DateTime693205669.h"
+#include "AssemblyU2DCSharp_TriangleNet_Configuration3096111654.h"
+#include "System_Core_System_Func_1_gen1252071010.h"
+#include "System_System_Collections_Generic_Stack_1_gen1262568142.h"
 #include "System_Core_System_Func_1_gen760488959.h"
 #include "AssemblyU2DCSharp_TriangleNet_TriangleLocator236619704.h"
 #include "AssemblyU2DCSharp_TriangleNet_Geometry_Rectangle3983541573.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_V1140886496.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_V2924478305.h"
 #include "AssemblyU2DCSharp_TriangleNet_Mesh_U3CU3Ec__Iterat1210610214.h"
-#include "AssemblyU2DCSharp_TriangleNet_NodeNumbering59217167.h"
-#include "AssemblyU2DCSharp_TriangleNet_Topology_SubSegment918625531.h"
-#include "AssemblyU2DCSharp_TriangleNet_Topology_Osub2903723171.h"
-#include "AssemblyU2DCSharp_TriangleNet_Topology_Triangle3965613618.h"
-#include "AssemblyU2DCSharp_TriangleNet_Topology_Otri174839988.h"
 #include "AssemblyU2DCSharp_TriangleNet_Meshing_QualityOptio1393950899.h"
 #include "AssemblyU2DCSharp_TriangleNet_Meshing_QualityMesher265812823.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_V4124359417.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_V3383807694.h"
-#include "AssemblyU2DCSharp_TriangleNet_Geometry_Vertex3430001018.h"
 #include "AssemblyU2DCSharp_TriangleNet_Tools_CuthillMcKee1912214488.h"
-#include "AssemblyU2DCSharp_TriangleNet_Geometry_Point124225758.h"
 #include "AssemblyU2DCSharp_TriangleNet_Tools_Statistic3669938472.h"
-#include "mscorlib_System_Int64909078037.h"
 #include "mscorlib_System_Exception1927440687.h"
 #include "AssemblyU2DCSharp_TriangleNet_InsertVertexResult1494801340.h"
 #include "AssemblyU2DCSharp_TriangleNet_Meshing_Data_BadSubs2563557474.h"
-#include "AssemblyU2DCSharp_TriangleNet_VertexType1410000526.h"
 #include "mscorlib_System_UInt322149682021.h"
 #include "AssemblyU2DCSharp_TriangleNet_Meshing_Iterators_Ed1318476235.h"
 #include "AssemblyU2DCSharp_TriangleNet_Geometry_Edge805845059.h"
@@ -77,20 +91,12 @@
 #include "AssemblyU2DCSharp_TriangleNet_Meshing_ConstraintMes647801575.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen3334734750.h"
 #include "AssemblyU2DCSharp_TriangleNet_Meshing_ConstraintOp2163317251.h"
-#include "mscorlib_System_Collections_Generic_List_1_gen528188932.h"
-#include "mscorlib_System_Collections_Generic_List_1_Enumera3323043860.h"
-#include "mscorlib_System_Collections_Generic_List_1_Enumera1593300101.h"
-#include "mscorlib_System_Collections_Generic_List_1_Enumera1145763427.h"
-#include "AssemblyU2DCSharp_TriangleNet_Geometry_RegionPoint2241912621.h"
 #include "AssemblyU2DCSharp_TriangleNet_Meshing_Iterators_Re3854740936.h"
-#include "mscorlib_System_Collections_Generic_List_1_Enumerato62918606.h"
 #include "mscorlib_System_Collections_Generic_List_1_Enumera2869464424.h"
 #include "AssemblyU2DCSharp_TriangleNet_FindDirectionResult2062325149.h"
 #include "AssemblyU2DCSharp_TriangleNet_Meshing_Converter1903823262.h"
 #include "AssemblyU2DCSharp_TriangleNet_Geometry_Polygon2200283598.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen3838928416.h"
-#include "mscorlib_System_Collections_Generic_List_1_gen2799122150.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_V1612983930.h"
 #include "AssemblyU2DCSharp_TriangleNet_Topology_DCEL_DcelMe3742056343.h"
 #include "AssemblyU2DCSharp_TriangleNet_Topology_DCEL_Vertex3185693932.h"
 #include "AssemblyU2DCSharp_TriangleNet_Topology_DCEL_Face3682684903.h"
@@ -197,46 +203,84 @@
 #include "UnityEngine_UnityEngine_Light494725636.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U1130867170.h"
 
-// TriangleNet.Log
-struct Log_t587848786;
-// System.Collections.Generic.List`1<TriangleNet.Logging.LogItem>
-struct List_1_t1337637597;
-// System.Collections.Generic.List`1<System.Object>
-struct List_1_t2058570427;
+// TriangleNet.IO.TriangleWriter
+struct TriangleWriter_t4239728233;
 // System.Object
 struct Il2CppObject;
-// TriangleNet.Logging.ILog`1<TriangleNet.Logging.LogItem>
-struct ILog_1_t846826848;
-// TriangleNet.Logging.LogItem
-struct LogItem_t1968516465;
-// System.String
-struct String_t;
-// System.Collections.Generic.IList`1<TriangleNet.Logging.LogItem>
-struct IList_1_t2509457066;
 // TriangleNet.Mesh
 struct Mesh_t1414352559;
-// TriangleNet.Configuration
-struct Configuration_t3096111654;
-// TriangleNet.Behavior
-struct Behavior_t3353801546;
+// System.String
+struct String_t;
+// System.IO.FileStream
+struct FileStream_t1695958676;
+// System.IO.StreamWriter
+struct StreamWriter_t3858580635;
+// System.IO.Stream
+struct Stream_t3255436806;
 // System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Geometry.Vertex>
 struct Dictionary_2_t2437826653;
 // System.Collections.Generic.Dictionary`2<System.Int32,System.Object>
 struct Dictionary_2_t1697274930;
-// System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Topology.SubSegment>
-struct Dictionary_2_t4221418462;
-// System.Func`1<TriangleNet.TrianglePool>
-struct Func_1_t1252071010;
+// TriangleNet.Behavior
+struct Behavior_t3353801546;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,TriangleNet.Geometry.Vertex>
+struct ValueCollection_t1140886496;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,System.Object>
+struct ValueCollection_t400334773;
+// System.Collections.Generic.IEnumerable`1<TriangleNet.Geometry.Vertex>
+struct IEnumerable_1_t3722128063;
+// TriangleNet.Geometry.Vertex
+struct Vertex_t3430001018;
+// System.IFormatProvider
+struct IFormatProvider_t2849799027;
 // TriangleNet.TrianglePool
 struct TrianglePool_t3592645624;
-// System.Func`1<System.Object>
-struct Func_1_t348874681;
-// System.Collections.Generic.Stack`1<TriangleNet.Topology.Otri>
-struct Stack_1_t1262568142;
+// System.Collections.Generic.IEnumerator`1<TriangleNet.Topology.Triangle>
+struct IEnumerator_1_t1441137445;
+// TriangleNet.Geometry.IPolygon
+struct IPolygon_t2839742609;
+// System.Collections.Generic.List`1<TriangleNet.Geometry.Vertex>
+struct List_1_t2799122150;
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_t2058570427;
+// System.Collections.Generic.List`1<TriangleNet.Geometry.ISegment>
+struct List_1_t528188932;
+// TriangleNet.Geometry.ISegment
+struct ISegment_t1159067800;
+// TriangleNet.Geometry.Point
+struct Point_t124225758;
 // System.Collections.Generic.List`1<TriangleNet.Geometry.Point>
 struct List_1_t3788314186;
 // System.Collections.Generic.List`1<TriangleNet.Geometry.RegionPointer>
 struct List_1_t1611033753;
+// TriangleNet.Geometry.RegionPointer
+struct RegionPointer_t2241912621;
+// System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Topology.SubSegment>
+struct Dictionary_2_t4221418462;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,TriangleNet.Topology.SubSegment>
+struct ValueCollection_t2924478305;
+// TriangleNet.Topology.SubSegment
+struct SubSegment_t918625531;
+// System.Globalization.NumberFormatInfo
+struct NumberFormatInfo_t104580544;
+// TriangleNet.Log
+struct Log_t587848786;
+// System.Collections.Generic.List`1<TriangleNet.Logging.LogItem>
+struct List_1_t1337637597;
+// TriangleNet.Logging.ILog`1<TriangleNet.Logging.LogItem>
+struct ILog_1_t846826848;
+// TriangleNet.Logging.LogItem
+struct LogItem_t1968516465;
+// System.Collections.Generic.IList`1<TriangleNet.Logging.LogItem>
+struct IList_1_t2509457066;
+// TriangleNet.Configuration
+struct Configuration_t3096111654;
+// System.Func`1<TriangleNet.TrianglePool>
+struct Func_1_t1252071010;
+// System.Func`1<System.Object>
+struct Func_1_t348874681;
+// System.Collections.Generic.Stack`1<TriangleNet.Topology.Otri>
+struct Stack_1_t1262568142;
 // System.Func`1<TriangleNet.IPredicates>
 struct Func_1_t760488959;
 // TriangleNet.IPredicates
@@ -247,44 +291,30 @@ struct TriangleLocator_t236619704;
 struct Rectangle_t3983541573;
 // System.Collections.Generic.ICollection`1<TriangleNet.Geometry.Vertex>
 struct ICollection_1_t87109027;
-// System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,TriangleNet.Geometry.Vertex>
-struct ValueCollection_t1140886496;
-// System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,System.Object>
-struct ValueCollection_t400334773;
 // System.Collections.Generic.IList`1<TriangleNet.Geometry.Point>
 struct IList_1_t665166359;
 // System.Collections.Generic.ICollection`1<TriangleNet.Topology.Triangle>
 struct ICollection_1_t622721627;
 // System.Collections.Generic.ICollection`1<TriangleNet.Topology.SubSegment>
 struct ICollection_1_t1870700836;
-// System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,TriangleNet.Topology.SubSegment>
-struct ValueCollection_t2924478305;
 // System.Collections.Generic.IEnumerable`1<TriangleNet.Geometry.Edge>
 struct IEnumerable_1_t1097972104;
 // TriangleNet.Mesh/<>c__Iterator0
 struct U3CU3Ec__Iterator0_t1210610214;
-// TriangleNet.Topology.SubSegment
-struct SubSegment_t918625531;
 // TriangleNet.Topology.Triangle
 struct Triangle_t3965613618;
 // TriangleNet.Meshing.QualityOptions
 struct QualityOptions_t1393950899;
 // TriangleNet.Meshing.QualityMesher
 struct QualityMesher_t265812823;
-// TriangleNet.Geometry.Vertex
-struct Vertex_t3430001018;
 // TriangleNet.Tools.CuthillMcKee
 struct CuthillMcKee_t1912214488;
 // System.Int32[]
 struct Int32U5BU5D_t3030399641;
-// System.Collections.Generic.IEnumerator`1<TriangleNet.Topology.Triangle>
-struct IEnumerator_1_t1441137445;
 // System.Collections.Generic.IList`1<TriangleNet.Geometry.Vertex>
 struct IList_1_t3970941619;
 // System.Exception
 struct Exception_t1927440687;
-// TriangleNet.Geometry.Point
-struct Point_t124225758;
 // TriangleNet.Meshing.Data.BadSubseg
 struct BadSubseg_t2563557474;
 // TriangleNet.Meshing.Iterators.EdgeIterator
@@ -323,24 +353,16 @@ struct SweepEventVertex_t1138536632;
 struct ConstraintMesher_t647801575;
 // System.Collections.Generic.List`1<TriangleNet.Topology.Triangle>
 struct List_1_t3334734750;
-// TriangleNet.Geometry.IPolygon
-struct IPolygon_t2839742609;
 // TriangleNet.Meshing.ConstraintOptions
 struct ConstraintOptions_t2163317251;
-// System.Collections.Generic.List`1<TriangleNet.Geometry.ISegment>
-struct List_1_t528188932;
 // System.Collections.Generic.IEnumerable`1<TriangleNet.Geometry.Point>
 struct IEnumerable_1_t416352803;
 // System.Collections.Generic.IEnumerable`1<System.Object>
 struct IEnumerable_1_t2981576340;
 // System.Collections.Generic.IEnumerable`1<TriangleNet.Geometry.RegionPointer>
 struct IEnumerable_1_t2534039666;
-// TriangleNet.Geometry.RegionPointer
-struct RegionPointer_t2241912621;
 // TriangleNet.Meshing.Iterators.RegionIterator
 struct RegionIterator_t3854740936;
-// TriangleNet.Geometry.ISegment
-struct ISegment_t1159067800;
 // System.Object[]
 struct ObjectU5BU5D_t3614634134;
 // TriangleNet.Geometry.Polygon
@@ -353,8 +375,6 @@ struct ITriangleU5BU5D_t4077191106;
 struct IEnumerable_1_t3523786200;
 // TriangleNet.Geometry.ITriangle
 struct ITriangle_t3231659155;
-// System.Collections.Generic.List`1<TriangleNet.Geometry.Vertex>
-struct List_1_t2799122150;
 // System.Collections.Generic.List`1<TriangleNet.Topology.Otri>[]
 struct List_1U5BU5D_t2097323361;
 // System.Collections.Generic.List`1<TriangleNet.Topology.Otri>
@@ -391,8 +411,6 @@ struct GenericMesher_t1388181579;
 struct ITriangulator_t3740062205;
 // System.ArgumentException
 struct ArgumentException_t3259014390;
-// System.Collections.Generic.IEnumerable`1<TriangleNet.Geometry.Vertex>
-struct IEnumerable_1_t3722128063;
 // TriangleNet.Geometry.Segment
 struct Segment_t3050481165;
 // TriangleNet.IO.InputTriangle
@@ -571,6 +589,75 @@ struct UnityARAmbient_t680084560;
 struct Light_t494725636;
 // UnityEngine.XR.iOS.UnityARSessionNativeInterface
 struct UnityARSessionNativeInterface_t1130867170;
+extern Il2CppClass* Path_t41728875_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1548026970;
+extern Il2CppCodeGenString* _stringLiteral1407336352;
+extern const uint32_t TriangleWriter_Write_m2559863646_MetadataUsageId;
+extern Il2CppClass* StreamWriter_t3858580635_il2cpp_TypeInfo_var;
+extern Il2CppClass* IDisposable_t2427283555_il2cpp_TypeInfo_var;
+extern const uint32_t TriangleWriter_WriteNodes_m478976229_MetadataUsageId;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
+extern Il2CppClass* VertexU5BU5D_t2879336287_il2cpp_TypeInfo_var;
+extern const MethodInfo* Dictionary_2_get_Count_m224431524_MethodInfo_var;
+extern const MethodInfo* Dictionary_2_get_Values_m1336547508_MethodInfo_var;
+extern const MethodInfo* ValueCollection_GetEnumerator_m1471375588_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m3627170066_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m275612969_MethodInfo_var;
+extern const MethodInfo* Enumerator_Dispose_m569312879_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral472494718;
+extern Il2CppCodeGenString* _stringLiteral372029325;
+extern Il2CppCodeGenString* _stringLiteral372029326;
+extern const uint32_t TriangleWriter_WriteNodes_m594545027_MetadataUsageId;
+extern Il2CppClass* IEnumerable_1_t3722128063_il2cpp_TypeInfo_var;
+extern Il2CppClass* IEnumerator_1_t905524845_il2cpp_TypeInfo_var;
+extern Il2CppClass* TriangleWriter_t4239728233_il2cpp_TypeInfo_var;
+extern Il2CppClass* IEnumerator_t1466026749_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3817453905;
+extern Il2CppCodeGenString* _stringLiteral1367446948;
+extern const uint32_t TriangleWriter_WriteNodes_m2442891416_MetadataUsageId;
+extern Il2CppClass* Otri_t174839988_il2cpp_TypeInfo_var;
+extern Il2CppClass* IEnumerator_1_t1441137445_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral4265065386;
+extern const uint32_t TriangleWriter_WriteElements_m650681467_MetadataUsageId;
+extern Il2CppClass* IPolygon_t2839742609_il2cpp_TypeInfo_var;
+extern Il2CppClass* ISegment_t1159067800_il2cpp_TypeInfo_var;
+extern Il2CppClass* IEdge_t2933729640_il2cpp_TypeInfo_var;
+extern const MethodInfo* List_1_get_Count_m2442253280_MethodInfo_var;
+extern const MethodInfo* List_1_get_Count_m1181452150_MethodInfo_var;
+extern const MethodInfo* List_1_GetEnumerator_m1150962713_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m3068901101_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m1137822645_MethodInfo_var;
+extern const MethodInfo* Enumerator_Dispose_m4179421875_MethodInfo_var;
+extern const MethodInfo* List_1_get_Count_m197961494_MethodInfo_var;
+extern const MethodInfo* List_1_GetEnumerator_m2378620307_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m78656199_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m4021534995_MethodInfo_var;
+extern const MethodInfo* Enumerator_Dispose_m3857316765_MethodInfo_var;
+extern const MethodInfo* List_1_get_Count_m2951258385_MethodInfo_var;
+extern const MethodInfo* List_1_GetEnumerator_m1023923998_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m2866670792_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m3799216998_MethodInfo_var;
+extern const MethodInfo* Enumerator_Dispose_m2917232148_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1984463515;
+extern Il2CppCodeGenString* _stringLiteral2512070489;
+extern Il2CppCodeGenString* _stringLiteral104529068;
+extern const uint32_t TriangleWriter_WritePoly_m3212210548_MetadataUsageId;
+extern Il2CppClass* Osub_t2903723171_il2cpp_TypeInfo_var;
+extern const MethodInfo* Dictionary_2_get_Count_m676340850_MethodInfo_var;
+extern const MethodInfo* Dictionary_2_get_Values_m87384110_MethodInfo_var;
+extern const MethodInfo* ValueCollection_GetEnumerator_m4015408546_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m2586821832_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m1166500305_MethodInfo_var;
+extern const MethodInfo* Enumerator_Dispose_m3099588663_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1948900449;
+extern const uint32_t TriangleWriter_WritePoly_m3641671803_MetadataUsageId;
+extern Il2CppClass* Int64_t909078037_il2cpp_TypeInfo_var;
+extern const uint32_t TriangleWriter_WriteEdges_m1705263910_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral579413433;
+extern const uint32_t TriangleWriter_WriteNeighbors_m1740510499_MetadataUsageId;
+extern Il2CppClass* NumberFormatInfo_t104580544_il2cpp_TypeInfo_var;
+extern const uint32_t TriangleWriter__cctor_m2323971034_MetadataUsageId;
 extern Il2CppClass* Log_t587848786_il2cpp_TypeInfo_var;
 extern const uint32_t Log__cctor_m3277602295_MetadataUsageId;
 extern Il2CppClass* List_1_t1337637597_il2cpp_TypeInfo_var;
@@ -606,9 +693,7 @@ extern const MethodInfo* List_1__ctor_m831838364_MethodInfo_var;
 extern const MethodInfo* List_1__ctor_m3828622721_MethodInfo_var;
 extern const MethodInfo* Func_1_Invoke_m4071243479_MethodInfo_var;
 extern const uint32_t Mesh__ctor_m3818024688_MetadataUsageId;
-extern const MethodInfo* Dictionary_2_get_Values_m1336547508_MethodInfo_var;
 extern const uint32_t Mesh_get_Vertices_m2581417346_MetadataUsageId;
-extern const MethodInfo* Dictionary_2_get_Values_m87384110_MethodInfo_var;
 extern const uint32_t Mesh_get_Segments_m1893423217_MetadataUsageId;
 extern Il2CppClass* U3CU3Ec__Iterator0_t1210610214_il2cpp_TypeInfo_var;
 extern const uint32_t Mesh_get_Edges_m2386673336_MetadataUsageId;
@@ -617,17 +702,8 @@ extern Il2CppClass* Triangle_t3965613618_il2cpp_TypeInfo_var;
 extern const uint32_t Mesh_Initialize_m1048802759_MetadataUsageId;
 extern Il2CppClass* Configuration_t3096111654_il2cpp_TypeInfo_var;
 extern Il2CppClass* QualityMesher_t265812823_il2cpp_TypeInfo_var;
-extern const MethodInfo* Dictionary_2_get_Count_m224431524_MethodInfo_var;
-extern const MethodInfo* Dictionary_2_get_Count_m676340850_MethodInfo_var;
 extern const uint32_t Mesh_Refine_m374239994_MetadataUsageId;
 extern Il2CppClass* CuthillMcKee_t1912214488_il2cpp_TypeInfo_var;
-extern Il2CppClass* IEnumerator_1_t1441137445_il2cpp_TypeInfo_var;
-extern Il2CppClass* IEnumerator_t1466026749_il2cpp_TypeInfo_var;
-extern Il2CppClass* IDisposable_t2427283555_il2cpp_TypeInfo_var;
-extern const MethodInfo* ValueCollection_GetEnumerator_m1471375588_MethodInfo_var;
-extern const MethodInfo* Enumerator_get_Current_m3627170066_MethodInfo_var;
-extern const MethodInfo* Enumerator_MoveNext_m275612969_MethodInfo_var;
-extern const MethodInfo* Enumerator_Dispose_m569312879_MethodInfo_var;
 extern const uint32_t Mesh_Renumber_m331059995_MetadataUsageId;
 extern const MethodInfo* Dictionary_2_Clear_m1672850339_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_Clear_m1455313587_MethodInfo_var;
@@ -642,17 +718,13 @@ extern Il2CppClass* Rectangle_t3983541573_il2cpp_TypeInfo_var;
 extern Il2CppClass* ILog_1_t846826848_il2cpp_TypeInfo_var;
 extern Il2CppClass* Exception_t1927440687_il2cpp_TypeInfo_var;
 extern Il2CppClass* IList_1_t3970941619_il2cpp_TypeInfo_var;
-extern Il2CppClass* IEnumerable_1_t3722128063_il2cpp_TypeInfo_var;
-extern Il2CppClass* IEnumerator_1_t905524845_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2_Add_m4100894502_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral780153798;
 extern Il2CppCodeGenString* _stringLiteral3607576390;
 extern const uint32_t Mesh_TransferNodes_m1901786311_MetadataUsageId;
-extern Il2CppClass* Otri_t174839988_il2cpp_TypeInfo_var;
 extern const uint32_t Mesh_MakeVertexMap_m1343430565_MetadataUsageId;
 extern const MethodInfo* Dictionary_2_Add_m4195954328_MethodInfo_var;
 extern const uint32_t Mesh_MakeSegment_m2083947939_MetadataUsageId;
-extern Il2CppClass* Osub_t2903723171_il2cpp_TypeInfo_var;
 extern Il2CppClass* BadSubseg_t2563557474_il2cpp_TypeInfo_var;
 extern Il2CppClass* IPredicates_t3101063573_il2cpp_TypeInfo_var;
 extern const MethodInfo* Stack_1_Push_m1433798748_MethodInfo_var;
@@ -679,8 +751,6 @@ extern const uint32_t U3CU3Ec__Iterator0_System_Collections_Generic_IEnumerableU
 extern Il2CppClass* Random_t1044426839_il2cpp_TypeInfo_var;
 extern const uint32_t Dwyer__ctor_m58076349_MetadataUsageId;
 extern Il2CppClass* Mesh_t1414352559_il2cpp_TypeInfo_var;
-extern Il2CppClass* VertexU5BU5D_t2879336287_il2cpp_TypeInfo_var;
-extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral892672260;
 extern Il2CppCodeGenString* _stringLiteral1560895442;
 extern const uint32_t Dwyer_Triangulate_m2502087219_MetadataUsageId;
@@ -724,33 +794,15 @@ extern const uint32_t SweepLine__cctor_m3321686621_MetadataUsageId;
 extern Il2CppClass* List_1_t3334734750_il2cpp_TypeInfo_var;
 extern const MethodInfo* List_1__ctor_m3083632179_MethodInfo_var;
 extern const uint32_t ConstraintMesher__ctor_m631421975_MetadataUsageId;
-extern Il2CppClass* IPolygon_t2839742609_il2cpp_TypeInfo_var;
-extern const MethodInfo* List_1_get_Count_m1181452150_MethodInfo_var;
-extern const MethodInfo* List_1_get_Count_m2951258385_MethodInfo_var;
 extern const MethodInfo* List_1_AddRange_m17739254_MethodInfo_var;
 extern const MethodInfo* List_1_AddRange_m3063956573_MethodInfo_var;
 extern const uint32_t ConstraintMesher_Apply_m4059349049_MetadataUsageId;
 extern Il2CppClass* TriangleU5BU5D_t3765354695_il2cpp_TypeInfo_var;
 extern Il2CppClass* RegionIterator_t3854740936_il2cpp_TypeInfo_var;
-extern const MethodInfo* List_1_GetEnumerator_m2378620307_MethodInfo_var;
-extern const MethodInfo* Enumerator_get_Current_m78656199_MethodInfo_var;
 extern const MethodInfo* List_1_Add_m708293887_MethodInfo_var;
-extern const MethodInfo* Enumerator_MoveNext_m4021534995_MethodInfo_var;
-extern const MethodInfo* Enumerator_Dispose_m3857316765_MethodInfo_var;
-extern const MethodInfo* List_1_GetEnumerator_m1023923998_MethodInfo_var;
-extern const MethodInfo* Enumerator_get_Current_m2866670792_MethodInfo_var;
-extern const MethodInfo* Enumerator_MoveNext_m3799216998_MethodInfo_var;
-extern const MethodInfo* Enumerator_Dispose_m2917232148_MethodInfo_var;
 extern const MethodInfo* List_1_get_Count_m294172043_MethodInfo_var;
 extern const MethodInfo* List_1_Clear_m3015994050_MethodInfo_var;
 extern const uint32_t ConstraintMesher_CarveHoles_m3015159372_MetadataUsageId;
-extern Il2CppClass* ISegment_t1159067800_il2cpp_TypeInfo_var;
-extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
-extern Il2CppClass* IEdge_t2933729640_il2cpp_TypeInfo_var;
-extern const MethodInfo* List_1_GetEnumerator_m1150962713_MethodInfo_var;
-extern const MethodInfo* Enumerator_get_Current_m3068901101_MethodInfo_var;
-extern const MethodInfo* Enumerator_MoveNext_m1137822645_MethodInfo_var;
-extern const MethodInfo* Enumerator_Dispose_m4179421875_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1704885810;
 extern Il2CppCodeGenString* _stringLiteral372029315;
 extern Il2CppCodeGenString* _stringLiteral2531604363;
@@ -795,12 +847,8 @@ extern const MethodInfo* List_1_get_Item_m3617923974_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1702642922;
 extern Il2CppCodeGenString* _stringLiteral968279579;
 extern const uint32_t Converter_SetNeighbors_m3344348027_MetadataUsageId;
-extern const MethodInfo* ValueCollection_GetEnumerator_m4015408546_MethodInfo_var;
-extern const MethodInfo* Enumerator_get_Current_m2586821832_MethodInfo_var;
 extern const MethodInfo* List_1_get_Item_m610008287_MethodInfo_var;
 extern const MethodInfo* List_1_Remove_m4049578024_MethodInfo_var;
-extern const MethodInfo* Enumerator_MoveNext_m1166500305_MethodInfo_var;
-extern const MethodInfo* Enumerator_Dispose_m3099588663_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1197419419;
 extern const uint32_t Converter_SetSegments_m795431574_MetadataUsageId;
 extern Il2CppClass* DcelMesh_t3742056343_il2cpp_TypeInfo_var;
@@ -1026,7 +1074,6 @@ extern const uint32_t CuthillMcKee_Renumber_m585584022_MetadataUsageId;
 extern const uint32_t CuthillMcKee_GenerateRcm_m3523288480_MetadataUsageId;
 extern const uint32_t CuthillMcKee_Rcm_m2107686558_MetadataUsageId;
 extern const uint32_t CuthillMcKee_PermInverse_m515451688_MetadataUsageId;
-extern const MethodInfo* List_1_get_Count_m2442253280_MethodInfo_var;
 extern const MethodInfo* List_1_GetEnumerator_m681557307_MethodInfo_var;
 extern const MethodInfo* Enumerator_get_Current_m2011575247_MethodInfo_var;
 extern const MethodInfo* Enumerator_MoveNext_m1528526403_MethodInfo_var;
@@ -1214,7 +1261,6 @@ extern const uint32_t BoundedVoronoiLegacy__ctor_m1371778016_MetadataUsageId;
 extern Il2CppClass* List_1_t593201092_il2cpp_TypeInfo_var;
 extern const MethodInfo* List_1__ctor_m2751847234_MethodInfo_var;
 extern const MethodInfo* List_1__ctor_m736012267_MethodInfo_var;
-extern const MethodInfo* List_1_get_Count_m197961494_MethodInfo_var;
 extern const MethodInfo* Array_Resize_TisPoint_t124225758_m3893177875_MethodInfo_var;
 extern const MethodInfo* List_1_get_Item_m2871531185_MethodInfo_var;
 extern const uint32_t BoundedVoronoiLegacy_Generate_m1138476628_MetadataUsageId;
@@ -1315,6 +1361,80 @@ extern Il2CppClass* UnityARSessionNativeInterface_t1130867170_il2cpp_TypeInfo_va
 extern const MethodInfo* Component_GetComponent_TisLight_t494725636_m2604108526_MethodInfo_var;
 extern const uint32_t UnityARAmbient_Start_m303369171_MetadataUsageId;
 
+// TriangleNet.Geometry.Vertex[]
+struct VertexU5BU5D_t2879336287  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Vertex_t3430001018 * m_Items[1];
+
+public:
+	inline Vertex_t3430001018 * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Vertex_t3430001018 ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Vertex_t3430001018 * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline Vertex_t3430001018 * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Vertex_t3430001018 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Vertex_t3430001018 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// System.Object[]
+struct ObjectU5BU5D_t3614634134  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Il2CppObject * m_Items[1];
+
+public:
+	inline Il2CppObject * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Il2CppObject ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Il2CppObject * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline Il2CppObject * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Il2CppObject ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Il2CppObject * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
 // TriangleNet.Topology.Osub[]
 struct OsubU5BU5D_t4046435698  : public Il2CppArray
 {
@@ -1420,43 +1540,6 @@ public:
 		m_Items[index] = value;
 	}
 };
-// TriangleNet.Geometry.Vertex[]
-struct VertexU5BU5D_t2879336287  : public Il2CppArray
-{
-public:
-	ALIGN_FIELD (8) Vertex_t3430001018 * m_Items[1];
-
-public:
-	inline Vertex_t3430001018 * GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Vertex_t3430001018 ** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Vertex_t3430001018 * value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
-	}
-	inline Vertex_t3430001018 * GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Vertex_t3430001018 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Vertex_t3430001018 * value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
-	}
-};
 // TriangleNet.Meshing.Algorithm.SweepLine/SweepEvent[]
 struct SweepEventU5BU5D_t1125404243  : public Il2CppArray
 {
@@ -1526,43 +1609,6 @@ public:
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, Triangle_t3965613618 * value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
-	}
-};
-// System.Object[]
-struct ObjectU5BU5D_t3614634134  : public Il2CppArray
-{
-public:
-	ALIGN_FIELD (8) Il2CppObject * m_Items[1];
-
-public:
-	inline Il2CppObject * GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Il2CppObject ** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Il2CppObject * value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
-	}
-	inline Il2CppObject * GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Il2CppObject ** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Il2CppObject * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
@@ -2047,6 +2093,28 @@ public:
 };
 
 
+// System.Int32 System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::get_Count()
+extern "C"  int32_t Dictionary_2_get_Count_m2168147420_gshared (Dictionary_2_t1697274930 * __this, const MethodInfo* method);
+// System.Collections.Generic.Dictionary`2/ValueCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::get_Values()
+extern "C"  ValueCollection_t400334773 * Dictionary_2_get_Values_m41521588_gshared (Dictionary_2_t1697274930 * __this, const MethodInfo* method);
+// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,System.Object>::GetEnumerator()
+extern "C"  Enumerator_t3383807694  ValueCollection_GetEnumerator_m520082450_gshared (ValueCollection_t400334773 * __this, const MethodInfo* method);
+// !1 System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,System.Object>::get_Current()
+extern "C"  Il2CppObject * Enumerator_get_Current_m3006348140_gshared (Enumerator_t3383807694 * __this, const MethodInfo* method);
+// System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,System.Object>::MoveNext()
+extern "C"  bool Enumerator_MoveNext_m1091131935_gshared (Enumerator_t3383807694 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,System.Object>::Dispose()
+extern "C"  void Enumerator_Dispose_m2369319718_gshared (Enumerator_t3383807694 * __this, const MethodInfo* method);
+// System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
+extern "C"  int32_t List_1_get_Count_m2375293942_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<System.Object>::GetEnumerator()
+extern "C"  Enumerator_t1593300101  List_1_GetEnumerator_m2837081829_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
+// !0 System.Collections.Generic.List`1/Enumerator<System.Object>::get_Current()
+extern "C"  Il2CppObject * Enumerator_get_Current_m2577424081_gshared (Enumerator_t1593300101 * __this, const MethodInfo* method);
+// System.Boolean System.Collections.Generic.List`1/Enumerator<System.Object>::MoveNext()
+extern "C"  bool Enumerator_MoveNext_m44995089_gshared (Enumerator_t1593300101 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
+extern "C"  void Enumerator_Dispose_m3736175406_gshared (Enumerator_t1593300101 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
 extern "C"  void List_1__ctor_m310736118_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::Add(!0)
@@ -2059,18 +2127,6 @@ extern "C"  void Dictionary_2__ctor_m1868603968_gshared (Dictionary_2_t169727493
 extern "C"  Il2CppObject * Func_1_Invoke_m1637440397_gshared (Func_1_t348874681 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.Stack`1<TriangleNet.Topology.Otri>::.ctor()
 extern "C"  void Stack_1__ctor_m3129719101_gshared (Stack_1_t1262568142 * __this, const MethodInfo* method);
-// System.Collections.Generic.Dictionary`2/ValueCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::get_Values()
-extern "C"  ValueCollection_t400334773 * Dictionary_2_get_Values_m41521588_gshared (Dictionary_2_t1697274930 * __this, const MethodInfo* method);
-// System.Int32 System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::get_Count()
-extern "C"  int32_t Dictionary_2_get_Count_m2168147420_gshared (Dictionary_2_t1697274930 * __this, const MethodInfo* method);
-// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,System.Object>::GetEnumerator()
-extern "C"  Enumerator_t3383807694  ValueCollection_GetEnumerator_m520082450_gshared (ValueCollection_t400334773 * __this, const MethodInfo* method);
-// !1 System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,System.Object>::get_Current()
-extern "C"  Il2CppObject * Enumerator_get_Current_m3006348140_gshared (Enumerator_t3383807694 * __this, const MethodInfo* method);
-// System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,System.Object>::MoveNext()
-extern "C"  bool Enumerator_MoveNext_m1091131935_gshared (Enumerator_t3383807694 * __this, const MethodInfo* method);
-// System.Void System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,System.Object>::Dispose()
-extern "C"  void Enumerator_Dispose_m2369319718_gshared (Enumerator_t3383807694 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::Clear()
 extern "C"  void Dictionary_2_Clear_m899854001_gshared (Dictionary_2_t1697274930 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.Stack`1<TriangleNet.Topology.Otri>::Clear()
@@ -2089,18 +2145,8 @@ extern "C"  Otri_t174839988  Stack_1_Peek_m1141110940_gshared (Stack_1_t12625681
 extern "C"  bool Dictionary_2_Remove_m2771612799_gshared (Dictionary_2_t1697274930 * __this, int32_t p0, const MethodInfo* method);
 // System.Boolean System.Collections.Generic.List`1<System.Object>::Remove(!0)
 extern "C"  bool List_1_Remove_m3164383811_gshared (List_1_t2058570427 * __this, Il2CppObject * p0, const MethodInfo* method);
-// System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
-extern "C"  int32_t List_1_get_Count_m2375293942_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::AddRange(System.Collections.Generic.IEnumerable`1<!0>)
 extern "C"  void List_1_AddRange_m3537433232_gshared (List_1_t2058570427 * __this, Il2CppObject* p0, const MethodInfo* method);
-// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<System.Object>::GetEnumerator()
-extern "C"  Enumerator_t1593300101  List_1_GetEnumerator_m2837081829_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
-// !0 System.Collections.Generic.List`1/Enumerator<System.Object>::get_Current()
-extern "C"  Il2CppObject * Enumerator_get_Current_m2577424081_gshared (Enumerator_t1593300101 * __this, const MethodInfo* method);
-// System.Boolean System.Collections.Generic.List`1/Enumerator<System.Object>::MoveNext()
-extern "C"  bool Enumerator_MoveNext_m44995089_gshared (Enumerator_t1593300101 * __this, const MethodInfo* method);
-// System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
-extern "C"  void Enumerator_Dispose_m3736175406_gshared (Enumerator_t1593300101 * __this, const MethodInfo* method);
 // !0 System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
 extern "C"  Il2CppObject * List_1_get_Item_m2062981835_gshared (List_1_t2058570427 * __this, int32_t p0, const MethodInfo* method);
 // !!0[] System.Linq.Enumerable::ToArray<System.Object>(System.Collections.Generic.IEnumerable`1<!!0>)
@@ -2234,12 +2280,120 @@ extern "C"  void UnityEvent_2_Invoke_m4237217379_gshared (UnityEvent_2_t20166571
 // System.Void UnityEngine.Events.UnityEvent`2<System.Single,System.Single>::.ctor()
 extern "C"  void UnityEvent_2__ctor_m731674732_gshared (UnityEvent_2_t2016657100 * __this, const MethodInfo* method);
 
+// System.Void System.Object::.ctor()
+extern "C"  void Object__ctor_m2551263788 (Il2CppObject * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.IO.Path::ChangeExtension(System.String,System.String)
+extern "C"  String_t* Path_ChangeExtension_m4087688358 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void TriangleNet.IO.TriangleWriter::WritePoly(TriangleNet.Mesh,System.String)
+extern "C"  void TriangleWriter_WritePoly_m2600110316 (TriangleWriter_t4239728233 * __this, Mesh_t1414352559 * ___mesh0, String_t* ___filename1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void TriangleNet.IO.TriangleWriter::WriteElements(TriangleNet.Mesh,System.String)
+extern "C"  void TriangleWriter_WriteElements_m650681467 (TriangleWriter_t4239728233 * __this, Mesh_t1414352559 * ___mesh0, String_t* ___filename1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IO.FileStream System.IO.File::OpenWrite(System.String)
+extern "C"  FileStream_t1695958676 * File_OpenWrite_m3037731260 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.IO.StreamWriter::.ctor(System.IO.Stream)
+extern "C"  void StreamWriter__ctor_m3847064531 (StreamWriter_t3858580635 * __this, Stream_t3255436806 * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void TriangleNet.IO.TriangleWriter::WriteNodes(System.IO.StreamWriter,TriangleNet.Mesh)
+extern "C"  void TriangleWriter_WriteNodes_m594545027 (TriangleWriter_t4239728233 * __this, StreamWriter_t3858580635 * ___writer0, Mesh_t1414352559 * ___mesh1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Geometry.Vertex>::get_Count()
+#define Dictionary_2_get_Count_m224431524(__this, method) ((  int32_t (*) (Dictionary_2_t2437826653 *, const MethodInfo*))Dictionary_2_get_Count_m2168147420_gshared)(__this, method)
+// System.Boolean TriangleNet.Behavior::get_Jettison()
+extern "C"  bool Behavior_get_Jettison_m801770417 (Behavior_t3353801546 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean TriangleNet.Behavior::get_UseBoundaryMarkers()
+extern "C"  bool Behavior_get_UseBoundaryMarkers_m914940907 (Behavior_t3353801546 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void TriangleNet.Mesh::Renumber()
+extern "C"  void Mesh_Renumber_m1687546911 (Mesh_t1414352559 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.Generic.Dictionary`2/ValueCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Geometry.Vertex>::get_Values()
+#define Dictionary_2_get_Values_m1336547508(__this, method) ((  ValueCollection_t1140886496 * (*) (Dictionary_2_t2437826653 *, const MethodInfo*))Dictionary_2_get_Values_m41521588_gshared)(__this, method)
+// System.Void TriangleNet.IO.TriangleWriter::WriteNodes(System.IO.StreamWriter,System.Collections.Generic.IEnumerable`1<TriangleNet.Geometry.Vertex>,System.Boolean,System.Int32,System.Boolean)
+extern "C"  void TriangleWriter_WriteNodes_m2442891416 (TriangleWriter_t4239728233 * __this, StreamWriter_t3858580635 * ___writer0, Il2CppObject* ___nodes1, bool ___markers2, int32_t ___attribs3, bool ___jettison4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,TriangleNet.Geometry.Vertex>::GetEnumerator()
+#define ValueCollection_GetEnumerator_m1471375588(__this, method) ((  Enumerator_t4124359417  (*) (ValueCollection_t1140886496 *, const MethodInfo*))ValueCollection_GetEnumerator_m520082450_gshared)(__this, method)
+// !1 System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,TriangleNet.Geometry.Vertex>::get_Current()
+#define Enumerator_get_Current_m3627170066(__this, method) ((  Vertex_t3430001018 * (*) (Enumerator_t4124359417 *, const MethodInfo*))Enumerator_get_Current_m3006348140_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,TriangleNet.Geometry.Vertex>::MoveNext()
+#define Enumerator_MoveNext_m275612969(__this, method) ((  bool (*) (Enumerator_t4124359417 *, const MethodInfo*))Enumerator_MoveNext_m1091131935_gshared)(__this, method)
+// System.Void System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,TriangleNet.Geometry.Vertex>::Dispose()
+#define Enumerator_Dispose_m569312879(__this, method) ((  void (*) (Enumerator_t4124359417 *, const MethodInfo*))Enumerator_Dispose_m2369319718_gshared)(__this, method)
+// System.String System.Double::ToString(System.IFormatProvider)
+extern "C"  String_t* Double_ToString_m1085043609 (double* __this, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 TriangleNet.TrianglePool::get_Count()
+extern "C"  int32_t TrianglePool_get_Count_m3506840474 (TrianglePool_t3592645624 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.Generic.IEnumerator`1<TriangleNet.Topology.Triangle> TriangleNet.TrianglePool::GetEnumerator()
+extern "C"  Il2CppObject* TrianglePool_GetEnumerator_m1858198676 (TrianglePool_t3592645624 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// TriangleNet.Geometry.Vertex TriangleNet.Topology.Otri::Org()
+extern "C"  Vertex_t3430001018 * Otri_Org_m2761406541 (Otri_t174839988 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// TriangleNet.Geometry.Vertex TriangleNet.Topology.Otri::Dest()
+extern "C"  Vertex_t3430001018 * Otri_Dest_m1791860597 (Otri_t174839988 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// TriangleNet.Geometry.Vertex TriangleNet.Topology.Otri::Apex()
+extern "C"  Vertex_t3430001018 * Otri_Apex_m3242619223 (Otri_t174839988 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.Collections.Generic.List`1<TriangleNet.Geometry.Vertex>::get_Count()
+#define List_1_get_Count_m2442253280(__this, method) ((  int32_t (*) (List_1_t2799122150 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<TriangleNet.Geometry.ISegment>::get_Count()
+#define List_1_get_Count_m1181452150(__this, method) ((  int32_t (*) (List_1_t528188932 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<TriangleNet.Geometry.ISegment>::GetEnumerator()
+#define List_1_GetEnumerator_m1150962713(__this, method) ((  Enumerator_t62918606  (*) (List_1_t528188932 *, const MethodInfo*))List_1_GetEnumerator_m2837081829_gshared)(__this, method)
+// !0 System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.ISegment>::get_Current()
+#define Enumerator_get_Current_m3068901101(__this, method) ((  Il2CppObject * (*) (Enumerator_t62918606 *, const MethodInfo*))Enumerator_get_Current_m2577424081_gshared)(__this, method)
+// System.Int32 TriangleNet.Geometry.Point::get_ID()
+extern "C"  int32_t Point_get_ID_m2299701774 (Point_t124225758 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.ISegment>::MoveNext()
+#define Enumerator_MoveNext_m1137822645(__this, method) ((  bool (*) (Enumerator_t62918606 *, const MethodInfo*))Enumerator_MoveNext_m44995089_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.ISegment>::Dispose()
+#define Enumerator_Dispose_m4179421875(__this, method) ((  void (*) (Enumerator_t62918606 *, const MethodInfo*))Enumerator_Dispose_m3736175406_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<TriangleNet.Geometry.Point>::get_Count()
+#define List_1_get_Count_m197961494(__this, method) ((  int32_t (*) (List_1_t3788314186 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<TriangleNet.Geometry.Point>::GetEnumerator()
+#define List_1_GetEnumerator_m2378620307(__this, method) ((  Enumerator_t3323043860  (*) (List_1_t3788314186 *, const MethodInfo*))List_1_GetEnumerator_m2837081829_gshared)(__this, method)
+// !0 System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.Point>::get_Current()
+#define Enumerator_get_Current_m78656199(__this, method) ((  Point_t124225758 * (*) (Enumerator_t3323043860 *, const MethodInfo*))Enumerator_get_Current_m2577424081_gshared)(__this, method)
+// System.Double TriangleNet.Geometry.Point::get_X()
+extern "C"  double Point_get_X_m2752711382 (Point_t124225758 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Double TriangleNet.Geometry.Point::get_Y()
+extern "C"  double Point_get_Y_m2752711349 (Point_t124225758 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.Point>::MoveNext()
+#define Enumerator_MoveNext_m4021534995(__this, method) ((  bool (*) (Enumerator_t3323043860 *, const MethodInfo*))Enumerator_MoveNext_m44995089_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.Point>::Dispose()
+#define Enumerator_Dispose_m3857316765(__this, method) ((  void (*) (Enumerator_t3323043860 *, const MethodInfo*))Enumerator_Dispose_m3736175406_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<TriangleNet.Geometry.RegionPointer>::get_Count()
+#define List_1_get_Count_m2951258385(__this, method) ((  int32_t (*) (List_1_t1611033753 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<TriangleNet.Geometry.RegionPointer>::GetEnumerator()
+#define List_1_GetEnumerator_m1023923998(__this, method) ((  Enumerator_t1145763427  (*) (List_1_t1611033753 *, const MethodInfo*))List_1_GetEnumerator_m2837081829_gshared)(__this, method)
+// !0 System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.RegionPointer>::get_Current()
+#define Enumerator_get_Current_m2866670792(__this, method) ((  RegionPointer_t2241912621 * (*) (Enumerator_t1145763427 *, const MethodInfo*))Enumerator_get_Current_m2577424081_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.RegionPointer>::MoveNext()
+#define Enumerator_MoveNext_m3799216998(__this, method) ((  bool (*) (Enumerator_t1145763427 *, const MethodInfo*))Enumerator_MoveNext_m44995089_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.RegionPointer>::Dispose()
+#define Enumerator_Dispose_m2917232148(__this, method) ((  void (*) (Enumerator_t1145763427 *, const MethodInfo*))Enumerator_Dispose_m3736175406_gshared)(__this, method)
+// System.Void TriangleNet.IO.TriangleWriter::WritePoly(TriangleNet.Mesh,System.String,System.Boolean)
+extern "C"  void TriangleWriter_WritePoly_m3641671803 (TriangleWriter_t4239728233 * __this, Mesh_t1414352559 * ___mesh0, String_t* ___filename1, bool ___writeNodes2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Topology.SubSegment>::get_Count()
+#define Dictionary_2_get_Count_m676340850(__this, method) ((  int32_t (*) (Dictionary_2_t4221418462 *, const MethodInfo*))Dictionary_2_get_Count_m2168147420_gshared)(__this, method)
+// System.Collections.Generic.Dictionary`2/ValueCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Topology.SubSegment>::get_Values()
+#define Dictionary_2_get_Values_m87384110(__this, method) ((  ValueCollection_t2924478305 * (*) (Dictionary_2_t4221418462 *, const MethodInfo*))Dictionary_2_get_Values_m41521588_gshared)(__this, method)
+// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,TriangleNet.Topology.SubSegment>::GetEnumerator()
+#define ValueCollection_GetEnumerator_m4015408546(__this, method) ((  Enumerator_t1612983930  (*) (ValueCollection_t2924478305 *, const MethodInfo*))ValueCollection_GetEnumerator_m520082450_gshared)(__this, method)
+// !1 System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,TriangleNet.Topology.SubSegment>::get_Current()
+#define Enumerator_get_Current_m2586821832(__this, method) ((  SubSegment_t918625531 * (*) (Enumerator_t1612983930 *, const MethodInfo*))Enumerator_get_Current_m3006348140_gshared)(__this, method)
+// TriangleNet.Geometry.Vertex TriangleNet.Topology.Osub::Org()
+extern "C"  Vertex_t3430001018 * Osub_Org_m667242036 (Osub_t2903723171 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// TriangleNet.Geometry.Vertex TriangleNet.Topology.Osub::Dest()
+extern "C"  Vertex_t3430001018 * Osub_Dest_m2304148064 (Osub_t2903723171 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,TriangleNet.Topology.SubSegment>::MoveNext()
+#define Enumerator_MoveNext_m1166500305(__this, method) ((  bool (*) (Enumerator_t1612983930 *, const MethodInfo*))Enumerator_MoveNext_m1091131935_gshared)(__this, method)
+// System.Void System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,TriangleNet.Topology.SubSegment>::Dispose()
+#define Enumerator_Dispose_m3099588663(__this, method) ((  void (*) (Enumerator_t1612983930 *, const MethodInfo*))Enumerator_Dispose_m2369319718_gshared)(__this, method)
+// System.Int32 TriangleNet.Mesh::get_NumberOfEdges()
+extern "C"  int32_t Mesh_get_NumberOfEdges_m2095082906 (Mesh_t1414352559 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void TriangleNet.Topology.Otri::Sym(TriangleNet.Topology.Otri&)
+extern "C"  void Otri_Sym_m3361605538 (Otri_t174839988 * __this, Otri_t174839988 * ___ot0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void TriangleNet.Topology.Otri::Pivot(TriangleNet.Topology.Osub&)
+extern "C"  void Otri_Pivot_m1291762458 (Otri_t174839988 * __this, Osub_t2903723171 * ___os0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Globalization.NumberFormatInfo System.Globalization.NumberFormatInfo::get_InvariantInfo()
+extern "C"  NumberFormatInfo_t104580544 * NumberFormatInfo_get_InvariantInfo_m2658215204 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Log::.ctor()
 extern "C"  void Log__ctor_m424755986 (Log_t587848786 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.List`1<TriangleNet.Logging.LogItem>::.ctor()
 #define List_1__ctor_m2463646456(__this, method) ((  void (*) (List_1_t1337637597 *, const MethodInfo*))List_1__ctor_m310736118_gshared)(__this, method)
-// System.Void System.Object::.ctor()
-extern "C"  void Object__ctor_m2551263788 (Il2CppObject * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.List`1<TriangleNet.Logging.LogItem>::Add(!0)
 #define List_1_Add_m456366284(__this, p0, method) ((  void (*) (List_1_t1337637597 *, LogItem_t1968516465 *, const MethodInfo*))List_1_Add_m4157722533_gshared)(__this, p0, method)
 // System.Void System.Collections.Generic.List`1<TriangleNet.Logging.LogItem>::Clear()
@@ -2276,24 +2430,14 @@ extern "C"  Func_1_t760488959 * Configuration_get_Predicates_m354087624 (Configu
 #define Func_1_Invoke_m4071243479(__this, method) ((  Il2CppObject * (*) (Func_1_t760488959 *, const MethodInfo*))Func_1_Invoke_m1637440397_gshared)(__this, method)
 // System.Void TriangleNet.TriangleLocator::.ctor(TriangleNet.Mesh,TriangleNet.IPredicates)
 extern "C"  void TriangleLocator__ctor_m242408008 (TriangleLocator_t236619704 * __this, Mesh_t1414352559 * ___mesh0, Il2CppObject * ___predicates1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Collections.Generic.Dictionary`2/ValueCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Geometry.Vertex>::get_Values()
-#define Dictionary_2_get_Values_m1336547508(__this, method) ((  ValueCollection_t1140886496 * (*) (Dictionary_2_t2437826653 *, const MethodInfo*))Dictionary_2_get_Values_m41521588_gshared)(__this, method)
-// System.Collections.Generic.Dictionary`2/ValueCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Topology.SubSegment>::get_Values()
-#define Dictionary_2_get_Values_m87384110(__this, method) ((  ValueCollection_t2924478305 * (*) (Dictionary_2_t4221418462 *, const MethodInfo*))Dictionary_2_get_Values_m41521588_gshared)(__this, method)
 // System.Void TriangleNet.Mesh/<>c__Iterator0::.ctor()
 extern "C"  void U3CU3Ec__Iterator0__ctor_m1535922499 (U3CU3Ec__Iterator0_t1210610214 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 TriangleNet.TrianglePool::get_Count()
-extern "C"  int32_t TrianglePool_get_Count_m3506840474 (TrianglePool_t3592645624 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Topology.SubSegment::.ctor()
 extern "C"  void SubSegment__ctor_m1041541978 (SubSegment_t918625531 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Topology.Triangle::.ctor()
 extern "C"  void Triangle__ctor_m2290163489 (Triangle_t3965613618 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Geometry.Vertex>::get_Count()
-#define Dictionary_2_get_Count_m224431524(__this, method) ((  int32_t (*) (Dictionary_2_t2437826653 *, const MethodInfo*))Dictionary_2_get_Count_m2168147420_gshared)(__this, method)
 // System.Boolean TriangleNet.Behavior::get_Poly()
 extern "C"  bool Behavior_get_Poly_m2011606151 (Behavior_t3353801546 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Topology.SubSegment>::get_Count()
-#define Dictionary_2_get_Count_m676340850(__this, method) ((  int32_t (*) (Dictionary_2_t4221418462 *, const MethodInfo*))Dictionary_2_get_Count_m2168147420_gshared)(__this, method)
 // System.Void TriangleNet.Mesh::Reset()
 extern "C"  void Mesh_Reset_m2288067834 (Mesh_t1414352559 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Configuration::.ctor()
@@ -2304,20 +2448,10 @@ extern "C"  void QualityMesher__ctor_m860152783 (QualityMesher_t265812823 * __th
 extern "C"  void QualityMesher_Apply_m542546320 (QualityMesher_t265812823 * __this, QualityOptions_t1393950899 * ___quality0, bool ___delaunay1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Mesh::Renumber(TriangleNet.NodeNumbering)
 extern "C"  void Mesh_Renumber_m331059995 (Mesh_t1414352559 * __this, int32_t ___num0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,TriangleNet.Geometry.Vertex>::GetEnumerator()
-#define ValueCollection_GetEnumerator_m1471375588(__this, method) ((  Enumerator_t4124359417  (*) (ValueCollection_t1140886496 *, const MethodInfo*))ValueCollection_GetEnumerator_m520082450_gshared)(__this, method)
-// !1 System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,TriangleNet.Geometry.Vertex>::get_Current()
-#define Enumerator_get_Current_m3627170066(__this, method) ((  Vertex_t3430001018 * (*) (Enumerator_t4124359417 *, const MethodInfo*))Enumerator_get_Current_m3006348140_gshared)(__this, method)
-// System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,TriangleNet.Geometry.Vertex>::MoveNext()
-#define Enumerator_MoveNext_m275612969(__this, method) ((  bool (*) (Enumerator_t4124359417 *, const MethodInfo*))Enumerator_MoveNext_m1091131935_gshared)(__this, method)
-// System.Void System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,TriangleNet.Geometry.Vertex>::Dispose()
-#define Enumerator_Dispose_m569312879(__this, method) ((  void (*) (Enumerator_t4124359417 *, const MethodInfo*))Enumerator_Dispose_m2369319718_gshared)(__this, method)
 // System.Void TriangleNet.Tools.CuthillMcKee::.ctor()
 extern "C"  void CuthillMcKee__ctor_m3645524443 (CuthillMcKee_t1912214488 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32[] TriangleNet.Tools.CuthillMcKee::Renumber(TriangleNet.Mesh)
 extern "C"  Int32U5BU5D_t3030399641* CuthillMcKee_Renumber_m1679803359 (CuthillMcKee_t1912214488 * __this, Mesh_t1414352559 * ___mesh0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Collections.Generic.IEnumerator`1<TriangleNet.Topology.Triangle> TriangleNet.TrianglePool::GetEnumerator()
-extern "C"  Il2CppObject* TrianglePool_GetEnumerator_m1858198676 (TrianglePool_t3592645624 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Geometry.Vertex>::Clear()
 #define Dictionary_2_Clear_m1672850339(__this, method) ((  void (*) (Dictionary_2_t2437826653 *, const MethodInfo*))Dictionary_2_Clear_m899854001_gshared)(__this, method)
 // TriangleNet.TrianglePool TriangleNet.TrianglePool::Restart()
@@ -2342,8 +2476,6 @@ extern "C"  int32_t Math_Max_m2671311541 (Il2CppObject * __this /* static, unuse
 #define Dictionary_2_Add_m4100894502(__this, p0, p1, method) ((  void (*) (Dictionary_2_t2437826653 *, int32_t, Vertex_t3430001018 *, const MethodInfo*))Dictionary_2_Add_m1296007576_gshared)(__this, p0, p1, method)
 // System.Void TriangleNet.Geometry.Rectangle::Expand(TriangleNet.Geometry.Point)
 extern "C"  void Rectangle_Expand_m2233415238 (Rectangle_t3983541573 * __this, Point_t124225758 * ___p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// TriangleNet.Geometry.Vertex TriangleNet.Topology.Otri::Org()
-extern "C"  Vertex_t3430001018 * Otri_Org_m2761406541 (Otri_t174839988 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // TriangleNet.Topology.Triangle TriangleNet.TrianglePool::Get()
 extern "C"  Triangle_t3965613618 * TrianglePool_Get_m3623230241 (TrianglePool_t3592645624 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Topology.SubSegment>::Add(!0,!1)
@@ -2358,18 +2490,10 @@ extern "C"  void Otri_Copy_m18629336 (Otri_t174839988 * __this, Otri_t174839988 
 extern "C"  int32_t TriangleLocator_PreciseLocate_m181514350 (TriangleLocator_t236619704 * __this, Point_t124225758 * ___searchpoint0, Otri_t174839988 * ___searchtri1, bool ___stopatsubsegment2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.TriangleLocator::Update(TriangleNet.Topology.Otri&)
 extern "C"  void TriangleLocator_Update_m2145044345 (TriangleLocator_t236619704 * __this, Otri_t174839988 * ___otri0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void TriangleNet.Topology.Otri::Pivot(TriangleNet.Topology.Osub&)
-extern "C"  void Otri_Pivot_m1291762458 (Otri_t174839988 * __this, Osub_t2903723171 * ___os0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 TriangleNet.Behavior::get_NoBisect()
 extern "C"  int32_t Behavior_get_NoBisect_m270474788 (Behavior_t3353801546 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void TriangleNet.Topology.Otri::Sym(TriangleNet.Topology.Otri&)
-extern "C"  void Otri_Sym_m3361605538 (Otri_t174839988 * __this, Otri_t174839988 * ___ot0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Meshing.Data.BadSubseg::.ctor()
 extern "C"  void BadSubseg__ctor_m2855358245 (BadSubseg_t2563557474 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// TriangleNet.Geometry.Vertex TriangleNet.Topology.Osub::Org()
-extern "C"  Vertex_t3430001018 * Osub_Org_m667242036 (Osub_t2903723171 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// TriangleNet.Geometry.Vertex TriangleNet.Topology.Osub::Dest()
-extern "C"  Vertex_t3430001018 * Osub_Dest_m2304148064 (Osub_t2903723171 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Meshing.QualityMesher::AddBadSubseg(TriangleNet.Meshing.Data.BadSubseg)
 extern "C"  void QualityMesher_AddBadSubseg_m2141376085 (QualityMesher_t265812823 * __this, BadSubseg_t2563557474 * ___badseg0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Topology.Otri::Lprev(TriangleNet.Topology.Otri&)
@@ -2378,10 +2502,6 @@ extern "C"  void Otri_Lprev_m1820831000 (Otri_t174839988 * __this, Otri_t1748399
 extern "C"  void Otri_Lnext_m1981625512 (Otri_t174839988 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Mesh::MakeTriangle(TriangleNet.Topology.Otri&)
 extern "C"  void Mesh_MakeTriangle_m3606748893 (Mesh_t1414352559 * __this, Otri_t174839988 * ___newotri0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// TriangleNet.Geometry.Vertex TriangleNet.Topology.Otri::Dest()
-extern "C"  Vertex_t3430001018 * Otri_Dest_m1791860597 (Otri_t174839988 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// TriangleNet.Geometry.Vertex TriangleNet.Topology.Otri::Apex()
-extern "C"  Vertex_t3430001018 * Otri_Apex_m3242619223 (Otri_t174839988 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Topology.Otri::SetOrg(TriangleNet.Geometry.Vertex)
 extern "C"  void Otri_SetOrg_m2330423388 (Otri_t174839988 * __this, Vertex_t3430001018 * ___v0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Topology.Otri::SetDest(TriangleNet.Geometry.Vertex)
@@ -2576,8 +2696,6 @@ extern "C"  void Point__ctor_m2447325210 (Point_t124225758 * __this, const Metho
 extern "C"  void Vertex__ctor_m1206303456 (Vertex_t3430001018 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.List`1<TriangleNet.Topology.Triangle>::.ctor()
 #define List_1__ctor_m3083632179(__this, method) ((  void (*) (List_1_t3334734750 *, const MethodInfo*))List_1__ctor_m310736118_gshared)(__this, method)
-// System.Int32 System.Collections.Generic.List`1<TriangleNet.Geometry.ISegment>::get_Count()
-#define List_1_get_Count_m1181452150(__this, method) ((  int32_t (*) (List_1_t528188932 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
 // System.Void TriangleNet.Behavior::set_Poly(System.Boolean)
 extern "C"  void Behavior_set_Poly_m3070838856 (Behavior_t3353801546 * __this, bool ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean TriangleNet.Meshing.ConstraintOptions::get_ConformingDelaunay()
@@ -2596,8 +2714,6 @@ extern "C"  void Behavior_set_NoBisect_m482135031 (Behavior_t3353801546 * __this
 extern "C"  bool Behavior_get_ConformingDelaunay_m2175099026 (Behavior_t3353801546 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Behavior::set_Quality(System.Boolean)
 extern "C"  void Behavior_set_Quality_m1860948515 (Behavior_t3353801546 * __this, bool ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 System.Collections.Generic.List`1<TriangleNet.Geometry.RegionPointer>::get_Count()
-#define List_1_get_Count_m2951258385(__this, method) ((  int32_t (*) (List_1_t1611033753 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
 // System.Void TriangleNet.Meshing.ConstraintMesher::FormSkeleton(TriangleNet.Geometry.IPolygon)
 extern "C"  void ConstraintMesher_FormSkeleton_m456759313 (ConstraintMesher_t647801575 * __this, Il2CppObject * ___input0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.List`1<TriangleNet.Geometry.Point>::AddRange(System.Collections.Generic.IEnumerable`1<!0>)
@@ -2612,10 +2728,6 @@ extern "C"  bool Behavior_get_Convex_m2661393982 (Behavior_t3353801546 * __this,
 extern "C"  void ConstraintMesher_InfectHull_m316648324 (ConstraintMesher_t647801575 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean TriangleNet.Behavior::get_NoHoles()
 extern "C"  bool Behavior_get_NoHoles_m2886245833 (Behavior_t3353801546 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<TriangleNet.Geometry.Point>::GetEnumerator()
-#define List_1_GetEnumerator_m2378620307(__this, method) ((  Enumerator_t3323043860  (*) (List_1_t3788314186 *, const MethodInfo*))List_1_GetEnumerator_m2837081829_gshared)(__this, method)
-// !0 System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.Point>::get_Current()
-#define Enumerator_get_Current_m78656199(__this, method) ((  Point_t124225758 * (*) (Enumerator_t3323043860 *, const MethodInfo*))Enumerator_get_Current_m2577424081_gshared)(__this, method)
 // System.Boolean TriangleNet.Geometry.Rectangle::Contains(TriangleNet.Geometry.Point)
 extern "C"  bool Rectangle_Contains_m1429587869 (Rectangle_t3983541573 * __this, Point_t124225758 * ___pt0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean TriangleNet.Topology.Otri::IsInfected()
@@ -2624,18 +2736,6 @@ extern "C"  bool Otri_IsInfected_m2177744835 (Otri_t174839988 * __this, const Me
 extern "C"  void Otri_Infect_m4077569232 (Otri_t174839988 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.List`1<TriangleNet.Topology.Triangle>::Add(!0)
 #define List_1_Add_m708293887(__this, p0, method) ((  void (*) (List_1_t3334734750 *, Triangle_t3965613618 *, const MethodInfo*))List_1_Add_m4157722533_gshared)(__this, p0, method)
-// System.Boolean System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.Point>::MoveNext()
-#define Enumerator_MoveNext_m4021534995(__this, method) ((  bool (*) (Enumerator_t3323043860 *, const MethodInfo*))Enumerator_MoveNext_m44995089_gshared)(__this, method)
-// System.Void System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.Point>::Dispose()
-#define Enumerator_Dispose_m3857316765(__this, method) ((  void (*) (Enumerator_t3323043860 *, const MethodInfo*))Enumerator_Dispose_m3736175406_gshared)(__this, method)
-// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<TriangleNet.Geometry.RegionPointer>::GetEnumerator()
-#define List_1_GetEnumerator_m1023923998(__this, method) ((  Enumerator_t1145763427  (*) (List_1_t1611033753 *, const MethodInfo*))List_1_GetEnumerator_m2837081829_gshared)(__this, method)
-// !0 System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.RegionPointer>::get_Current()
-#define Enumerator_get_Current_m2866670792(__this, method) ((  RegionPointer_t2241912621 * (*) (Enumerator_t1145763427 *, const MethodInfo*))Enumerator_get_Current_m2577424081_gshared)(__this, method)
-// System.Boolean System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.RegionPointer>::MoveNext()
-#define Enumerator_MoveNext_m3799216998(__this, method) ((  bool (*) (Enumerator_t1145763427 *, const MethodInfo*))Enumerator_MoveNext_m44995089_gshared)(__this, method)
-// System.Void System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.RegionPointer>::Dispose()
-#define Enumerator_Dispose_m2917232148(__this, method) ((  void (*) (Enumerator_t1145763427 *, const MethodInfo*))Enumerator_Dispose_m3736175406_gshared)(__this, method)
 // System.Int32 System.Collections.Generic.List`1<TriangleNet.Topology.Triangle>::get_Count()
 #define List_1_get_Count_m294172043(__this, method) ((  int32_t (*) (List_1_t3334734750 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
 // System.Void TriangleNet.Meshing.ConstraintMesher::Plague()
@@ -2650,18 +2750,10 @@ extern "C"  void RegionIterator_Process_m2032054588 (RegionIterator_t3854740936 
 #define List_1_Clear_m3015994050(__this, method) ((  void (*) (List_1_t3334734750 *, const MethodInfo*))List_1_Clear_m4254626809_gshared)(__this, method)
 // System.Void TriangleNet.Mesh::MakeVertexMap()
 extern "C"  void Mesh_MakeVertexMap_m1343430565 (Mesh_t1414352559 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<TriangleNet.Geometry.ISegment>::GetEnumerator()
-#define List_1_GetEnumerator_m1150962713(__this, method) ((  Enumerator_t62918606  (*) (List_1_t528188932 *, const MethodInfo*))List_1_GetEnumerator_m2837081829_gshared)(__this, method)
-// !0 System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.ISegment>::get_Current()
-#define Enumerator_get_Current_m3068901101(__this, method) ((  Il2CppObject * (*) (Enumerator_t62918606 *, const MethodInfo*))Enumerator_get_Current_m2577424081_gshared)(__this, method)
 // System.String System.String::Concat(System.Object[])
 extern "C"  String_t* String_Concat_m3881798623 (Il2CppObject * __this /* static, unused */, ObjectU5BU5D_t3614634134* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Meshing.ConstraintMesher::InsertSegment(TriangleNet.Geometry.Vertex,TriangleNet.Geometry.Vertex,System.Int32)
 extern "C"  void ConstraintMesher_InsertSegment_m730646685 (ConstraintMesher_t647801575 * __this, Vertex_t3430001018 * ___endpoint10, Vertex_t3430001018 * ___endpoint21, int32_t ___newmark2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.ISegment>::MoveNext()
-#define Enumerator_MoveNext_m1137822645(__this, method) ((  bool (*) (Enumerator_t62918606 *, const MethodInfo*))Enumerator_MoveNext_m44995089_gshared)(__this, method)
-// System.Void System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.ISegment>::Dispose()
-#define Enumerator_Dispose_m4179421875(__this, method) ((  void (*) (Enumerator_t62918606 *, const MethodInfo*))Enumerator_Dispose_m3736175406_gshared)(__this, method)
 // System.Void TriangleNet.Meshing.ConstraintMesher::MarkHull()
 extern "C"  void ConstraintMesher_MarkHull_m638812456 (ConstraintMesher_t647801575 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // !0 System.Collections.Generic.List`1<TriangleNet.Topology.Triangle>::get_Item(System.Int32)
@@ -2722,28 +2814,16 @@ extern "C"  void Converter_SetSegments_m795431574 (Il2CppObject * __this /* stat
 #define List_1_get_Count_m3954411981(__this, method) ((  int32_t (*) (List_1_t3838928416 *, const MethodInfo*))List_1_get_Count_m3954411981_gshared)(__this, method)
 // !0 System.Collections.Generic.List`1<TriangleNet.Topology.Otri>::get_Item(System.Int32)
 #define List_1_get_Item_m3617923974(__this, p0, method) ((  Otri_t174839988  (*) (List_1_t3838928416 *, int32_t, const MethodInfo*))List_1_get_Item_m3617923974_gshared)(__this, p0, method)
-// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,TriangleNet.Topology.SubSegment>::GetEnumerator()
-#define ValueCollection_GetEnumerator_m4015408546(__this, method) ((  Enumerator_t1612983930  (*) (ValueCollection_t2924478305 *, const MethodInfo*))ValueCollection_GetEnumerator_m520082450_gshared)(__this, method)
-// !1 System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,TriangleNet.Topology.SubSegment>::get_Current()
-#define Enumerator_get_Current_m2586821832(__this, method) ((  SubSegment_t918625531 * (*) (Enumerator_t1612983930 *, const MethodInfo*))Enumerator_get_Current_m3006348140_gshared)(__this, method)
 // !0 System.Collections.Generic.List`1<TriangleNet.Geometry.ISegment>::get_Item(System.Int32)
 #define List_1_get_Item_m610008287(__this, p0, method) ((  Il2CppObject * (*) (List_1_t528188932 *, int32_t, const MethodInfo*))List_1_get_Item_m2062981835_gshared)(__this, p0, method)
 // System.Boolean System.Collections.Generic.List`1<TriangleNet.Topology.Otri>::Remove(!0)
 #define List_1_Remove_m4049578024(__this, p0, method) ((  bool (*) (List_1_t3838928416 *, Otri_t174839988 , const MethodInfo*))List_1_Remove_m4049578024_gshared)(__this, p0, method)
-// System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,TriangleNet.Topology.SubSegment>::MoveNext()
-#define Enumerator_MoveNext_m1166500305(__this, method) ((  bool (*) (Enumerator_t1612983930 *, const MethodInfo*))Enumerator_MoveNext_m1091131935_gshared)(__this, method)
-// System.Void System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Int32,TriangleNet.Topology.SubSegment>::Dispose()
-#define Enumerator_Dispose_m3099588663(__this, method) ((  void (*) (Enumerator_t1612983930 *, const MethodInfo*))Enumerator_Dispose_m2369319718_gshared)(__this, method)
 // System.Void TriangleNet.Topology.DCEL.DcelMesh::.ctor()
 extern "C"  void DcelMesh__ctor_m2440209338 (DcelMesh_t3742056343 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.Generic.List`1<TriangleNet.Topology.DCEL.HalfEdge> TriangleNet.Topology.DCEL.DcelMesh::get_HalfEdges()
 extern "C"  List_1_t4109356166 * DcelMesh_get_HalfEdges_m133519237 (DcelMesh_t3742056343 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 TriangleNet.Mesh::get_NumberOfEdges()
-extern "C"  int32_t Mesh_get_NumberOfEdges_m2095082906 (Mesh_t1414352559 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.List`1<TriangleNet.Topology.DCEL.HalfEdge>::set_Capacity(System.Int32)
 #define List_1_set_Capacity_m4066132377(__this, p0, method) ((  void (*) (List_1_t4109356166 *, int32_t, const MethodInfo*))List_1_set_Capacity_m491101164_gshared)(__this, p0, method)
-// System.Void TriangleNet.Mesh::Renumber()
-extern "C"  void Mesh_Renumber_m1687546911 (Mesh_t1414352559 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Topology.DCEL.Vertex::.ctor(System.Double,System.Double)
 extern "C"  void Vertex__ctor_m1129966963 (Vertex_t3185693932 * __this, double ___x0, double ___y1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Topology.DCEL.Face::.ctor(TriangleNet.Geometry.Point)
@@ -3150,16 +3230,10 @@ extern "C"  void CuthillMcKee_Degree_m1912506651 (CuthillMcKee_t1912214488 * __t
 extern "C"  void CuthillMcKee_ReverseVector_m3082036901 (CuthillMcKee_t1912214488 * __this, Int32U5BU5D_t3030399641* ___a0, int32_t ___offset1, int32_t ___size2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Tools.CuthillMcKee::GetLevelSet(System.Int32&,System.Int32[],System.Int32&,System.Int32[],System.Int32[],System.Int32)
 extern "C"  void CuthillMcKee_GetLevelSet_m302334787 (CuthillMcKee_t1912214488 * __this, int32_t* ___root0, Int32U5BU5D_t3030399641* ___mask1, int32_t* ___level_num2, Int32U5BU5D_t3030399641* ___level_row3, Int32U5BU5D_t3030399641* ___level4, int32_t ___offset5, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Double TriangleNet.Geometry.Point::get_X()
-extern "C"  double Point_get_X_m2752711382 (Point_t124225758 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Double TriangleNet.Geometry.Point::get_Y()
-extern "C"  double Point_get_Y_m2752711349 (Point_t124225758 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Geometry.Point::set_X(System.Double)
 extern "C"  void Point_set_X_m644097267 (Point_t124225758 * __this, double ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Geometry.Point::set_Y(System.Double)
 extern "C"  void Point_set_Y_m1155313428 (Point_t124225758 * __this, double ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 System.Collections.Generic.List`1<TriangleNet.Geometry.Vertex>::get_Count()
-#define List_1_get_Count_m2442253280(__this, method) ((  int32_t (*) (List_1_t2799122150 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
 // System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<TriangleNet.Geometry.Vertex>::GetEnumerator()
 #define List_1_GetEnumerator_m681557307(__this, method) ((  Enumerator_t2333851824  (*) (List_1_t2799122150 *, const MethodInfo*))List_1_GetEnumerator_m2837081829_gshared)(__this, method)
 // !0 System.Collections.Generic.List`1/Enumerator<TriangleNet.Geometry.Vertex>::get_Current()
@@ -3318,8 +3392,6 @@ extern "C"  void Edge__ctor_m2585419543 (Edge_t805845059 * __this, int32_t ___p0
 #define List_1_Add_m4249023656(__this, p0, method) ((  void (*) (List_1_t2302850772 *, Il2CppObject *, const MethodInfo*))List_1_Add_m4157722533_gshared)(__this, p0, method)
 // System.Void TriangleNet.Topology.DCEL.Face::.ctor(TriangleNet.Geometry.Point,TriangleNet.Topology.DCEL.HalfEdge)
 extern "C"  void Face__ctor_m688963133 (Face_t3682684903 * __this, Point_t124225758 * ___generator0, HalfEdge_t445267738 * ___edge1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 TriangleNet.Geometry.Point::get_ID()
-extern "C"  int32_t Point_get_ID_m2299701774 (Point_t124225758 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Topology.DCEL.Face/<EnumerateEdges>c__Iterator0::.ctor()
 extern "C"  void U3CEnumerateEdgesU3Ec__Iterator0__ctor_m4179042548 (U3CEnumerateEdgesU3Ec__Iterator0_t153644287 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.Generic.IEnumerator`1<TriangleNet.Topology.DCEL.HalfEdge> TriangleNet.Topology.DCEL.Face/<EnumerateEdges>c__Iterator0::System.Collections.Generic.IEnumerable<TriangleNet.Topology.DCEL.HalfEdge>.GetEnumerator()
@@ -3432,8 +3504,6 @@ extern "C"  void BoundedVoronoiLegacy_TagBlindTriangles_m2517627261 (BoundedVoro
 extern "C"  void BoundedVoronoiLegacy_ConstructCell_m137955755 (BoundedVoronoiLegacy_t1975431292 * __this, Vertex_t3430001018 * ___vertex0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Voronoi.Legacy.BoundedVoronoiLegacy::ConstructBoundaryCell(TriangleNet.Geometry.Vertex)
 extern "C"  void BoundedVoronoiLegacy_ConstructBoundaryCell_m3052042719 (BoundedVoronoiLegacy_t1975431292 * __this, Vertex_t3430001018 * ___vertex0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 System.Collections.Generic.List`1<TriangleNet.Geometry.Point>::get_Count()
-#define List_1_get_Count_m197961494(__this, method) ((  int32_t (*) (List_1_t3788314186 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
 // System.Void System.Array::Resize<TriangleNet.Geometry.Point>(!!0[]&,System.Int32)
 #define Array_Resize_TisPoint_t124225758_m3893177875(__this /* static, unused */, p0, p1, method) ((  void (*) (Il2CppObject * /* static, unused */, PointU5BU5D_t3405418987**, int32_t, const MethodInfo*))Array_Resize_TisIl2CppObject_m1482391709_gshared)(__this /* static, unused */, p0, p1, method)
 // !0 System.Collections.Generic.List`1<TriangleNet.Geometry.Point>::get_Item(System.Int32)
@@ -3665,6 +3735,2752 @@ extern "C"  void Light_set_intensity_m1790590300 (Light_t494725636 * __this, flo
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void TriangleNet.IO.TriangleWriter::.ctor()
+extern "C"  void TriangleWriter__ctor_m4220288293 (TriangleWriter_t4239728233 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void TriangleNet.IO.TriangleWriter::Write(TriangleNet.Mesh,System.String)
+extern "C"  void TriangleWriter_Write_m2559863646 (TriangleWriter_t4239728233 * __this, Mesh_t1414352559 * ___mesh0, String_t* ___filename1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TriangleWriter_Write_m2559863646_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Mesh_t1414352559 * L_0 = ___mesh0;
+		String_t* L_1 = ___filename1;
+		IL2CPP_RUNTIME_CLASS_INIT(Path_t41728875_il2cpp_TypeInfo_var);
+		String_t* L_2 = Path_ChangeExtension_m4087688358(NULL /*static, unused*/, L_1, _stringLiteral1548026970, /*hidden argument*/NULL);
+		TriangleWriter_WritePoly_m2600110316(__this, L_0, L_2, /*hidden argument*/NULL);
+		Mesh_t1414352559 * L_3 = ___mesh0;
+		String_t* L_4 = ___filename1;
+		String_t* L_5 = Path_ChangeExtension_m4087688358(NULL /*static, unused*/, L_4, _stringLiteral1407336352, /*hidden argument*/NULL);
+		TriangleWriter_WriteElements_m650681467(__this, L_3, L_5, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void TriangleNet.IO.TriangleWriter::WriteNodes(TriangleNet.Mesh,System.String)
+extern "C"  void TriangleWriter_WriteNodes_m478976229 (TriangleWriter_t4239728233 * __this, Mesh_t1414352559 * ___mesh0, String_t* ___filename1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TriangleWriter_WriteNodes_m478976229_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	StreamWriter_t3858580635 * V_0 = NULL;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		String_t* L_0 = ___filename1;
+		FileStream_t1695958676 * L_1 = File_OpenWrite_m3037731260(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		StreamWriter_t3858580635 * L_2 = (StreamWriter_t3858580635 *)il2cpp_codegen_object_new(StreamWriter_t3858580635_il2cpp_TypeInfo_var);
+		StreamWriter__ctor_m3847064531(L_2, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+	}
+
+IL_000c:
+	try
+	{ // begin try (depth: 1)
+		StreamWriter_t3858580635 * L_3 = V_0;
+		Mesh_t1414352559 * L_4 = ___mesh0;
+		TriangleWriter_WriteNodes_m594545027(__this, L_3, L_4, /*hidden argument*/NULL);
+		IL2CPP_LEAVE(0x26, FINALLY_0019);
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_0019;
+	}
+
+FINALLY_0019:
+	{ // begin finally (depth: 1)
+		{
+			StreamWriter_t3858580635 * L_5 = V_0;
+			if (!L_5)
+			{
+				goto IL_0025;
+			}
+		}
+
+IL_001f:
+		{
+			StreamWriter_t3858580635 * L_6 = V_0;
+			NullCheck(L_6);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, L_6);
+		}
+
+IL_0025:
+		{
+			IL2CPP_END_FINALLY(25)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(25)
+	{
+		IL2CPP_JUMP_TBL(0x26, IL_0026)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_0026:
+	{
+		return;
+	}
+}
+// System.Void TriangleNet.IO.TriangleWriter::WriteNodes(System.IO.StreamWriter,TriangleNet.Mesh)
+extern "C"  void TriangleWriter_WriteNodes_m594545027 (TriangleWriter_t4239728233 * __this, StreamWriter_t3858580635 * ___writer0, Mesh_t1414352559 * ___mesh1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TriangleWriter_WriteNodes_m594545027_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	Behavior_t3353801546 * V_2 = NULL;
+	VertexU5BU5D_t2879336287* V_3 = NULL;
+	Vertex_t3430001018 * V_4 = NULL;
+	Enumerator_t4124359417  V_5;
+	memset(&V_5, 0, sizeof(V_5));
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	int32_t G_B5_0 = 0;
+	ObjectU5BU5D_t3614634134* G_B5_1 = NULL;
+	ObjectU5BU5D_t3614634134* G_B5_2 = NULL;
+	String_t* G_B5_3 = NULL;
+	StreamWriter_t3858580635 * G_B5_4 = NULL;
+	int32_t G_B4_0 = 0;
+	ObjectU5BU5D_t3614634134* G_B4_1 = NULL;
+	ObjectU5BU5D_t3614634134* G_B4_2 = NULL;
+	String_t* G_B4_3 = NULL;
+	StreamWriter_t3858580635 * G_B4_4 = NULL;
+	String_t* G_B6_0 = NULL;
+	int32_t G_B6_1 = 0;
+	ObjectU5BU5D_t3614634134* G_B6_2 = NULL;
+	ObjectU5BU5D_t3614634134* G_B6_3 = NULL;
+	String_t* G_B6_4 = NULL;
+	StreamWriter_t3858580635 * G_B6_5 = NULL;
+	{
+		Mesh_t1414352559 * L_0 = ___mesh1;
+		NullCheck(L_0);
+		Dictionary_2_t2437826653 * L_1 = L_0->get_vertices_6();
+		NullCheck(L_1);
+		int32_t L_2 = Dictionary_2_get_Count_m224431524(L_1, /*hidden argument*/Dictionary_2_get_Count_m224431524_MethodInfo_var);
+		V_0 = L_2;
+		Mesh_t1414352559 * L_3 = ___mesh1;
+		NullCheck(L_3);
+		int32_t L_4 = L_3->get_nextras_17();
+		V_1 = L_4;
+		Mesh_t1414352559 * L_5 = ___mesh1;
+		NullCheck(L_5);
+		Behavior_t3353801546 * L_6 = L_5->get_behavior_26();
+		V_2 = L_6;
+		Behavior_t3353801546 * L_7 = V_2;
+		NullCheck(L_7);
+		bool L_8 = Behavior_get_Jettison_m801770417(L_7, /*hidden argument*/NULL);
+		if (!L_8)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		Mesh_t1414352559 * L_9 = ___mesh1;
+		NullCheck(L_9);
+		Dictionary_2_t2437826653 * L_10 = L_9->get_vertices_6();
+		NullCheck(L_10);
+		int32_t L_11 = Dictionary_2_get_Count_m224431524(L_10, /*hidden argument*/Dictionary_2_get_Count_m224431524_MethodInfo_var);
+		Mesh_t1414352559 * L_12 = ___mesh1;
+		NullCheck(L_12);
+		int32_t L_13 = L_12->get_undeads_15();
+		V_0 = ((int32_t)((int32_t)L_11-(int32_t)L_13));
+	}
+
+IL_0038:
+	{
+		StreamWriter_t3858580635 * L_14 = ___writer0;
+		if (!L_14)
+		{
+			goto IL_013d;
+		}
+	}
+	{
+		StreamWriter_t3858580635 * L_15 = ___writer0;
+		ObjectU5BU5D_t3614634134* L_16 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)4));
+		int32_t L_17 = V_0;
+		int32_t L_18 = L_17;
+		Il2CppObject * L_19 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_18);
+		NullCheck(L_16);
+		ArrayElementTypeCheck (L_16, L_19);
+		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_19);
+		ObjectU5BU5D_t3614634134* L_20 = L_16;
+		Mesh_t1414352559 * L_21 = ___mesh1;
+		NullCheck(L_21);
+		int32_t L_22 = L_21->get_mesh_dim_16();
+		int32_t L_23 = L_22;
+		Il2CppObject * L_24 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_23);
+		NullCheck(L_20);
+		ArrayElementTypeCheck (L_20, L_24);
+		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_24);
+		ObjectU5BU5D_t3614634134* L_25 = L_20;
+		int32_t L_26 = V_1;
+		int32_t L_27 = L_26;
+		Il2CppObject * L_28 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_27);
+		NullCheck(L_25);
+		ArrayElementTypeCheck (L_25, L_28);
+		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)L_28);
+		ObjectU5BU5D_t3614634134* L_29 = L_25;
+		Behavior_t3353801546 * L_30 = V_2;
+		NullCheck(L_30);
+		bool L_31 = Behavior_get_UseBoundaryMarkers_m914940907(L_30, /*hidden argument*/NULL);
+		G_B4_0 = 3;
+		G_B4_1 = L_29;
+		G_B4_2 = L_29;
+		G_B4_3 = _stringLiteral472494718;
+		G_B4_4 = L_15;
+		if (!L_31)
+		{
+			G_B5_0 = 3;
+			G_B5_1 = L_29;
+			G_B5_2 = L_29;
+			G_B5_3 = _stringLiteral472494718;
+			G_B5_4 = L_15;
+			goto IL_0081;
+		}
+	}
+	{
+		G_B6_0 = _stringLiteral372029325;
+		G_B6_1 = G_B4_0;
+		G_B6_2 = G_B4_1;
+		G_B6_3 = G_B4_2;
+		G_B6_4 = G_B4_3;
+		G_B6_5 = G_B4_4;
+		goto IL_0086;
+	}
+
+IL_0081:
+	{
+		G_B6_0 = _stringLiteral372029326;
+		G_B6_1 = G_B5_0;
+		G_B6_2 = G_B5_1;
+		G_B6_3 = G_B5_2;
+		G_B6_4 = G_B5_3;
+		G_B6_5 = G_B5_4;
+	}
+
+IL_0086:
+	{
+		NullCheck(G_B6_2);
+		ArrayElementTypeCheck (G_B6_2, G_B6_0);
+		(G_B6_2)->SetAt(static_cast<il2cpp_array_size_t>(G_B6_1), (Il2CppObject *)G_B6_0);
+		NullCheck(G_B6_5);
+		VirtActionInvoker2< String_t*, ObjectU5BU5D_t3614634134* >::Invoke(21 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object[]) */, G_B6_5, G_B6_4, G_B6_3);
+		Mesh_t1414352559 * L_32 = ___mesh1;
+		NullCheck(L_32);
+		int32_t L_33 = L_32->get_numbering_27();
+		if (L_33)
+		{
+			goto IL_009d;
+		}
+	}
+	{
+		Mesh_t1414352559 * L_34 = ___mesh1;
+		NullCheck(L_34);
+		Mesh_Renumber_m1687546911(L_34, /*hidden argument*/NULL);
+	}
+
+IL_009d:
+	{
+		Mesh_t1414352559 * L_35 = ___mesh1;
+		NullCheck(L_35);
+		int32_t L_36 = L_35->get_numbering_27();
+		if ((!(((uint32_t)L_36) == ((uint32_t)1))))
+		{
+			goto IL_00cd;
+		}
+	}
+	{
+		StreamWriter_t3858580635 * L_37 = ___writer0;
+		Mesh_t1414352559 * L_38 = ___mesh1;
+		NullCheck(L_38);
+		Dictionary_2_t2437826653 * L_39 = L_38->get_vertices_6();
+		NullCheck(L_39);
+		ValueCollection_t1140886496 * L_40 = Dictionary_2_get_Values_m1336547508(L_39, /*hidden argument*/Dictionary_2_get_Values_m1336547508_MethodInfo_var);
+		Behavior_t3353801546 * L_41 = V_2;
+		NullCheck(L_41);
+		bool L_42 = Behavior_get_UseBoundaryMarkers_m914940907(L_41, /*hidden argument*/NULL);
+		int32_t L_43 = V_1;
+		Behavior_t3353801546 * L_44 = V_2;
+		NullCheck(L_44);
+		bool L_45 = Behavior_get_Jettison_m801770417(L_44, /*hidden argument*/NULL);
+		TriangleWriter_WriteNodes_m2442891416(__this, L_37, L_40, L_42, L_43, L_45, /*hidden argument*/NULL);
+		goto IL_013d;
+	}
+
+IL_00cd:
+	{
+		Mesh_t1414352559 * L_46 = ___mesh1;
+		NullCheck(L_46);
+		Dictionary_2_t2437826653 * L_47 = L_46->get_vertices_6();
+		NullCheck(L_47);
+		int32_t L_48 = Dictionary_2_get_Count_m224431524(L_47, /*hidden argument*/Dictionary_2_get_Count_m224431524_MethodInfo_var);
+		V_3 = ((VertexU5BU5D_t2879336287*)SZArrayNew(VertexU5BU5D_t2879336287_il2cpp_TypeInfo_var, (uint32_t)L_48));
+		Mesh_t1414352559 * L_49 = ___mesh1;
+		NullCheck(L_49);
+		Dictionary_2_t2437826653 * L_50 = L_49->get_vertices_6();
+		NullCheck(L_50);
+		ValueCollection_t1140886496 * L_51 = Dictionary_2_get_Values_m1336547508(L_50, /*hidden argument*/Dictionary_2_get_Values_m1336547508_MethodInfo_var);
+		NullCheck(L_51);
+		Enumerator_t4124359417  L_52 = ValueCollection_GetEnumerator_m1471375588(L_51, /*hidden argument*/ValueCollection_GetEnumerator_m1471375588_MethodInfo_var);
+		V_5 = L_52;
+	}
+
+IL_00f0:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0109;
+		}
+
+IL_00f5:
+		{
+			Vertex_t3430001018 * L_53 = Enumerator_get_Current_m3627170066((&V_5), /*hidden argument*/Enumerator_get_Current_m3627170066_MethodInfo_var);
+			V_4 = L_53;
+			VertexU5BU5D_t2879336287* L_54 = V_3;
+			Vertex_t3430001018 * L_55 = V_4;
+			NullCheck(L_55);
+			int32_t L_56 = ((Point_t124225758 *)L_55)->get_id_0();
+			Vertex_t3430001018 * L_57 = V_4;
+			NullCheck(L_54);
+			ArrayElementTypeCheck (L_54, L_57);
+			(L_54)->SetAt(static_cast<il2cpp_array_size_t>(L_56), (Vertex_t3430001018 *)L_57);
+		}
+
+IL_0109:
+		{
+			bool L_58 = Enumerator_MoveNext_m275612969((&V_5), /*hidden argument*/Enumerator_MoveNext_m275612969_MethodInfo_var);
+			if (L_58)
+			{
+				goto IL_00f5;
+			}
+		}
+
+IL_0115:
+		{
+			IL2CPP_LEAVE(0x128, FINALLY_011a);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_011a;
+	}
+
+FINALLY_011a:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m569312879((&V_5), /*hidden argument*/Enumerator_Dispose_m569312879_MethodInfo_var);
+		IL2CPP_END_FINALLY(282)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(282)
+	{
+		IL2CPP_JUMP_TBL(0x128, IL_0128)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_0128:
+	{
+		StreamWriter_t3858580635 * L_59 = ___writer0;
+		VertexU5BU5D_t2879336287* L_60 = V_3;
+		Behavior_t3353801546 * L_61 = V_2;
+		NullCheck(L_61);
+		bool L_62 = Behavior_get_UseBoundaryMarkers_m914940907(L_61, /*hidden argument*/NULL);
+		int32_t L_63 = V_1;
+		Behavior_t3353801546 * L_64 = V_2;
+		NullCheck(L_64);
+		bool L_65 = Behavior_get_Jettison_m801770417(L_64, /*hidden argument*/NULL);
+		TriangleWriter_WriteNodes_m2442891416(__this, L_59, (Il2CppObject*)(Il2CppObject*)L_60, L_62, L_63, L_65, /*hidden argument*/NULL);
+	}
+
+IL_013d:
+	{
+		return;
+	}
+}
+// System.Void TriangleNet.IO.TriangleWriter::WriteNodes(System.IO.StreamWriter,System.Collections.Generic.IEnumerable`1<TriangleNet.Geometry.Vertex>,System.Boolean,System.Int32,System.Boolean)
+extern "C"  void TriangleWriter_WriteNodes_m2442891416 (TriangleWriter_t4239728233 * __this, StreamWriter_t3858580635 * ___writer0, Il2CppObject* ___nodes1, bool ___markers2, int32_t ___attribs3, bool ___jettison4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TriangleWriter_WriteNodes_m2442891416_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Vertex_t3430001018 * V_1 = NULL;
+	Il2CppObject* V_2 = NULL;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		V_0 = 0;
+		Il2CppObject* L_0 = ___nodes1;
+		NullCheck(L_0);
+		Il2CppObject* L_1 = InterfaceFuncInvoker0< Il2CppObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<!0> System.Collections.Generic.IEnumerable`1<TriangleNet.Geometry.Vertex>::GetEnumerator() */, IEnumerable_1_t3722128063_il2cpp_TypeInfo_var, L_0);
+		V_2 = L_1;
+	}
+
+IL_0009:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_007f;
+		}
+
+IL_000e:
+		{
+			Il2CppObject* L_2 = V_2;
+			NullCheck(L_2);
+			Vertex_t3430001018 * L_3 = InterfaceFuncInvoker0< Vertex_t3430001018 * >::Invoke(0 /* !0 System.Collections.Generic.IEnumerator`1<TriangleNet.Geometry.Vertex>::get_Current() */, IEnumerator_1_t905524845_il2cpp_TypeInfo_var, L_2);
+			V_1 = L_3;
+			bool L_4 = ___jettison4;
+			if (!L_4)
+			{
+				goto IL_0028;
+			}
+		}
+
+IL_001c:
+		{
+			Vertex_t3430001018 * L_5 = V_1;
+			NullCheck(L_5);
+			int32_t L_6 = L_5->get_type_6();
+			if ((((int32_t)L_6) == ((int32_t)4)))
+			{
+				goto IL_007f;
+			}
+		}
+
+IL_0028:
+		{
+			StreamWriter_t3858580635 * L_7 = ___writer0;
+			int32_t L_8 = V_0;
+			int32_t L_9 = L_8;
+			Il2CppObject * L_10 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_9);
+			Vertex_t3430001018 * L_11 = V_1;
+			NullCheck(L_11);
+			double* L_12 = ((Point_t124225758 *)L_11)->get_address_of_x_2();
+			IL2CPP_RUNTIME_CLASS_INIT(TriangleWriter_t4239728233_il2cpp_TypeInfo_var);
+			NumberFormatInfo_t104580544 * L_13 = ((TriangleWriter_t4239728233_StaticFields*)TriangleWriter_t4239728233_il2cpp_TypeInfo_var->static_fields)->get_nfi_0();
+			String_t* L_14 = Double_ToString_m1085043609(L_12, L_13, /*hidden argument*/NULL);
+			Vertex_t3430001018 * L_15 = V_1;
+			NullCheck(L_15);
+			double* L_16 = ((Point_t124225758 *)L_15)->get_address_of_y_3();
+			NumberFormatInfo_t104580544 * L_17 = ((TriangleWriter_t4239728233_StaticFields*)TriangleWriter_t4239728233_il2cpp_TypeInfo_var->static_fields)->get_nfi_0();
+			String_t* L_18 = Double_ToString_m1085043609(L_16, L_17, /*hidden argument*/NULL);
+			NullCheck(L_7);
+			VirtActionInvoker4< String_t*, Il2CppObject *, Il2CppObject *, Il2CppObject * >::Invoke(17 /* System.Void System.IO.TextWriter::Write(System.String,System.Object,System.Object,System.Object) */, L_7, _stringLiteral3817453905, L_10, L_14, L_18);
+			bool L_19 = ___markers2;
+			if (!L_19)
+			{
+				goto IL_0075;
+			}
+		}
+
+IL_005f:
+		{
+			StreamWriter_t3858580635 * L_20 = ___writer0;
+			Vertex_t3430001018 * L_21 = V_1;
+			NullCheck(L_21);
+			int32_t L_22 = ((Point_t124225758 *)L_21)->get_label_1();
+			int32_t L_23 = L_22;
+			Il2CppObject * L_24 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_23);
+			NullCheck(L_20);
+			VirtActionInvoker2< String_t*, Il2CppObject * >::Invoke(13 /* System.Void System.IO.TextWriter::Write(System.String,System.Object) */, L_20, _stringLiteral1367446948, L_24);
+		}
+
+IL_0075:
+		{
+			StreamWriter_t3858580635 * L_25 = ___writer0;
+			NullCheck(L_25);
+			VirtActionInvoker0::Invoke(18 /* System.Void System.IO.TextWriter::WriteLine() */, L_25);
+			int32_t L_26 = V_0;
+			V_0 = ((int32_t)((int32_t)L_26+(int32_t)1));
+		}
+
+IL_007f:
+		{
+			Il2CppObject* L_27 = V_2;
+			NullCheck(L_27);
+			bool L_28 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1466026749_il2cpp_TypeInfo_var, L_27);
+			if (L_28)
+			{
+				goto IL_000e;
+			}
+		}
+
+IL_008a:
+		{
+			IL2CPP_LEAVE(0x9C, FINALLY_008f);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_008f;
+	}
+
+FINALLY_008f:
+	{ // begin finally (depth: 1)
+		{
+			Il2CppObject* L_29 = V_2;
+			if (!L_29)
+			{
+				goto IL_009b;
+			}
+		}
+
+IL_0095:
+		{
+			Il2CppObject* L_30 = V_2;
+			NullCheck(L_30);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, L_30);
+		}
+
+IL_009b:
+		{
+			IL2CPP_END_FINALLY(143)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(143)
+	{
+		IL2CPP_JUMP_TBL(0x9C, IL_009c)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_009c:
+	{
+		return;
+	}
+}
+// System.Void TriangleNet.IO.TriangleWriter::WriteElements(TriangleNet.Mesh,System.String)
+extern "C"  void TriangleWriter_WriteElements_m650681467 (TriangleWriter_t4239728233 * __this, Mesh_t1414352559 * ___mesh0, String_t* ___filename1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TriangleWriter_WriteElements_m650681467_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Otri_t174839988  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Otri_t174839988  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Vertex_t3430001018 * V_2 = NULL;
+	Vertex_t3430001018 * V_3 = NULL;
+	Vertex_t3430001018 * V_4 = NULL;
+	bool V_5 = false;
+	int32_t V_6 = 0;
+	StreamWriter_t3858580635 * V_7 = NULL;
+	Triangle_t3965613618 * V_8 = NULL;
+	Il2CppObject* V_9 = NULL;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	Il2CppObject * G_B3_0 = NULL;
+	String_t* G_B3_1 = NULL;
+	StreamWriter_t3858580635 * G_B3_2 = NULL;
+	Il2CppObject * G_B2_0 = NULL;
+	String_t* G_B2_1 = NULL;
+	StreamWriter_t3858580635 * G_B2_2 = NULL;
+	int32_t G_B4_0 = 0;
+	Il2CppObject * G_B4_1 = NULL;
+	String_t* G_B4_2 = NULL;
+	StreamWriter_t3858580635 * G_B4_3 = NULL;
+	{
+		Initobj (Otri_t174839988_il2cpp_TypeInfo_var, (&V_1));
+		Otri_t174839988  L_0 = V_1;
+		V_0 = L_0;
+		Mesh_t1414352559 * L_1 = ___mesh0;
+		NullCheck(L_1);
+		Behavior_t3353801546 * L_2 = L_1->get_behavior_26();
+		NullCheck(L_2);
+		bool L_3 = L_2->get_useRegions_15();
+		V_5 = L_3;
+		V_6 = 0;
+		(&V_0)->set_orient_1(0);
+		String_t* L_4 = ___filename1;
+		FileStream_t1695958676 * L_5 = File_OpenWrite_m3037731260(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		StreamWriter_t3858580635 * L_6 = (StreamWriter_t3858580635 *)il2cpp_codegen_object_new(StreamWriter_t3858580635_il2cpp_TypeInfo_var);
+		StreamWriter__ctor_m3847064531(L_6, L_5, /*hidden argument*/NULL);
+		V_7 = L_6;
+	}
+
+IL_002f:
+	try
+	{ // begin try (depth: 1)
+		{
+			StreamWriter_t3858580635 * L_7 = V_7;
+			Mesh_t1414352559 * L_8 = ___mesh0;
+			NullCheck(L_8);
+			TrianglePool_t3592645624 * L_9 = L_8->get_triangles_4();
+			NullCheck(L_9);
+			int32_t L_10 = TrianglePool_get_Count_m3506840474(L_9, /*hidden argument*/NULL);
+			int32_t L_11 = L_10;
+			Il2CppObject * L_12 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_11);
+			bool L_13 = V_5;
+			G_B2_0 = L_12;
+			G_B2_1 = _stringLiteral4265065386;
+			G_B2_2 = L_7;
+			if (!L_13)
+			{
+				G_B3_0 = L_12;
+				G_B3_1 = _stringLiteral4265065386;
+				G_B3_2 = L_7;
+				goto IL_0053;
+			}
+		}
+
+IL_004d:
+		{
+			G_B4_0 = 1;
+			G_B4_1 = G_B2_0;
+			G_B4_2 = G_B2_1;
+			G_B4_3 = G_B2_2;
+			goto IL_0054;
+		}
+
+IL_0053:
+		{
+			G_B4_0 = 0;
+			G_B4_1 = G_B3_0;
+			G_B4_2 = G_B3_1;
+			G_B4_3 = G_B3_2;
+		}
+
+IL_0054:
+		{
+			int32_t L_14 = G_B4_0;
+			Il2CppObject * L_15 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_14);
+			NullCheck(G_B4_3);
+			VirtActionInvoker3< String_t*, Il2CppObject *, Il2CppObject * >::Invoke(22 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object,System.Object) */, G_B4_3, G_B4_2, G_B4_1, L_15);
+			Mesh_t1414352559 * L_16 = ___mesh0;
+			NullCheck(L_16);
+			TrianglePool_t3592645624 * L_17 = L_16->get_triangles_4();
+			NullCheck(L_17);
+			Il2CppObject* L_18 = TrianglePool_GetEnumerator_m1858198676(L_17, /*hidden argument*/NULL);
+			V_9 = L_18;
+		}
+
+IL_006b:
+		try
+		{ // begin try (depth: 2)
+			{
+				goto IL_011b;
+			}
+
+IL_0070:
+			{
+				Il2CppObject* L_19 = V_9;
+				NullCheck(L_19);
+				Triangle_t3965613618 * L_20 = InterfaceFuncInvoker0< Triangle_t3965613618 * >::Invoke(0 /* !0 System.Collections.Generic.IEnumerator`1<TriangleNet.Topology.Triangle>::get_Current() */, IEnumerator_1_t1441137445_il2cpp_TypeInfo_var, L_19);
+				V_8 = L_20;
+				Triangle_t3965613618 * L_21 = V_8;
+				(&V_0)->set_tri_0(L_21);
+				Vertex_t3430001018 * L_22 = Otri_Org_m2761406541((&V_0), /*hidden argument*/NULL);
+				V_2 = L_22;
+				Vertex_t3430001018 * L_23 = Otri_Dest_m1791860597((&V_0), /*hidden argument*/NULL);
+				V_3 = L_23;
+				Vertex_t3430001018 * L_24 = Otri_Apex_m3242619223((&V_0), /*hidden argument*/NULL);
+				V_4 = L_24;
+				StreamWriter_t3858580635 * L_25 = V_7;
+				ObjectU5BU5D_t3614634134* L_26 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)4));
+				int32_t L_27 = V_6;
+				int32_t L_28 = L_27;
+				Il2CppObject * L_29 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_28);
+				NullCheck(L_26);
+				ArrayElementTypeCheck (L_26, L_29);
+				(L_26)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_29);
+				ObjectU5BU5D_t3614634134* L_30 = L_26;
+				Vertex_t3430001018 * L_31 = V_2;
+				NullCheck(L_31);
+				int32_t L_32 = ((Point_t124225758 *)L_31)->get_id_0();
+				int32_t L_33 = L_32;
+				Il2CppObject * L_34 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_33);
+				NullCheck(L_30);
+				ArrayElementTypeCheck (L_30, L_34);
+				(L_30)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_34);
+				ObjectU5BU5D_t3614634134* L_35 = L_30;
+				Vertex_t3430001018 * L_36 = V_3;
+				NullCheck(L_36);
+				int32_t L_37 = ((Point_t124225758 *)L_36)->get_id_0();
+				int32_t L_38 = L_37;
+				Il2CppObject * L_39 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_38);
+				NullCheck(L_35);
+				ArrayElementTypeCheck (L_35, L_39);
+				(L_35)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)L_39);
+				ObjectU5BU5D_t3614634134* L_40 = L_35;
+				Vertex_t3430001018 * L_41 = V_4;
+				NullCheck(L_41);
+				int32_t L_42 = ((Point_t124225758 *)L_41)->get_id_0();
+				int32_t L_43 = L_42;
+				Il2CppObject * L_44 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_43);
+				NullCheck(L_40);
+				ArrayElementTypeCheck (L_40, L_44);
+				(L_40)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_44);
+				NullCheck(L_25);
+				VirtActionInvoker2< String_t*, ObjectU5BU5D_t3614634134* >::Invoke(14 /* System.Void System.IO.TextWriter::Write(System.String,System.Object[]) */, L_25, _stringLiteral472494718, L_40);
+				bool L_45 = V_5;
+				if (!L_45)
+				{
+					goto IL_0106;
+				}
+			}
+
+IL_00e9:
+			{
+				StreamWriter_t3858580635 * L_46 = V_7;
+				Triangle_t3965613618 * L_47 = (&V_0)->get_tri_0();
+				NullCheck(L_47);
+				int32_t L_48 = L_47->get_label_5();
+				int32_t L_49 = L_48;
+				Il2CppObject * L_50 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_49);
+				NullCheck(L_46);
+				VirtActionInvoker2< String_t*, Il2CppObject * >::Invoke(13 /* System.Void System.IO.TextWriter::Write(System.String,System.Object) */, L_46, _stringLiteral1367446948, L_50);
+			}
+
+IL_0106:
+			{
+				StreamWriter_t3858580635 * L_51 = V_7;
+				NullCheck(L_51);
+				VirtActionInvoker0::Invoke(18 /* System.Void System.IO.TextWriter::WriteLine() */, L_51);
+				Triangle_t3965613618 * L_52 = V_8;
+				int32_t L_53 = V_6;
+				int32_t L_54 = L_53;
+				V_6 = ((int32_t)((int32_t)L_54+(int32_t)1));
+				NullCheck(L_52);
+				L_52->set_id_1(L_54);
+			}
+
+IL_011b:
+			{
+				Il2CppObject* L_55 = V_9;
+				NullCheck(L_55);
+				bool L_56 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1466026749_il2cpp_TypeInfo_var, L_55);
+				if (L_56)
+				{
+					goto IL_0070;
+				}
+			}
+
+IL_0127:
+			{
+				IL2CPP_LEAVE(0x13B, FINALLY_012c);
+			}
+		} // end try (depth: 2)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+			goto FINALLY_012c;
+		}
+
+FINALLY_012c:
+		{ // begin finally (depth: 2)
+			{
+				Il2CppObject* L_57 = V_9;
+				if (!L_57)
+				{
+					goto IL_013a;
+				}
+			}
+
+IL_0133:
+			{
+				Il2CppObject* L_58 = V_9;
+				NullCheck(L_58);
+				InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, L_58);
+			}
+
+IL_013a:
+			{
+				IL2CPP_END_FINALLY(300)
+			}
+		} // end finally (depth: 2)
+		IL2CPP_CLEANUP(300)
+		{
+			IL2CPP_JUMP_TBL(0x13B, IL_013b)
+			IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+		}
+
+IL_013b:
+		{
+			IL2CPP_LEAVE(0x14F, FINALLY_0140);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_0140;
+	}
+
+FINALLY_0140:
+	{ // begin finally (depth: 1)
+		{
+			StreamWriter_t3858580635 * L_59 = V_7;
+			if (!L_59)
+			{
+				goto IL_014e;
+			}
+		}
+
+IL_0147:
+		{
+			StreamWriter_t3858580635 * L_60 = V_7;
+			NullCheck(L_60);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, L_60);
+		}
+
+IL_014e:
+		{
+			IL2CPP_END_FINALLY(320)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(320)
+	{
+		IL2CPP_JUMP_TBL(0x14F, IL_014f)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_014f:
+	{
+		return;
+	}
+}
+// System.Void TriangleNet.IO.TriangleWriter::WritePoly(TriangleNet.Geometry.IPolygon,System.String)
+extern "C"  void TriangleWriter_WritePoly_m3212210548 (TriangleWriter_t4239728233 * __this, Il2CppObject * ___polygon0, String_t* ___filename1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TriangleWriter_WritePoly_m3212210548_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	StreamWriter_t3858580635 * V_1 = NULL;
+	Vertex_t3430001018 * V_2 = NULL;
+	Vertex_t3430001018 * V_3 = NULL;
+	int32_t V_4 = 0;
+	Il2CppObject * V_5 = NULL;
+	Enumerator_t62918606  V_6;
+	memset(&V_6, 0, sizeof(V_6));
+	Point_t124225758 * V_7 = NULL;
+	Enumerator_t3323043860  V_8;
+	memset(&V_8, 0, sizeof(V_8));
+	double V_9 = 0.0;
+	double V_10 = 0.0;
+	RegionPointer_t2241912621 * V_11 = NULL;
+	Enumerator_t1145763427  V_12;
+	memset(&V_12, 0, sizeof(V_12));
+	double V_13 = 0.0;
+	double V_14 = 0.0;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	Il2CppObject * G_B3_0 = NULL;
+	String_t* G_B3_1 = NULL;
+	StreamWriter_t3858580635 * G_B3_2 = NULL;
+	Il2CppObject * G_B2_0 = NULL;
+	String_t* G_B2_1 = NULL;
+	StreamWriter_t3858580635 * G_B2_2 = NULL;
+	String_t* G_B4_0 = NULL;
+	Il2CppObject * G_B4_1 = NULL;
+	String_t* G_B4_2 = NULL;
+	StreamWriter_t3858580635 * G_B4_3 = NULL;
+	Il2CppObject * G_B6_0 = NULL;
+	String_t* G_B6_1 = NULL;
+	StreamWriter_t3858580635 * G_B6_2 = NULL;
+	Il2CppObject * G_B5_0 = NULL;
+	String_t* G_B5_1 = NULL;
+	StreamWriter_t3858580635 * G_B5_2 = NULL;
+	String_t* G_B7_0 = NULL;
+	Il2CppObject * G_B7_1 = NULL;
+	String_t* G_B7_2 = NULL;
+	StreamWriter_t3858580635 * G_B7_3 = NULL;
+	{
+		Il2CppObject * L_0 = ___polygon0;
+		NullCheck(L_0);
+		bool L_1 = InterfaceFuncInvoker0< bool >::Invoke(6 /* System.Boolean TriangleNet.Geometry.IPolygon::get_HasSegmentMarkers() */, IPolygon_t2839742609_il2cpp_TypeInfo_var, L_0);
+		V_0 = L_1;
+		String_t* L_2 = ___filename1;
+		FileStream_t1695958676 * L_3 = File_OpenWrite_m3037731260(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		StreamWriter_t3858580635 * L_4 = (StreamWriter_t3858580635 *)il2cpp_codegen_object_new(StreamWriter_t3858580635_il2cpp_TypeInfo_var);
+		StreamWriter__ctor_m3847064531(L_4, L_3, /*hidden argument*/NULL);
+		V_1 = L_4;
+	}
+
+IL_0013:
+	try
+	{ // begin try (depth: 1)
+		{
+			StreamWriter_t3858580635 * L_5 = V_1;
+			Il2CppObject * L_6 = ___polygon0;
+			NullCheck(L_6);
+			List_1_t2799122150 * L_7 = InterfaceFuncInvoker0< List_1_t2799122150 * >::Invoke(0 /* System.Collections.Generic.List`1<TriangleNet.Geometry.Vertex> TriangleNet.Geometry.IPolygon::get_Points() */, IPolygon_t2839742609_il2cpp_TypeInfo_var, L_6);
+			NullCheck(L_7);
+			int32_t L_8 = List_1_get_Count_m2442253280(L_7, /*hidden argument*/List_1_get_Count_m2442253280_MethodInfo_var);
+			int32_t L_9 = L_8;
+			Il2CppObject * L_10 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_9);
+			Il2CppObject * L_11 = ___polygon0;
+			NullCheck(L_11);
+			bool L_12 = InterfaceFuncInvoker0< bool >::Invoke(4 /* System.Boolean TriangleNet.Geometry.IPolygon::get_HasPointMarkers() */, IPolygon_t2839742609_il2cpp_TypeInfo_var, L_11);
+			G_B2_0 = L_10;
+			G_B2_1 = _stringLiteral1984463515;
+			G_B2_2 = L_5;
+			if (!L_12)
+			{
+				G_B3_0 = L_10;
+				G_B3_1 = _stringLiteral1984463515;
+				G_B3_2 = L_5;
+				goto IL_003e;
+			}
+		}
+
+IL_0034:
+		{
+			G_B4_0 = _stringLiteral372029325;
+			G_B4_1 = G_B2_0;
+			G_B4_2 = G_B2_1;
+			G_B4_3 = G_B2_2;
+			goto IL_0043;
+		}
+
+IL_003e:
+		{
+			G_B4_0 = _stringLiteral372029326;
+			G_B4_1 = G_B3_0;
+			G_B4_2 = G_B3_1;
+			G_B4_3 = G_B3_2;
+		}
+
+IL_0043:
+		{
+			NullCheck(G_B4_3);
+			VirtActionInvoker3< String_t*, Il2CppObject *, Il2CppObject * >::Invoke(22 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object,System.Object) */, G_B4_3, G_B4_2, G_B4_1, G_B4_0);
+			StreamWriter_t3858580635 * L_13 = V_1;
+			Il2CppObject * L_14 = ___polygon0;
+			NullCheck(L_14);
+			List_1_t2799122150 * L_15 = InterfaceFuncInvoker0< List_1_t2799122150 * >::Invoke(0 /* System.Collections.Generic.List`1<TriangleNet.Geometry.Vertex> TriangleNet.Geometry.IPolygon::get_Points() */, IPolygon_t2839742609_il2cpp_TypeInfo_var, L_14);
+			Il2CppObject * L_16 = ___polygon0;
+			NullCheck(L_16);
+			bool L_17 = InterfaceFuncInvoker0< bool >::Invoke(4 /* System.Boolean TriangleNet.Geometry.IPolygon::get_HasPointMarkers() */, IPolygon_t2839742609_il2cpp_TypeInfo_var, L_16);
+			TriangleWriter_WriteNodes_m2442891416(__this, L_13, L_15, L_17, 0, (bool)0, /*hidden argument*/NULL);
+			StreamWriter_t3858580635 * L_18 = V_1;
+			Il2CppObject * L_19 = ___polygon0;
+			NullCheck(L_19);
+			List_1_t528188932 * L_20 = InterfaceFuncInvoker0< List_1_t528188932 * >::Invoke(1 /* System.Collections.Generic.List`1<TriangleNet.Geometry.ISegment> TriangleNet.Geometry.IPolygon::get_Segments() */, IPolygon_t2839742609_il2cpp_TypeInfo_var, L_19);
+			NullCheck(L_20);
+			int32_t L_21 = List_1_get_Count_m1181452150(L_20, /*hidden argument*/List_1_get_Count_m1181452150_MethodInfo_var);
+			int32_t L_22 = L_21;
+			Il2CppObject * L_23 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_22);
+			bool L_24 = V_0;
+			G_B5_0 = L_23;
+			G_B5_1 = _stringLiteral2512070489;
+			G_B5_2 = L_18;
+			if (!L_24)
+			{
+				G_B6_0 = L_23;
+				G_B6_1 = _stringLiteral2512070489;
+				G_B6_2 = L_18;
+				goto IL_0083;
+			}
+		}
+
+IL_0079:
+		{
+			G_B7_0 = _stringLiteral372029325;
+			G_B7_1 = G_B5_0;
+			G_B7_2 = G_B5_1;
+			G_B7_3 = G_B5_2;
+			goto IL_0088;
+		}
+
+IL_0083:
+		{
+			G_B7_0 = _stringLiteral372029326;
+			G_B7_1 = G_B6_0;
+			G_B7_2 = G_B6_1;
+			G_B7_3 = G_B6_2;
+		}
+
+IL_0088:
+		{
+			NullCheck(G_B7_3);
+			VirtActionInvoker3< String_t*, Il2CppObject *, Il2CppObject * >::Invoke(22 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object,System.Object) */, G_B7_3, G_B7_2, G_B7_1, G_B7_0);
+			V_4 = 0;
+			Il2CppObject * L_25 = ___polygon0;
+			NullCheck(L_25);
+			List_1_t528188932 * L_26 = InterfaceFuncInvoker0< List_1_t528188932 * >::Invoke(1 /* System.Collections.Generic.List`1<TriangleNet.Geometry.ISegment> TriangleNet.Geometry.IPolygon::get_Segments() */, IPolygon_t2839742609_il2cpp_TypeInfo_var, L_25);
+			NullCheck(L_26);
+			Enumerator_t62918606  L_27 = List_1_GetEnumerator_m1150962713(L_26, /*hidden argument*/List_1_GetEnumerator_m1150962713_MethodInfo_var);
+			V_6 = L_27;
+		}
+
+IL_009d:
+		try
+		{ // begin try (depth: 2)
+			{
+				goto IL_013c;
+			}
+
+IL_00a2:
+			{
+				Il2CppObject * L_28 = Enumerator_get_Current_m3068901101((&V_6), /*hidden argument*/Enumerator_get_Current_m3068901101_MethodInfo_var);
+				V_5 = L_28;
+				Il2CppObject * L_29 = V_5;
+				NullCheck(L_29);
+				Vertex_t3430001018 * L_30 = InterfaceFuncInvoker1< Vertex_t3430001018 *, int32_t >::Invoke(0 /* TriangleNet.Geometry.Vertex TriangleNet.Geometry.ISegment::GetVertex(System.Int32) */, ISegment_t1159067800_il2cpp_TypeInfo_var, L_29, 0);
+				V_2 = L_30;
+				Il2CppObject * L_31 = V_5;
+				NullCheck(L_31);
+				Vertex_t3430001018 * L_32 = InterfaceFuncInvoker1< Vertex_t3430001018 *, int32_t >::Invoke(0 /* TriangleNet.Geometry.Vertex TriangleNet.Geometry.ISegment::GetVertex(System.Int32) */, ISegment_t1159067800_il2cpp_TypeInfo_var, L_31, 1);
+				V_3 = L_32;
+				bool L_33 = V_0;
+				if (!L_33)
+				{
+					goto IL_010e;
+				}
+			}
+
+IL_00c3:
+			{
+				StreamWriter_t3858580635 * L_34 = V_1;
+				ObjectU5BU5D_t3614634134* L_35 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)4));
+				int32_t L_36 = V_4;
+				int32_t L_37 = L_36;
+				Il2CppObject * L_38 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_37);
+				NullCheck(L_35);
+				ArrayElementTypeCheck (L_35, L_38);
+				(L_35)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_38);
+				ObjectU5BU5D_t3614634134* L_39 = L_35;
+				Vertex_t3430001018 * L_40 = V_2;
+				NullCheck(L_40);
+				int32_t L_41 = Point_get_ID_m2299701774(L_40, /*hidden argument*/NULL);
+				int32_t L_42 = L_41;
+				Il2CppObject * L_43 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_42);
+				NullCheck(L_39);
+				ArrayElementTypeCheck (L_39, L_43);
+				(L_39)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_43);
+				ObjectU5BU5D_t3614634134* L_44 = L_39;
+				Vertex_t3430001018 * L_45 = V_3;
+				NullCheck(L_45);
+				int32_t L_46 = Point_get_ID_m2299701774(L_45, /*hidden argument*/NULL);
+				int32_t L_47 = L_46;
+				Il2CppObject * L_48 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_47);
+				NullCheck(L_44);
+				ArrayElementTypeCheck (L_44, L_48);
+				(L_44)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)L_48);
+				ObjectU5BU5D_t3614634134* L_49 = L_44;
+				Il2CppObject * L_50 = V_5;
+				NullCheck(L_50);
+				int32_t L_51 = InterfaceFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 TriangleNet.Geometry.IEdge::get_Label() */, IEdge_t2933729640_il2cpp_TypeInfo_var, L_50);
+				int32_t L_52 = L_51;
+				Il2CppObject * L_53 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_52);
+				NullCheck(L_49);
+				ArrayElementTypeCheck (L_49, L_53);
+				(L_49)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_53);
+				NullCheck(L_34);
+				VirtActionInvoker2< String_t*, ObjectU5BU5D_t3614634134* >::Invoke(21 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object[]) */, L_34, _stringLiteral472494718, L_49);
+				goto IL_0136;
+			}
+
+IL_010e:
+			{
+				StreamWriter_t3858580635 * L_54 = V_1;
+				int32_t L_55 = V_4;
+				int32_t L_56 = L_55;
+				Il2CppObject * L_57 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_56);
+				Vertex_t3430001018 * L_58 = V_2;
+				NullCheck(L_58);
+				int32_t L_59 = Point_get_ID_m2299701774(L_58, /*hidden argument*/NULL);
+				int32_t L_60 = L_59;
+				Il2CppObject * L_61 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_60);
+				Vertex_t3430001018 * L_62 = V_3;
+				NullCheck(L_62);
+				int32_t L_63 = Point_get_ID_m2299701774(L_62, /*hidden argument*/NULL);
+				int32_t L_64 = L_63;
+				Il2CppObject * L_65 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_64);
+				NullCheck(L_54);
+				VirtActionInvoker4< String_t*, Il2CppObject *, Il2CppObject *, Il2CppObject * >::Invoke(23 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object,System.Object,System.Object) */, L_54, _stringLiteral3817453905, L_57, L_61, L_65);
+			}
+
+IL_0136:
+			{
+				int32_t L_66 = V_4;
+				V_4 = ((int32_t)((int32_t)L_66+(int32_t)1));
+			}
+
+IL_013c:
+			{
+				bool L_67 = Enumerator_MoveNext_m1137822645((&V_6), /*hidden argument*/Enumerator_MoveNext_m1137822645_MethodInfo_var);
+				if (L_67)
+				{
+					goto IL_00a2;
+				}
+			}
+
+IL_0148:
+			{
+				IL2CPP_LEAVE(0x15B, FINALLY_014d);
+			}
+		} // end try (depth: 2)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+			goto FINALLY_014d;
+		}
+
+FINALLY_014d:
+		{ // begin finally (depth: 2)
+			Enumerator_Dispose_m4179421875((&V_6), /*hidden argument*/Enumerator_Dispose_m4179421875_MethodInfo_var);
+			IL2CPP_END_FINALLY(333)
+		} // end finally (depth: 2)
+		IL2CPP_CLEANUP(333)
+		{
+			IL2CPP_JUMP_TBL(0x15B, IL_015b)
+			IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+		}
+
+IL_015b:
+		{
+			V_4 = 0;
+			StreamWriter_t3858580635 * L_68 = V_1;
+			Il2CppObject * L_69 = ___polygon0;
+			NullCheck(L_69);
+			List_1_t3788314186 * L_70 = InterfaceFuncInvoker0< List_1_t3788314186 * >::Invoke(2 /* System.Collections.Generic.List`1<TriangleNet.Geometry.Point> TriangleNet.Geometry.IPolygon::get_Holes() */, IPolygon_t2839742609_il2cpp_TypeInfo_var, L_69);
+			NullCheck(L_70);
+			int32_t L_71 = List_1_get_Count_m197961494(L_70, /*hidden argument*/List_1_get_Count_m197961494_MethodInfo_var);
+			int32_t L_72 = L_71;
+			Il2CppObject * L_73 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_72);
+			NullCheck(L_68);
+			VirtActionInvoker2< String_t*, Il2CppObject * >::Invoke(20 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object) */, L_68, _stringLiteral104529068, L_73);
+			Il2CppObject * L_74 = ___polygon0;
+			NullCheck(L_74);
+			List_1_t3788314186 * L_75 = InterfaceFuncInvoker0< List_1_t3788314186 * >::Invoke(2 /* System.Collections.Generic.List`1<TriangleNet.Geometry.Point> TriangleNet.Geometry.IPolygon::get_Holes() */, IPolygon_t2839742609_il2cpp_TypeInfo_var, L_74);
+			NullCheck(L_75);
+			Enumerator_t3323043860  L_76 = List_1_GetEnumerator_m2378620307(L_75, /*hidden argument*/List_1_GetEnumerator_m2378620307_MethodInfo_var);
+			V_8 = L_76;
+		}
+
+IL_0186:
+		try
+		{ // begin try (depth: 2)
+			{
+				goto IL_01d5;
+			}
+
+IL_018b:
+			{
+				Point_t124225758 * L_77 = Enumerator_get_Current_m78656199((&V_8), /*hidden argument*/Enumerator_get_Current_m78656199_MethodInfo_var);
+				V_7 = L_77;
+				StreamWriter_t3858580635 * L_78 = V_1;
+				int32_t L_79 = V_4;
+				int32_t L_80 = L_79;
+				V_4 = ((int32_t)((int32_t)L_80+(int32_t)1));
+				int32_t L_81 = L_80;
+				Il2CppObject * L_82 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_81);
+				Point_t124225758 * L_83 = V_7;
+				NullCheck(L_83);
+				double L_84 = Point_get_X_m2752711382(L_83, /*hidden argument*/NULL);
+				V_9 = L_84;
+				IL2CPP_RUNTIME_CLASS_INIT(TriangleWriter_t4239728233_il2cpp_TypeInfo_var);
+				NumberFormatInfo_t104580544 * L_85 = ((TriangleWriter_t4239728233_StaticFields*)TriangleWriter_t4239728233_il2cpp_TypeInfo_var->static_fields)->get_nfi_0();
+				String_t* L_86 = Double_ToString_m1085043609((&V_9), L_85, /*hidden argument*/NULL);
+				Point_t124225758 * L_87 = V_7;
+				NullCheck(L_87);
+				double L_88 = Point_get_Y_m2752711349(L_87, /*hidden argument*/NULL);
+				V_10 = L_88;
+				NumberFormatInfo_t104580544 * L_89 = ((TriangleWriter_t4239728233_StaticFields*)TriangleWriter_t4239728233_il2cpp_TypeInfo_var->static_fields)->get_nfi_0();
+				String_t* L_90 = Double_ToString_m1085043609((&V_10), L_89, /*hidden argument*/NULL);
+				NullCheck(L_78);
+				VirtActionInvoker4< String_t*, Il2CppObject *, Il2CppObject *, Il2CppObject * >::Invoke(23 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object,System.Object,System.Object) */, L_78, _stringLiteral3817453905, L_82, L_86, L_90);
+			}
+
+IL_01d5:
+			{
+				bool L_91 = Enumerator_MoveNext_m4021534995((&V_8), /*hidden argument*/Enumerator_MoveNext_m4021534995_MethodInfo_var);
+				if (L_91)
+				{
+					goto IL_018b;
+				}
+			}
+
+IL_01e1:
+			{
+				IL2CPP_LEAVE(0x1F4, FINALLY_01e6);
+			}
+		} // end try (depth: 2)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+			goto FINALLY_01e6;
+		}
+
+FINALLY_01e6:
+		{ // begin finally (depth: 2)
+			Enumerator_Dispose_m3857316765((&V_8), /*hidden argument*/Enumerator_Dispose_m3857316765_MethodInfo_var);
+			IL2CPP_END_FINALLY(486)
+		} // end finally (depth: 2)
+		IL2CPP_CLEANUP(486)
+		{
+			IL2CPP_JUMP_TBL(0x1F4, IL_01f4)
+			IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+		}
+
+IL_01f4:
+		{
+			Il2CppObject * L_92 = ___polygon0;
+			NullCheck(L_92);
+			List_1_t1611033753 * L_93 = InterfaceFuncInvoker0< List_1_t1611033753 * >::Invoke(3 /* System.Collections.Generic.List`1<TriangleNet.Geometry.RegionPointer> TriangleNet.Geometry.IPolygon::get_Regions() */, IPolygon_t2839742609_il2cpp_TypeInfo_var, L_92);
+			NullCheck(L_93);
+			int32_t L_94 = List_1_get_Count_m2951258385(L_93, /*hidden argument*/List_1_get_Count_m2951258385_MethodInfo_var);
+			if ((((int32_t)L_94) <= ((int32_t)0)))
+			{
+				goto IL_02c7;
+			}
+		}
+
+IL_0205:
+		{
+			V_4 = 0;
+			StreamWriter_t3858580635 * L_95 = V_1;
+			Il2CppObject * L_96 = ___polygon0;
+			NullCheck(L_96);
+			List_1_t1611033753 * L_97 = InterfaceFuncInvoker0< List_1_t1611033753 * >::Invoke(3 /* System.Collections.Generic.List`1<TriangleNet.Geometry.RegionPointer> TriangleNet.Geometry.IPolygon::get_Regions() */, IPolygon_t2839742609_il2cpp_TypeInfo_var, L_96);
+			NullCheck(L_97);
+			int32_t L_98 = List_1_get_Count_m2951258385(L_97, /*hidden argument*/List_1_get_Count_m2951258385_MethodInfo_var);
+			int32_t L_99 = L_98;
+			Il2CppObject * L_100 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_99);
+			NullCheck(L_95);
+			VirtActionInvoker2< String_t*, Il2CppObject * >::Invoke(20 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object) */, L_95, _stringLiteral104529068, L_100);
+			Il2CppObject * L_101 = ___polygon0;
+			NullCheck(L_101);
+			List_1_t1611033753 * L_102 = InterfaceFuncInvoker0< List_1_t1611033753 * >::Invoke(3 /* System.Collections.Generic.List`1<TriangleNet.Geometry.RegionPointer> TriangleNet.Geometry.IPolygon::get_Regions() */, IPolygon_t2839742609_il2cpp_TypeInfo_var, L_101);
+			NullCheck(L_102);
+			Enumerator_t1145763427  L_103 = List_1_GetEnumerator_m1023923998(L_102, /*hidden argument*/List_1_GetEnumerator_m1023923998_MethodInfo_var);
+			V_12 = L_103;
+		}
+
+IL_0230:
+		try
+		{ // begin try (depth: 2)
+			{
+				goto IL_02a8;
+			}
+
+IL_0235:
+			{
+				RegionPointer_t2241912621 * L_104 = Enumerator_get_Current_m2866670792((&V_12), /*hidden argument*/Enumerator_get_Current_m2866670792_MethodInfo_var);
+				V_11 = L_104;
+				StreamWriter_t3858580635 * L_105 = V_1;
+				ObjectU5BU5D_t3614634134* L_106 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)4));
+				int32_t L_107 = V_4;
+				int32_t L_108 = L_107;
+				Il2CppObject * L_109 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_108);
+				NullCheck(L_106);
+				ArrayElementTypeCheck (L_106, L_109);
+				(L_106)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_109);
+				ObjectU5BU5D_t3614634134* L_110 = L_106;
+				RegionPointer_t2241912621 * L_111 = V_11;
+				NullCheck(L_111);
+				Point_t124225758 * L_112 = L_111->get_point_0();
+				NullCheck(L_112);
+				double L_113 = Point_get_X_m2752711382(L_112, /*hidden argument*/NULL);
+				V_13 = L_113;
+				IL2CPP_RUNTIME_CLASS_INIT(TriangleWriter_t4239728233_il2cpp_TypeInfo_var);
+				NumberFormatInfo_t104580544 * L_114 = ((TriangleWriter_t4239728233_StaticFields*)TriangleWriter_t4239728233_il2cpp_TypeInfo_var->static_fields)->get_nfi_0();
+				String_t* L_115 = Double_ToString_m1085043609((&V_13), L_114, /*hidden argument*/NULL);
+				NullCheck(L_110);
+				ArrayElementTypeCheck (L_110, L_115);
+				(L_110)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_115);
+				ObjectU5BU5D_t3614634134* L_116 = L_110;
+				RegionPointer_t2241912621 * L_117 = V_11;
+				NullCheck(L_117);
+				Point_t124225758 * L_118 = L_117->get_point_0();
+				NullCheck(L_118);
+				double L_119 = Point_get_Y_m2752711349(L_118, /*hidden argument*/NULL);
+				V_14 = L_119;
+				NumberFormatInfo_t104580544 * L_120 = ((TriangleWriter_t4239728233_StaticFields*)TriangleWriter_t4239728233_il2cpp_TypeInfo_var->static_fields)->get_nfi_0();
+				String_t* L_121 = Double_ToString_m1085043609((&V_14), L_120, /*hidden argument*/NULL);
+				NullCheck(L_116);
+				ArrayElementTypeCheck (L_116, L_121);
+				(L_116)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)L_121);
+				ObjectU5BU5D_t3614634134* L_122 = L_116;
+				RegionPointer_t2241912621 * L_123 = V_11;
+				NullCheck(L_123);
+				int32_t L_124 = L_123->get_id_1();
+				int32_t L_125 = L_124;
+				Il2CppObject * L_126 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_125);
+				NullCheck(L_122);
+				ArrayElementTypeCheck (L_122, L_126);
+				(L_122)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_126);
+				NullCheck(L_105);
+				VirtActionInvoker2< String_t*, ObjectU5BU5D_t3614634134* >::Invoke(21 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object[]) */, L_105, _stringLiteral472494718, L_122);
+				int32_t L_127 = V_4;
+				V_4 = ((int32_t)((int32_t)L_127+(int32_t)1));
+			}
+
+IL_02a8:
+			{
+				bool L_128 = Enumerator_MoveNext_m3799216998((&V_12), /*hidden argument*/Enumerator_MoveNext_m3799216998_MethodInfo_var);
+				if (L_128)
+				{
+					goto IL_0235;
+				}
+			}
+
+IL_02b4:
+			{
+				IL2CPP_LEAVE(0x2C7, FINALLY_02b9);
+			}
+		} // end try (depth: 2)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+			goto FINALLY_02b9;
+		}
+
+FINALLY_02b9:
+		{ // begin finally (depth: 2)
+			Enumerator_Dispose_m2917232148((&V_12), /*hidden argument*/Enumerator_Dispose_m2917232148_MethodInfo_var);
+			IL2CPP_END_FINALLY(697)
+		} // end finally (depth: 2)
+		IL2CPP_CLEANUP(697)
+		{
+			IL2CPP_JUMP_TBL(0x2C7, IL_02c7)
+			IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+		}
+
+IL_02c7:
+		{
+			IL2CPP_LEAVE(0x2D9, FINALLY_02cc);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_02cc;
+	}
+
+FINALLY_02cc:
+	{ // begin finally (depth: 1)
+		{
+			StreamWriter_t3858580635 * L_129 = V_1;
+			if (!L_129)
+			{
+				goto IL_02d8;
+			}
+		}
+
+IL_02d2:
+		{
+			StreamWriter_t3858580635 * L_130 = V_1;
+			NullCheck(L_130);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, L_130);
+		}
+
+IL_02d8:
+		{
+			IL2CPP_END_FINALLY(716)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(716)
+	{
+		IL2CPP_JUMP_TBL(0x2D9, IL_02d9)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_02d9:
+	{
+		return;
+	}
+}
+// System.Void TriangleNet.IO.TriangleWriter::WritePoly(TriangleNet.Mesh,System.String)
+extern "C"  void TriangleWriter_WritePoly_m2600110316 (TriangleWriter_t4239728233 * __this, Mesh_t1414352559 * ___mesh0, String_t* ___filename1, const MethodInfo* method)
+{
+	{
+		Mesh_t1414352559 * L_0 = ___mesh0;
+		String_t* L_1 = ___filename1;
+		TriangleWriter_WritePoly_m3641671803(__this, L_0, L_1, (bool)1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void TriangleNet.IO.TriangleWriter::WritePoly(TriangleNet.Mesh,System.String,System.Boolean)
+extern "C"  void TriangleWriter_WritePoly_m3641671803 (TriangleWriter_t4239728233 * __this, Mesh_t1414352559 * ___mesh0, String_t* ___filename1, bool ___writeNodes2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TriangleWriter_WritePoly_m3641671803_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Osub_t2903723171  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Osub_t2903723171  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Vertex_t3430001018 * V_2 = NULL;
+	Vertex_t3430001018 * V_3 = NULL;
+	bool V_4 = false;
+	StreamWriter_t3858580635 * V_5 = NULL;
+	int32_t V_6 = 0;
+	SubSegment_t918625531 * V_7 = NULL;
+	Enumerator_t1612983930  V_8;
+	memset(&V_8, 0, sizeof(V_8));
+	Point_t124225758 * V_9 = NULL;
+	Enumerator_t3323043860  V_10;
+	memset(&V_10, 0, sizeof(V_10));
+	double V_11 = 0.0;
+	double V_12 = 0.0;
+	RegionPointer_t2241912621 * V_13 = NULL;
+	Enumerator_t1145763427  V_14;
+	memset(&V_14, 0, sizeof(V_14));
+	double V_15 = 0.0;
+	double V_16 = 0.0;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	Il2CppObject * G_B5_0 = NULL;
+	Il2CppObject * G_B5_1 = NULL;
+	String_t* G_B5_2 = NULL;
+	StreamWriter_t3858580635 * G_B5_3 = NULL;
+	Il2CppObject * G_B4_0 = NULL;
+	Il2CppObject * G_B4_1 = NULL;
+	String_t* G_B4_2 = NULL;
+	StreamWriter_t3858580635 * G_B4_3 = NULL;
+	String_t* G_B6_0 = NULL;
+	Il2CppObject * G_B6_1 = NULL;
+	Il2CppObject * G_B6_2 = NULL;
+	String_t* G_B6_3 = NULL;
+	StreamWriter_t3858580635 * G_B6_4 = NULL;
+	Il2CppObject * G_B9_0 = NULL;
+	String_t* G_B9_1 = NULL;
+	StreamWriter_t3858580635 * G_B9_2 = NULL;
+	Il2CppObject * G_B8_0 = NULL;
+	String_t* G_B8_1 = NULL;
+	StreamWriter_t3858580635 * G_B8_2 = NULL;
+	String_t* G_B10_0 = NULL;
+	Il2CppObject * G_B10_1 = NULL;
+	String_t* G_B10_2 = NULL;
+	StreamWriter_t3858580635 * G_B10_3 = NULL;
+	{
+		Initobj (Osub_t2903723171_il2cpp_TypeInfo_var, (&V_1));
+		Osub_t2903723171  L_0 = V_1;
+		V_0 = L_0;
+		Mesh_t1414352559 * L_1 = ___mesh0;
+		NullCheck(L_1);
+		Behavior_t3353801546 * L_2 = L_1->get_behavior_26();
+		NullCheck(L_2);
+		bool L_3 = Behavior_get_UseBoundaryMarkers_m914940907(L_2, /*hidden argument*/NULL);
+		V_4 = L_3;
+		String_t* L_4 = ___filename1;
+		FileStream_t1695958676 * L_5 = File_OpenWrite_m3037731260(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		StreamWriter_t3858580635 * L_6 = (StreamWriter_t3858580635 *)il2cpp_codegen_object_new(StreamWriter_t3858580635_il2cpp_TypeInfo_var);
+		StreamWriter__ctor_m3847064531(L_6, L_5, /*hidden argument*/NULL);
+		V_5 = L_6;
+	}
+
+IL_0024:
+	try
+	{ // begin try (depth: 1)
+		{
+			bool L_7 = ___writeNodes2;
+			if (!L_7)
+			{
+				goto IL_0038;
+			}
+		}
+
+IL_002a:
+		{
+			StreamWriter_t3858580635 * L_8 = V_5;
+			Mesh_t1414352559 * L_9 = ___mesh0;
+			TriangleWriter_WriteNodes_m594545027(__this, L_8, L_9, /*hidden argument*/NULL);
+			goto IL_0070;
+		}
+
+IL_0038:
+		{
+			StreamWriter_t3858580635 * L_10 = V_5;
+			Mesh_t1414352559 * L_11 = ___mesh0;
+			NullCheck(L_11);
+			int32_t L_12 = L_11->get_mesh_dim_16();
+			int32_t L_13 = L_12;
+			Il2CppObject * L_14 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_13);
+			Mesh_t1414352559 * L_15 = ___mesh0;
+			NullCheck(L_15);
+			int32_t L_16 = L_15->get_nextras_17();
+			int32_t L_17 = L_16;
+			Il2CppObject * L_18 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_17);
+			bool L_19 = V_4;
+			G_B4_0 = L_18;
+			G_B4_1 = L_14;
+			G_B4_2 = _stringLiteral1948900449;
+			G_B4_3 = L_10;
+			if (!L_19)
+			{
+				G_B5_0 = L_18;
+				G_B5_1 = L_14;
+				G_B5_2 = _stringLiteral1948900449;
+				G_B5_3 = L_10;
+				goto IL_0066;
+			}
+		}
+
+IL_005c:
+		{
+			G_B6_0 = _stringLiteral372029325;
+			G_B6_1 = G_B4_0;
+			G_B6_2 = G_B4_1;
+			G_B6_3 = G_B4_2;
+			G_B6_4 = G_B4_3;
+			goto IL_006b;
+		}
+
+IL_0066:
+		{
+			G_B6_0 = _stringLiteral372029326;
+			G_B6_1 = G_B5_0;
+			G_B6_2 = G_B5_1;
+			G_B6_3 = G_B5_2;
+			G_B6_4 = G_B5_3;
+		}
+
+IL_006b:
+		{
+			NullCheck(G_B6_4);
+			VirtActionInvoker4< String_t*, Il2CppObject *, Il2CppObject *, Il2CppObject * >::Invoke(23 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object,System.Object,System.Object) */, G_B6_4, G_B6_3, G_B6_2, G_B6_1, G_B6_0);
+		}
+
+IL_0070:
+		{
+			StreamWriter_t3858580635 * L_20 = V_5;
+			Mesh_t1414352559 * L_21 = ___mesh0;
+			NullCheck(L_21);
+			Dictionary_2_t4221418462 * L_22 = L_21->get_subsegs_5();
+			NullCheck(L_22);
+			int32_t L_23 = Dictionary_2_get_Count_m676340850(L_22, /*hidden argument*/Dictionary_2_get_Count_m676340850_MethodInfo_var);
+			int32_t L_24 = L_23;
+			Il2CppObject * L_25 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_24);
+			bool L_26 = V_4;
+			G_B8_0 = L_25;
+			G_B8_1 = _stringLiteral2512070489;
+			G_B8_2 = L_20;
+			if (!L_26)
+			{
+				G_B9_0 = L_25;
+				G_B9_1 = _stringLiteral2512070489;
+				G_B9_2 = L_20;
+				goto IL_0098;
+			}
+		}
+
+IL_008e:
+		{
+			G_B10_0 = _stringLiteral372029325;
+			G_B10_1 = G_B8_0;
+			G_B10_2 = G_B8_1;
+			G_B10_3 = G_B8_2;
+			goto IL_009d;
+		}
+
+IL_0098:
+		{
+			G_B10_0 = _stringLiteral372029326;
+			G_B10_1 = G_B9_0;
+			G_B10_2 = G_B9_1;
+			G_B10_3 = G_B9_2;
+		}
+
+IL_009d:
+		{
+			NullCheck(G_B10_3);
+			VirtActionInvoker3< String_t*, Il2CppObject *, Il2CppObject * >::Invoke(22 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object,System.Object) */, G_B10_3, G_B10_2, G_B10_1, G_B10_0);
+			(&V_0)->set_orient_1(0);
+			V_6 = 0;
+			Mesh_t1414352559 * L_27 = ___mesh0;
+			NullCheck(L_27);
+			Dictionary_2_t4221418462 * L_28 = L_27->get_subsegs_5();
+			NullCheck(L_28);
+			ValueCollection_t2924478305 * L_29 = Dictionary_2_get_Values_m87384110(L_28, /*hidden argument*/Dictionary_2_get_Values_m87384110_MethodInfo_var);
+			NullCheck(L_29);
+			Enumerator_t1612983930  L_30 = ValueCollection_GetEnumerator_m4015408546(L_29, /*hidden argument*/ValueCollection_GetEnumerator_m4015408546_MethodInfo_var);
+			V_8 = L_30;
+		}
+
+IL_00bf:
+		try
+		{ // begin try (depth: 2)
+			{
+				goto IL_016d;
+			}
+
+IL_00c4:
+			{
+				SubSegment_t918625531 * L_31 = Enumerator_get_Current_m2586821832((&V_8), /*hidden argument*/Enumerator_get_Current_m2586821832_MethodInfo_var);
+				V_7 = L_31;
+				SubSegment_t918625531 * L_32 = V_7;
+				(&V_0)->set_seg_0(L_32);
+				Vertex_t3430001018 * L_33 = Osub_Org_m667242036((&V_0), /*hidden argument*/NULL);
+				V_2 = L_33;
+				Vertex_t3430001018 * L_34 = Osub_Dest_m2304148064((&V_0), /*hidden argument*/NULL);
+				V_3 = L_34;
+				bool L_35 = V_4;
+				if (!L_35)
+				{
+					goto IL_013e;
+				}
+			}
+
+IL_00ed:
+			{
+				StreamWriter_t3858580635 * L_36 = V_5;
+				ObjectU5BU5D_t3614634134* L_37 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)4));
+				int32_t L_38 = V_6;
+				int32_t L_39 = L_38;
+				Il2CppObject * L_40 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_39);
+				NullCheck(L_37);
+				ArrayElementTypeCheck (L_37, L_40);
+				(L_37)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_40);
+				ObjectU5BU5D_t3614634134* L_41 = L_37;
+				Vertex_t3430001018 * L_42 = V_2;
+				NullCheck(L_42);
+				int32_t L_43 = ((Point_t124225758 *)L_42)->get_id_0();
+				int32_t L_44 = L_43;
+				Il2CppObject * L_45 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_44);
+				NullCheck(L_41);
+				ArrayElementTypeCheck (L_41, L_45);
+				(L_41)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_45);
+				ObjectU5BU5D_t3614634134* L_46 = L_41;
+				Vertex_t3430001018 * L_47 = V_3;
+				NullCheck(L_47);
+				int32_t L_48 = ((Point_t124225758 *)L_47)->get_id_0();
+				int32_t L_49 = L_48;
+				Il2CppObject * L_50 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_49);
+				NullCheck(L_46);
+				ArrayElementTypeCheck (L_46, L_50);
+				(L_46)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)L_50);
+				ObjectU5BU5D_t3614634134* L_51 = L_46;
+				SubSegment_t918625531 * L_52 = (&V_0)->get_seg_0();
+				NullCheck(L_52);
+				int32_t L_53 = L_52->get_boundary_4();
+				int32_t L_54 = L_53;
+				Il2CppObject * L_55 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_54);
+				NullCheck(L_51);
+				ArrayElementTypeCheck (L_51, L_55);
+				(L_51)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_55);
+				NullCheck(L_36);
+				VirtActionInvoker2< String_t*, ObjectU5BU5D_t3614634134* >::Invoke(21 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object[]) */, L_36, _stringLiteral472494718, L_51);
+				goto IL_0167;
+			}
+
+IL_013e:
+			{
+				StreamWriter_t3858580635 * L_56 = V_5;
+				int32_t L_57 = V_6;
+				int32_t L_58 = L_57;
+				Il2CppObject * L_59 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_58);
+				Vertex_t3430001018 * L_60 = V_2;
+				NullCheck(L_60);
+				int32_t L_61 = ((Point_t124225758 *)L_60)->get_id_0();
+				int32_t L_62 = L_61;
+				Il2CppObject * L_63 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_62);
+				Vertex_t3430001018 * L_64 = V_3;
+				NullCheck(L_64);
+				int32_t L_65 = ((Point_t124225758 *)L_64)->get_id_0();
+				int32_t L_66 = L_65;
+				Il2CppObject * L_67 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_66);
+				NullCheck(L_56);
+				VirtActionInvoker4< String_t*, Il2CppObject *, Il2CppObject *, Il2CppObject * >::Invoke(23 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object,System.Object,System.Object) */, L_56, _stringLiteral3817453905, L_59, L_63, L_67);
+			}
+
+IL_0167:
+			{
+				int32_t L_68 = V_6;
+				V_6 = ((int32_t)((int32_t)L_68+(int32_t)1));
+			}
+
+IL_016d:
+			{
+				bool L_69 = Enumerator_MoveNext_m1166500305((&V_8), /*hidden argument*/Enumerator_MoveNext_m1166500305_MethodInfo_var);
+				if (L_69)
+				{
+					goto IL_00c4;
+				}
+			}
+
+IL_0179:
+			{
+				IL2CPP_LEAVE(0x18C, FINALLY_017e);
+			}
+		} // end try (depth: 2)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+			goto FINALLY_017e;
+		}
+
+FINALLY_017e:
+		{ // begin finally (depth: 2)
+			Enumerator_Dispose_m3099588663((&V_8), /*hidden argument*/Enumerator_Dispose_m3099588663_MethodInfo_var);
+			IL2CPP_END_FINALLY(382)
+		} // end finally (depth: 2)
+		IL2CPP_CLEANUP(382)
+		{
+			IL2CPP_JUMP_TBL(0x18C, IL_018c)
+			IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+		}
+
+IL_018c:
+		{
+			V_6 = 0;
+			StreamWriter_t3858580635 * L_70 = V_5;
+			Mesh_t1414352559 * L_71 = ___mesh0;
+			NullCheck(L_71);
+			List_1_t3788314186 * L_72 = L_71->get_holes_10();
+			NullCheck(L_72);
+			int32_t L_73 = List_1_get_Count_m197961494(L_72, /*hidden argument*/List_1_get_Count_m197961494_MethodInfo_var);
+			int32_t L_74 = L_73;
+			Il2CppObject * L_75 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_74);
+			NullCheck(L_70);
+			VirtActionInvoker2< String_t*, Il2CppObject * >::Invoke(20 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object) */, L_70, _stringLiteral104529068, L_75);
+			Mesh_t1414352559 * L_76 = ___mesh0;
+			NullCheck(L_76);
+			List_1_t3788314186 * L_77 = L_76->get_holes_10();
+			NullCheck(L_77);
+			Enumerator_t3323043860  L_78 = List_1_GetEnumerator_m2378620307(L_77, /*hidden argument*/List_1_GetEnumerator_m2378620307_MethodInfo_var);
+			V_10 = L_78;
+		}
+
+IL_01b8:
+		try
+		{ // begin try (depth: 2)
+			{
+				goto IL_0208;
+			}
+
+IL_01bd:
+			{
+				Point_t124225758 * L_79 = Enumerator_get_Current_m78656199((&V_10), /*hidden argument*/Enumerator_get_Current_m78656199_MethodInfo_var);
+				V_9 = L_79;
+				StreamWriter_t3858580635 * L_80 = V_5;
+				int32_t L_81 = V_6;
+				int32_t L_82 = L_81;
+				V_6 = ((int32_t)((int32_t)L_82+(int32_t)1));
+				int32_t L_83 = L_82;
+				Il2CppObject * L_84 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_83);
+				Point_t124225758 * L_85 = V_9;
+				NullCheck(L_85);
+				double L_86 = Point_get_X_m2752711382(L_85, /*hidden argument*/NULL);
+				V_11 = L_86;
+				IL2CPP_RUNTIME_CLASS_INIT(TriangleWriter_t4239728233_il2cpp_TypeInfo_var);
+				NumberFormatInfo_t104580544 * L_87 = ((TriangleWriter_t4239728233_StaticFields*)TriangleWriter_t4239728233_il2cpp_TypeInfo_var->static_fields)->get_nfi_0();
+				String_t* L_88 = Double_ToString_m1085043609((&V_11), L_87, /*hidden argument*/NULL);
+				Point_t124225758 * L_89 = V_9;
+				NullCheck(L_89);
+				double L_90 = Point_get_Y_m2752711349(L_89, /*hidden argument*/NULL);
+				V_12 = L_90;
+				NumberFormatInfo_t104580544 * L_91 = ((TriangleWriter_t4239728233_StaticFields*)TriangleWriter_t4239728233_il2cpp_TypeInfo_var->static_fields)->get_nfi_0();
+				String_t* L_92 = Double_ToString_m1085043609((&V_12), L_91, /*hidden argument*/NULL);
+				NullCheck(L_80);
+				VirtActionInvoker4< String_t*, Il2CppObject *, Il2CppObject *, Il2CppObject * >::Invoke(23 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object,System.Object,System.Object) */, L_80, _stringLiteral3817453905, L_84, L_88, L_92);
+			}
+
+IL_0208:
+			{
+				bool L_93 = Enumerator_MoveNext_m4021534995((&V_10), /*hidden argument*/Enumerator_MoveNext_m4021534995_MethodInfo_var);
+				if (L_93)
+				{
+					goto IL_01bd;
+				}
+			}
+
+IL_0214:
+			{
+				IL2CPP_LEAVE(0x227, FINALLY_0219);
+			}
+		} // end try (depth: 2)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+			goto FINALLY_0219;
+		}
+
+FINALLY_0219:
+		{ // begin finally (depth: 2)
+			Enumerator_Dispose_m3857316765((&V_10), /*hidden argument*/Enumerator_Dispose_m3857316765_MethodInfo_var);
+			IL2CPP_END_FINALLY(537)
+		} // end finally (depth: 2)
+		IL2CPP_CLEANUP(537)
+		{
+			IL2CPP_JUMP_TBL(0x227, IL_0227)
+			IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+		}
+
+IL_0227:
+		{
+			Mesh_t1414352559 * L_94 = ___mesh0;
+			NullCheck(L_94);
+			List_1_t1611033753 * L_95 = L_94->get_regions_11();
+			NullCheck(L_95);
+			int32_t L_96 = List_1_get_Count_m2951258385(L_95, /*hidden argument*/List_1_get_Count_m2951258385_MethodInfo_var);
+			if ((((int32_t)L_96) <= ((int32_t)0)))
+			{
+				goto IL_02fc;
+			}
+		}
+
+IL_0238:
+		{
+			V_6 = 0;
+			StreamWriter_t3858580635 * L_97 = V_5;
+			Mesh_t1414352559 * L_98 = ___mesh0;
+			NullCheck(L_98);
+			List_1_t1611033753 * L_99 = L_98->get_regions_11();
+			NullCheck(L_99);
+			int32_t L_100 = List_1_get_Count_m2951258385(L_99, /*hidden argument*/List_1_get_Count_m2951258385_MethodInfo_var);
+			int32_t L_101 = L_100;
+			Il2CppObject * L_102 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_101);
+			NullCheck(L_97);
+			VirtActionInvoker2< String_t*, Il2CppObject * >::Invoke(20 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object) */, L_97, _stringLiteral104529068, L_102);
+			Mesh_t1414352559 * L_103 = ___mesh0;
+			NullCheck(L_103);
+			List_1_t1611033753 * L_104 = L_103->get_regions_11();
+			NullCheck(L_104);
+			Enumerator_t1145763427  L_105 = List_1_GetEnumerator_m1023923998(L_104, /*hidden argument*/List_1_GetEnumerator_m1023923998_MethodInfo_var);
+			V_14 = L_105;
+		}
+
+IL_0264:
+		try
+		{ // begin try (depth: 2)
+			{
+				goto IL_02dd;
+			}
+
+IL_0269:
+			{
+				RegionPointer_t2241912621 * L_106 = Enumerator_get_Current_m2866670792((&V_14), /*hidden argument*/Enumerator_get_Current_m2866670792_MethodInfo_var);
+				V_13 = L_106;
+				StreamWriter_t3858580635 * L_107 = V_5;
+				ObjectU5BU5D_t3614634134* L_108 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)4));
+				int32_t L_109 = V_6;
+				int32_t L_110 = L_109;
+				Il2CppObject * L_111 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_110);
+				NullCheck(L_108);
+				ArrayElementTypeCheck (L_108, L_111);
+				(L_108)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_111);
+				ObjectU5BU5D_t3614634134* L_112 = L_108;
+				RegionPointer_t2241912621 * L_113 = V_13;
+				NullCheck(L_113);
+				Point_t124225758 * L_114 = L_113->get_point_0();
+				NullCheck(L_114);
+				double L_115 = Point_get_X_m2752711382(L_114, /*hidden argument*/NULL);
+				V_15 = L_115;
+				IL2CPP_RUNTIME_CLASS_INIT(TriangleWriter_t4239728233_il2cpp_TypeInfo_var);
+				NumberFormatInfo_t104580544 * L_116 = ((TriangleWriter_t4239728233_StaticFields*)TriangleWriter_t4239728233_il2cpp_TypeInfo_var->static_fields)->get_nfi_0();
+				String_t* L_117 = Double_ToString_m1085043609((&V_15), L_116, /*hidden argument*/NULL);
+				NullCheck(L_112);
+				ArrayElementTypeCheck (L_112, L_117);
+				(L_112)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_117);
+				ObjectU5BU5D_t3614634134* L_118 = L_112;
+				RegionPointer_t2241912621 * L_119 = V_13;
+				NullCheck(L_119);
+				Point_t124225758 * L_120 = L_119->get_point_0();
+				NullCheck(L_120);
+				double L_121 = Point_get_Y_m2752711349(L_120, /*hidden argument*/NULL);
+				V_16 = L_121;
+				NumberFormatInfo_t104580544 * L_122 = ((TriangleWriter_t4239728233_StaticFields*)TriangleWriter_t4239728233_il2cpp_TypeInfo_var->static_fields)->get_nfi_0();
+				String_t* L_123 = Double_ToString_m1085043609((&V_16), L_122, /*hidden argument*/NULL);
+				NullCheck(L_118);
+				ArrayElementTypeCheck (L_118, L_123);
+				(L_118)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)L_123);
+				ObjectU5BU5D_t3614634134* L_124 = L_118;
+				RegionPointer_t2241912621 * L_125 = V_13;
+				NullCheck(L_125);
+				int32_t L_126 = L_125->get_id_1();
+				int32_t L_127 = L_126;
+				Il2CppObject * L_128 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_127);
+				NullCheck(L_124);
+				ArrayElementTypeCheck (L_124, L_128);
+				(L_124)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_128);
+				NullCheck(L_107);
+				VirtActionInvoker2< String_t*, ObjectU5BU5D_t3614634134* >::Invoke(21 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object[]) */, L_107, _stringLiteral472494718, L_124);
+				int32_t L_129 = V_6;
+				V_6 = ((int32_t)((int32_t)L_129+(int32_t)1));
+			}
+
+IL_02dd:
+			{
+				bool L_130 = Enumerator_MoveNext_m3799216998((&V_14), /*hidden argument*/Enumerator_MoveNext_m3799216998_MethodInfo_var);
+				if (L_130)
+				{
+					goto IL_0269;
+				}
+			}
+
+IL_02e9:
+			{
+				IL2CPP_LEAVE(0x2FC, FINALLY_02ee);
+			}
+		} // end try (depth: 2)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+			goto FINALLY_02ee;
+		}
+
+FINALLY_02ee:
+		{ // begin finally (depth: 2)
+			Enumerator_Dispose_m2917232148((&V_14), /*hidden argument*/Enumerator_Dispose_m2917232148_MethodInfo_var);
+			IL2CPP_END_FINALLY(750)
+		} // end finally (depth: 2)
+		IL2CPP_CLEANUP(750)
+		{
+			IL2CPP_JUMP_TBL(0x2FC, IL_02fc)
+			IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+		}
+
+IL_02fc:
+		{
+			IL2CPP_LEAVE(0x310, FINALLY_0301);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_0301;
+	}
+
+FINALLY_0301:
+	{ // begin finally (depth: 1)
+		{
+			StreamWriter_t3858580635 * L_131 = V_5;
+			if (!L_131)
+			{
+				goto IL_030f;
+			}
+		}
+
+IL_0308:
+		{
+			StreamWriter_t3858580635 * L_132 = V_5;
+			NullCheck(L_132);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, L_132);
+		}
+
+IL_030f:
+		{
+			IL2CPP_END_FINALLY(769)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(769)
+	{
+		IL2CPP_JUMP_TBL(0x310, IL_0310)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_0310:
+	{
+		return;
+	}
+}
+// System.Void TriangleNet.IO.TriangleWriter::WriteEdges(TriangleNet.Mesh,System.String)
+extern "C"  void TriangleWriter_WriteEdges_m1705263910 (TriangleWriter_t4239728233 * __this, Mesh_t1414352559 * ___mesh0, String_t* ___filename1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TriangleWriter_WriteEdges_m1705263910_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Otri_t174839988  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Otri_t174839988  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Otri_t174839988  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Osub_t2903723171  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	Osub_t2903723171  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	Vertex_t3430001018 * V_5 = NULL;
+	Vertex_t3430001018 * V_6 = NULL;
+	Behavior_t3353801546 * V_7 = NULL;
+	StreamWriter_t3858580635 * V_8 = NULL;
+	int64_t V_9 = 0;
+	Triangle_t3965613618 * V_10 = NULL;
+	Il2CppObject* V_11 = NULL;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	Il2CppObject * G_B3_0 = NULL;
+	String_t* G_B3_1 = NULL;
+	StreamWriter_t3858580635 * G_B3_2 = NULL;
+	Il2CppObject * G_B2_0 = NULL;
+	String_t* G_B2_1 = NULL;
+	StreamWriter_t3858580635 * G_B2_2 = NULL;
+	String_t* G_B4_0 = NULL;
+	Il2CppObject * G_B4_1 = NULL;
+	String_t* G_B4_2 = NULL;
+	StreamWriter_t3858580635 * G_B4_3 = NULL;
+	int32_t G_B17_0 = 0;
+	ObjectU5BU5D_t3614634134* G_B17_1 = NULL;
+	ObjectU5BU5D_t3614634134* G_B17_2 = NULL;
+	String_t* G_B17_3 = NULL;
+	StreamWriter_t3858580635 * G_B17_4 = NULL;
+	int32_t G_B16_0 = 0;
+	ObjectU5BU5D_t3614634134* G_B16_1 = NULL;
+	ObjectU5BU5D_t3614634134* G_B16_2 = NULL;
+	String_t* G_B16_3 = NULL;
+	StreamWriter_t3858580635 * G_B16_4 = NULL;
+	String_t* G_B18_0 = NULL;
+	int32_t G_B18_1 = 0;
+	ObjectU5BU5D_t3614634134* G_B18_2 = NULL;
+	ObjectU5BU5D_t3614634134* G_B18_3 = NULL;
+	String_t* G_B18_4 = NULL;
+	StreamWriter_t3858580635 * G_B18_5 = NULL;
+	{
+		Initobj (Otri_t174839988_il2cpp_TypeInfo_var, (&V_1));
+		Otri_t174839988  L_0 = V_1;
+		V_0 = L_0;
+		Initobj (Otri_t174839988_il2cpp_TypeInfo_var, (&V_1));
+		Otri_t174839988  L_1 = V_1;
+		V_2 = L_1;
+		Initobj (Osub_t2903723171_il2cpp_TypeInfo_var, (&V_4));
+		Osub_t2903723171  L_2 = V_4;
+		V_3 = L_2;
+		Mesh_t1414352559 * L_3 = ___mesh0;
+		NullCheck(L_3);
+		Behavior_t3353801546 * L_4 = L_3->get_behavior_26();
+		V_7 = L_4;
+		String_t* L_5 = ___filename1;
+		FileStream_t1695958676 * L_6 = File_OpenWrite_m3037731260(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		StreamWriter_t3858580635 * L_7 = (StreamWriter_t3858580635 *)il2cpp_codegen_object_new(StreamWriter_t3858580635_il2cpp_TypeInfo_var);
+		StreamWriter__ctor_m3847064531(L_7, L_6, /*hidden argument*/NULL);
+		V_8 = L_7;
+	}
+
+IL_0034:
+	try
+	{ // begin try (depth: 1)
+		{
+			StreamWriter_t3858580635 * L_8 = V_8;
+			Mesh_t1414352559 * L_9 = ___mesh0;
+			NullCheck(L_9);
+			int32_t L_10 = Mesh_get_NumberOfEdges_m2095082906(L_9, /*hidden argument*/NULL);
+			int32_t L_11 = L_10;
+			Il2CppObject * L_12 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_11);
+			Behavior_t3353801546 * L_13 = V_7;
+			NullCheck(L_13);
+			bool L_14 = Behavior_get_UseBoundaryMarkers_m914940907(L_13, /*hidden argument*/NULL);
+			G_B2_0 = L_12;
+			G_B2_1 = _stringLiteral2512070489;
+			G_B2_2 = L_8;
+			if (!L_14)
+			{
+				G_B3_0 = L_12;
+				G_B3_1 = _stringLiteral2512070489;
+				G_B3_2 = L_8;
+				goto IL_005c;
+			}
+		}
+
+IL_0052:
+		{
+			G_B4_0 = _stringLiteral372029325;
+			G_B4_1 = G_B2_0;
+			G_B4_2 = G_B2_1;
+			G_B4_3 = G_B2_2;
+			goto IL_0061;
+		}
+
+IL_005c:
+		{
+			G_B4_0 = _stringLiteral372029326;
+			G_B4_1 = G_B3_0;
+			G_B4_2 = G_B3_1;
+			G_B4_3 = G_B3_2;
+		}
+
+IL_0061:
+		{
+			NullCheck(G_B4_3);
+			VirtActionInvoker3< String_t*, Il2CppObject *, Il2CppObject * >::Invoke(22 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object,System.Object) */, G_B4_3, G_B4_2, G_B4_1, G_B4_0);
+			V_9 = (((int64_t)((int64_t)0)));
+			Mesh_t1414352559 * L_15 = ___mesh0;
+			NullCheck(L_15);
+			TrianglePool_t3592645624 * L_16 = L_15->get_triangles_4();
+			NullCheck(L_16);
+			Il2CppObject* L_17 = TrianglePool_GetEnumerator_m1858198676(L_16, /*hidden argument*/NULL);
+			V_11 = L_17;
+		}
+
+IL_0077:
+		try
+		{ // begin try (depth: 2)
+			{
+				goto IL_0264;
+			}
+
+IL_007c:
+			{
+				Il2CppObject* L_18 = V_11;
+				NullCheck(L_18);
+				Triangle_t3965613618 * L_19 = InterfaceFuncInvoker0< Triangle_t3965613618 * >::Invoke(0 /* !0 System.Collections.Generic.IEnumerator`1<TriangleNet.Topology.Triangle>::get_Current() */, IEnumerator_1_t1441137445_il2cpp_TypeInfo_var, L_18);
+				V_10 = L_19;
+				Triangle_t3965613618 * L_20 = V_10;
+				(&V_0)->set_tri_0(L_20);
+				(&V_0)->set_orient_1(0);
+				goto IL_0257;
+			}
+
+IL_009b:
+			{
+				Otri_Sym_m3361605538((&V_0), (&V_2), /*hidden argument*/NULL);
+				Triangle_t3965613618 * L_21 = (&V_0)->get_tri_0();
+				NullCheck(L_21);
+				int32_t L_22 = L_21->get_id_1();
+				Triangle_t3965613618 * L_23 = (&V_2)->get_tri_0();
+				NullCheck(L_23);
+				int32_t L_24 = L_23->get_id_1();
+				if ((((int32_t)L_22) < ((int32_t)L_24)))
+				{
+					goto IL_00d3;
+				}
+			}
+
+IL_00c1:
+			{
+				Triangle_t3965613618 * L_25 = (&V_2)->get_tri_0();
+				NullCheck(L_25);
+				int32_t L_26 = L_25->get_id_1();
+				if ((!(((uint32_t)L_26) == ((uint32_t)(-1)))))
+				{
+					goto IL_0248;
+				}
+			}
+
+IL_00d3:
+			{
+				Vertex_t3430001018 * L_27 = Otri_Org_m2761406541((&V_0), /*hidden argument*/NULL);
+				V_5 = L_27;
+				Vertex_t3430001018 * L_28 = Otri_Dest_m1791860597((&V_0), /*hidden argument*/NULL);
+				V_6 = L_28;
+				Behavior_t3353801546 * L_29 = V_7;
+				NullCheck(L_29);
+				bool L_30 = Behavior_get_UseBoundaryMarkers_m914940907(L_29, /*hidden argument*/NULL);
+				if (!L_30)
+				{
+					goto IL_0216;
+				}
+			}
+
+IL_00f1:
+			{
+				Behavior_t3353801546 * L_31 = V_7;
+				NullCheck(L_31);
+				bool L_32 = L_31->get_useSegments_14();
+				if (!L_32)
+				{
+					goto IL_01b3;
+				}
+			}
+
+IL_00fd:
+			{
+				Otri_Pivot_m1291762458((&V_0), (&V_3), /*hidden argument*/NULL);
+				SubSegment_t918625531 * L_33 = (&V_3)->get_seg_0();
+				NullCheck(L_33);
+				int32_t L_34 = L_33->get_hash_0();
+				if ((!(((uint32_t)L_34) == ((uint32_t)(-1)))))
+				{
+					goto IL_0160;
+				}
+			}
+
+IL_0118:
+			{
+				StreamWriter_t3858580635 * L_35 = V_8;
+				ObjectU5BU5D_t3614634134* L_36 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)4));
+				int64_t L_37 = V_9;
+				int64_t L_38 = L_37;
+				Il2CppObject * L_39 = Box(Int64_t909078037_il2cpp_TypeInfo_var, &L_38);
+				NullCheck(L_36);
+				ArrayElementTypeCheck (L_36, L_39);
+				(L_36)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_39);
+				ObjectU5BU5D_t3614634134* L_40 = L_36;
+				Vertex_t3430001018 * L_41 = V_5;
+				NullCheck(L_41);
+				int32_t L_42 = ((Point_t124225758 *)L_41)->get_id_0();
+				int32_t L_43 = L_42;
+				Il2CppObject * L_44 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_43);
+				NullCheck(L_40);
+				ArrayElementTypeCheck (L_40, L_44);
+				(L_40)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_44);
+				ObjectU5BU5D_t3614634134* L_45 = L_40;
+				Vertex_t3430001018 * L_46 = V_6;
+				NullCheck(L_46);
+				int32_t L_47 = ((Point_t124225758 *)L_46)->get_id_0();
+				int32_t L_48 = L_47;
+				Il2CppObject * L_49 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_48);
+				NullCheck(L_45);
+				ArrayElementTypeCheck (L_45, L_49);
+				(L_45)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)L_49);
+				ObjectU5BU5D_t3614634134* L_50 = L_45;
+				int32_t L_51 = 0;
+				Il2CppObject * L_52 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_51);
+				NullCheck(L_50);
+				ArrayElementTypeCheck (L_50, L_52);
+				(L_50)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_52);
+				NullCheck(L_35);
+				VirtActionInvoker2< String_t*, ObjectU5BU5D_t3614634134* >::Invoke(21 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object[]) */, L_35, _stringLiteral472494718, L_50);
+				goto IL_01ae;
+			}
+
+IL_0160:
+			{
+				StreamWriter_t3858580635 * L_53 = V_8;
+				ObjectU5BU5D_t3614634134* L_54 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)4));
+				int64_t L_55 = V_9;
+				int64_t L_56 = L_55;
+				Il2CppObject * L_57 = Box(Int64_t909078037_il2cpp_TypeInfo_var, &L_56);
+				NullCheck(L_54);
+				ArrayElementTypeCheck (L_54, L_57);
+				(L_54)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_57);
+				ObjectU5BU5D_t3614634134* L_58 = L_54;
+				Vertex_t3430001018 * L_59 = V_5;
+				NullCheck(L_59);
+				int32_t L_60 = ((Point_t124225758 *)L_59)->get_id_0();
+				int32_t L_61 = L_60;
+				Il2CppObject * L_62 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_61);
+				NullCheck(L_58);
+				ArrayElementTypeCheck (L_58, L_62);
+				(L_58)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_62);
+				ObjectU5BU5D_t3614634134* L_63 = L_58;
+				Vertex_t3430001018 * L_64 = V_6;
+				NullCheck(L_64);
+				int32_t L_65 = ((Point_t124225758 *)L_64)->get_id_0();
+				int32_t L_66 = L_65;
+				Il2CppObject * L_67 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_66);
+				NullCheck(L_63);
+				ArrayElementTypeCheck (L_63, L_67);
+				(L_63)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)L_67);
+				ObjectU5BU5D_t3614634134* L_68 = L_63;
+				SubSegment_t918625531 * L_69 = (&V_3)->get_seg_0();
+				NullCheck(L_69);
+				int32_t L_70 = L_69->get_boundary_4();
+				int32_t L_71 = L_70;
+				Il2CppObject * L_72 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_71);
+				NullCheck(L_68);
+				ArrayElementTypeCheck (L_68, L_72);
+				(L_68)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_72);
+				NullCheck(L_53);
+				VirtActionInvoker2< String_t*, ObjectU5BU5D_t3614634134* >::Invoke(21 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object[]) */, L_53, _stringLiteral472494718, L_68);
+			}
+
+IL_01ae:
+			{
+				goto IL_0211;
+			}
+
+IL_01b3:
+			{
+				StreamWriter_t3858580635 * L_73 = V_8;
+				ObjectU5BU5D_t3614634134* L_74 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)4));
+				int64_t L_75 = V_9;
+				int64_t L_76 = L_75;
+				Il2CppObject * L_77 = Box(Int64_t909078037_il2cpp_TypeInfo_var, &L_76);
+				NullCheck(L_74);
+				ArrayElementTypeCheck (L_74, L_77);
+				(L_74)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_77);
+				ObjectU5BU5D_t3614634134* L_78 = L_74;
+				Vertex_t3430001018 * L_79 = V_5;
+				NullCheck(L_79);
+				int32_t L_80 = ((Point_t124225758 *)L_79)->get_id_0();
+				int32_t L_81 = L_80;
+				Il2CppObject * L_82 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_81);
+				NullCheck(L_78);
+				ArrayElementTypeCheck (L_78, L_82);
+				(L_78)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_82);
+				ObjectU5BU5D_t3614634134* L_83 = L_78;
+				Vertex_t3430001018 * L_84 = V_6;
+				NullCheck(L_84);
+				int32_t L_85 = ((Point_t124225758 *)L_84)->get_id_0();
+				int32_t L_86 = L_85;
+				Il2CppObject * L_87 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_86);
+				NullCheck(L_83);
+				ArrayElementTypeCheck (L_83, L_87);
+				(L_83)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)L_87);
+				ObjectU5BU5D_t3614634134* L_88 = L_83;
+				Triangle_t3965613618 * L_89 = (&V_2)->get_tri_0();
+				NullCheck(L_89);
+				int32_t L_90 = L_89->get_id_1();
+				G_B16_0 = 3;
+				G_B16_1 = L_88;
+				G_B16_2 = L_88;
+				G_B16_3 = _stringLiteral472494718;
+				G_B16_4 = L_73;
+				if ((!(((uint32_t)L_90) == ((uint32_t)(-1)))))
+				{
+					G_B17_0 = 3;
+					G_B17_1 = L_88;
+					G_B17_2 = L_88;
+					G_B17_3 = _stringLiteral472494718;
+					G_B17_4 = L_73;
+					goto IL_0206;
+				}
+			}
+
+IL_01fc:
+			{
+				G_B18_0 = _stringLiteral372029325;
+				G_B18_1 = G_B16_0;
+				G_B18_2 = G_B16_1;
+				G_B18_3 = G_B16_2;
+				G_B18_4 = G_B16_3;
+				G_B18_5 = G_B16_4;
+				goto IL_020b;
+			}
+
+IL_0206:
+			{
+				G_B18_0 = _stringLiteral372029326;
+				G_B18_1 = G_B17_0;
+				G_B18_2 = G_B17_1;
+				G_B18_3 = G_B17_2;
+				G_B18_4 = G_B17_3;
+				G_B18_5 = G_B17_4;
+			}
+
+IL_020b:
+			{
+				NullCheck(G_B18_2);
+				ArrayElementTypeCheck (G_B18_2, G_B18_0);
+				(G_B18_2)->SetAt(static_cast<il2cpp_array_size_t>(G_B18_1), (Il2CppObject *)G_B18_0);
+				NullCheck(G_B18_5);
+				VirtActionInvoker2< String_t*, ObjectU5BU5D_t3614634134* >::Invoke(21 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object[]) */, G_B18_5, G_B18_4, G_B18_3);
+			}
+
+IL_0211:
+			{
+				goto IL_0241;
+			}
+
+IL_0216:
+			{
+				StreamWriter_t3858580635 * L_91 = V_8;
+				int64_t L_92 = V_9;
+				int64_t L_93 = L_92;
+				Il2CppObject * L_94 = Box(Int64_t909078037_il2cpp_TypeInfo_var, &L_93);
+				Vertex_t3430001018 * L_95 = V_5;
+				NullCheck(L_95);
+				int32_t L_96 = ((Point_t124225758 *)L_95)->get_id_0();
+				int32_t L_97 = L_96;
+				Il2CppObject * L_98 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_97);
+				Vertex_t3430001018 * L_99 = V_6;
+				NullCheck(L_99);
+				int32_t L_100 = ((Point_t124225758 *)L_99)->get_id_0();
+				int32_t L_101 = L_100;
+				Il2CppObject * L_102 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_101);
+				NullCheck(L_91);
+				VirtActionInvoker4< String_t*, Il2CppObject *, Il2CppObject *, Il2CppObject * >::Invoke(23 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object,System.Object,System.Object) */, L_91, _stringLiteral3817453905, L_94, L_98, L_102);
+			}
+
+IL_0241:
+			{
+				int64_t L_103 = V_9;
+				V_9 = ((int64_t)((int64_t)L_103+(int64_t)(((int64_t)((int64_t)1)))));
+			}
+
+IL_0248:
+			{
+				Otri_t174839988 * L_104 = (&V_0);
+				int32_t L_105 = L_104->get_orient_1();
+				L_104->set_orient_1(((int32_t)((int32_t)L_105+(int32_t)1)));
+			}
+
+IL_0257:
+			{
+				int32_t L_106 = (&V_0)->get_orient_1();
+				if ((((int32_t)L_106) < ((int32_t)3)))
+				{
+					goto IL_009b;
+				}
+			}
+
+IL_0264:
+			{
+				Il2CppObject* L_107 = V_11;
+				NullCheck(L_107);
+				bool L_108 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1466026749_il2cpp_TypeInfo_var, L_107);
+				if (L_108)
+				{
+					goto IL_007c;
+				}
+			}
+
+IL_0270:
+			{
+				IL2CPP_LEAVE(0x284, FINALLY_0275);
+			}
+		} // end try (depth: 2)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+			goto FINALLY_0275;
+		}
+
+FINALLY_0275:
+		{ // begin finally (depth: 2)
+			{
+				Il2CppObject* L_109 = V_11;
+				if (!L_109)
+				{
+					goto IL_0283;
+				}
+			}
+
+IL_027c:
+			{
+				Il2CppObject* L_110 = V_11;
+				NullCheck(L_110);
+				InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, L_110);
+			}
+
+IL_0283:
+			{
+				IL2CPP_END_FINALLY(629)
+			}
+		} // end finally (depth: 2)
+		IL2CPP_CLEANUP(629)
+		{
+			IL2CPP_JUMP_TBL(0x284, IL_0284)
+			IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+		}
+
+IL_0284:
+		{
+			IL2CPP_LEAVE(0x298, FINALLY_0289);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_0289;
+	}
+
+FINALLY_0289:
+	{ // begin finally (depth: 1)
+		{
+			StreamWriter_t3858580635 * L_111 = V_8;
+			if (!L_111)
+			{
+				goto IL_0297;
+			}
+		}
+
+IL_0290:
+		{
+			StreamWriter_t3858580635 * L_112 = V_8;
+			NullCheck(L_112);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, L_112);
+		}
+
+IL_0297:
+		{
+			IL2CPP_END_FINALLY(649)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(649)
+	{
+		IL2CPP_JUMP_TBL(0x298, IL_0298)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_0298:
+	{
+		return;
+	}
+}
+// System.Void TriangleNet.IO.TriangleWriter::WriteNeighbors(TriangleNet.Mesh,System.String)
+extern "C"  void TriangleWriter_WriteNeighbors_m1740510499 (TriangleWriter_t4239728233 * __this, Mesh_t1414352559 * ___mesh0, String_t* ___filename1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TriangleWriter_WriteNeighbors_m1740510499_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Otri_t174839988  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Otri_t174839988  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Otri_t174839988  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	int32_t V_3 = 0;
+	int32_t V_4 = 0;
+	int32_t V_5 = 0;
+	int32_t V_6 = 0;
+	StreamWriter_t3858580635 * V_7 = NULL;
+	Triangle_t3965613618 * V_8 = NULL;
+	Il2CppObject* V_9 = NULL;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		Initobj (Otri_t174839988_il2cpp_TypeInfo_var, (&V_1));
+		Otri_t174839988  L_0 = V_1;
+		V_0 = L_0;
+		Initobj (Otri_t174839988_il2cpp_TypeInfo_var, (&V_1));
+		Otri_t174839988  L_1 = V_1;
+		V_2 = L_1;
+		V_6 = 0;
+		String_t* L_2 = ___filename1;
+		FileStream_t1695958676 * L_3 = File_OpenWrite_m3037731260(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		StreamWriter_t3858580635 * L_4 = (StreamWriter_t3858580635 *)il2cpp_codegen_object_new(StreamWriter_t3858580635_il2cpp_TypeInfo_var);
+		StreamWriter__ctor_m3847064531(L_4, L_3, /*hidden argument*/NULL);
+		V_7 = L_4;
+	}
+
+IL_0024:
+	try
+	{ // begin try (depth: 1)
+		{
+			StreamWriter_t3858580635 * L_5 = V_7;
+			Mesh_t1414352559 * L_6 = ___mesh0;
+			NullCheck(L_6);
+			TrianglePool_t3592645624 * L_7 = L_6->get_triangles_4();
+			NullCheck(L_7);
+			int32_t L_8 = TrianglePool_get_Count_m3506840474(L_7, /*hidden argument*/NULL);
+			int32_t L_9 = L_8;
+			Il2CppObject * L_10 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_9);
+			NullCheck(L_5);
+			VirtActionInvoker2< String_t*, Il2CppObject * >::Invoke(20 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object) */, L_5, _stringLiteral579413433, L_10);
+			Mesh_t1414352559 * L_11 = ___mesh0;
+			NullCheck(L_11);
+			TrianglePool_t3592645624 * L_12 = L_11->get_triangles_4();
+			NullCheck(L_12);
+			Il2CppObject* L_13 = TrianglePool_GetEnumerator_m1858198676(L_12, /*hidden argument*/NULL);
+			V_9 = L_13;
+		}
+
+IL_004d:
+		try
+		{ // begin try (depth: 2)
+			{
+				goto IL_00fe;
+			}
+
+IL_0052:
+			{
+				Il2CppObject* L_14 = V_9;
+				NullCheck(L_14);
+				Triangle_t3965613618 * L_15 = InterfaceFuncInvoker0< Triangle_t3965613618 * >::Invoke(0 /* !0 System.Collections.Generic.IEnumerator`1<TriangleNet.Topology.Triangle>::get_Current() */, IEnumerator_1_t1441137445_il2cpp_TypeInfo_var, L_14);
+				V_8 = L_15;
+				Triangle_t3965613618 * L_16 = V_8;
+				(&V_0)->set_tri_0(L_16);
+				(&V_0)->set_orient_1(1);
+				Otri_Sym_m3361605538((&V_0), (&V_2), /*hidden argument*/NULL);
+				Triangle_t3965613618 * L_17 = (&V_2)->get_tri_0();
+				NullCheck(L_17);
+				int32_t L_18 = L_17->get_id_1();
+				V_3 = L_18;
+				(&V_0)->set_orient_1(2);
+				Otri_Sym_m3361605538((&V_0), (&V_2), /*hidden argument*/NULL);
+				Triangle_t3965613618 * L_19 = (&V_2)->get_tri_0();
+				NullCheck(L_19);
+				int32_t L_20 = L_19->get_id_1();
+				V_4 = L_20;
+				(&V_0)->set_orient_1(0);
+				Otri_Sym_m3361605538((&V_0), (&V_2), /*hidden argument*/NULL);
+				Triangle_t3965613618 * L_21 = (&V_2)->get_tri_0();
+				NullCheck(L_21);
+				int32_t L_22 = L_21->get_id_1();
+				V_5 = L_22;
+				StreamWriter_t3858580635 * L_23 = V_7;
+				ObjectU5BU5D_t3614634134* L_24 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)4));
+				int32_t L_25 = V_6;
+				int32_t L_26 = L_25;
+				V_6 = ((int32_t)((int32_t)L_26+(int32_t)1));
+				int32_t L_27 = L_26;
+				Il2CppObject * L_28 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_27);
+				NullCheck(L_24);
+				ArrayElementTypeCheck (L_24, L_28);
+				(L_24)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_28);
+				ObjectU5BU5D_t3614634134* L_29 = L_24;
+				int32_t L_30 = V_3;
+				int32_t L_31 = L_30;
+				Il2CppObject * L_32 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_31);
+				NullCheck(L_29);
+				ArrayElementTypeCheck (L_29, L_32);
+				(L_29)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_32);
+				ObjectU5BU5D_t3614634134* L_33 = L_29;
+				int32_t L_34 = V_4;
+				int32_t L_35 = L_34;
+				Il2CppObject * L_36 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_35);
+				NullCheck(L_33);
+				ArrayElementTypeCheck (L_33, L_36);
+				(L_33)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)L_36);
+				ObjectU5BU5D_t3614634134* L_37 = L_33;
+				int32_t L_38 = V_5;
+				int32_t L_39 = L_38;
+				Il2CppObject * L_40 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_39);
+				NullCheck(L_37);
+				ArrayElementTypeCheck (L_37, L_40);
+				(L_37)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_40);
+				NullCheck(L_23);
+				VirtActionInvoker2< String_t*, ObjectU5BU5D_t3614634134* >::Invoke(21 /* System.Void System.IO.TextWriter::WriteLine(System.String,System.Object[]) */, L_23, _stringLiteral472494718, L_37);
+			}
+
+IL_00fe:
+			{
+				Il2CppObject* L_41 = V_9;
+				NullCheck(L_41);
+				bool L_42 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1466026749_il2cpp_TypeInfo_var, L_41);
+				if (L_42)
+				{
+					goto IL_0052;
+				}
+			}
+
+IL_010a:
+			{
+				IL2CPP_LEAVE(0x11E, FINALLY_010f);
+			}
+		} // end try (depth: 2)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+			goto FINALLY_010f;
+		}
+
+FINALLY_010f:
+		{ // begin finally (depth: 2)
+			{
+				Il2CppObject* L_43 = V_9;
+				if (!L_43)
+				{
+					goto IL_011d;
+				}
+			}
+
+IL_0116:
+			{
+				Il2CppObject* L_44 = V_9;
+				NullCheck(L_44);
+				InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, L_44);
+			}
+
+IL_011d:
+			{
+				IL2CPP_END_FINALLY(271)
+			}
+		} // end finally (depth: 2)
+		IL2CPP_CLEANUP(271)
+		{
+			IL2CPP_JUMP_TBL(0x11E, IL_011e)
+			IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+		}
+
+IL_011e:
+		{
+			IL2CPP_LEAVE(0x132, FINALLY_0123);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_0123;
+	}
+
+FINALLY_0123:
+	{ // begin finally (depth: 1)
+		{
+			StreamWriter_t3858580635 * L_45 = V_7;
+			if (!L_45)
+			{
+				goto IL_0131;
+			}
+		}
+
+IL_012a:
+		{
+			StreamWriter_t3858580635 * L_46 = V_7;
+			NullCheck(L_46);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, L_46);
+		}
+
+IL_0131:
+		{
+			IL2CPP_END_FINALLY(291)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(291)
+	{
+		IL2CPP_JUMP_TBL(0x132, IL_0132)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_0132:
+	{
+		return;
+	}
+}
+// System.Void TriangleNet.IO.TriangleWriter::.cctor()
+extern "C"  void TriangleWriter__cctor_m2323971034 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TriangleWriter__cctor_m2323971034_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(NumberFormatInfo_t104580544_il2cpp_TypeInfo_var);
+		NumberFormatInfo_t104580544 * L_0 = NumberFormatInfo_get_InvariantInfo_m2658215204(NULL /*static, unused*/, /*hidden argument*/NULL);
+		((TriangleWriter_t4239728233_StaticFields*)TriangleWriter_t4239728233_il2cpp_TypeInfo_var->static_fields)->set_nfi_0(L_0);
+		return;
+	}
+}
 // System.Void TriangleNet.Log::.cctor()
 extern "C"  void Log__cctor_m3277602295 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {

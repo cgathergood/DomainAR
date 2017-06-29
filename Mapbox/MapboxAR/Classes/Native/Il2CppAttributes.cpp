@@ -35910,12 +35910,12 @@ static void Clipper_t2198513455_CustomAttributesCacheGenerator_U3CReverseSolutio
 static void Clipper_t2198513455_CustomAttributesCacheGenerator_U3CStrictlySimpleU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[0];
-		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
+		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
 	}
 	{
-		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[1];
-		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
+		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
 	}
 }
 static void Clipper_t2198513455_CustomAttributesCacheGenerator_Clipper_get_ReverseSolution_m2202240328(CustomAttributesCache* cache)
@@ -36010,12 +36010,12 @@ static void PbfReader_t1678926567_CustomAttributesCacheGenerator_U3CTagU3Ek__Bac
 static void PbfReader_t1678926567_CustomAttributesCacheGenerator_U3CValueU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[0];
-		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
+		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
 	}
 	{
-		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[1];
-		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
+		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
 	}
 }
 static void PbfReader_t1678926567_CustomAttributesCacheGenerator_U3CWireTypeU3Ek__BackingField(CustomAttributesCache* cache)
@@ -36092,12 +36092,12 @@ static void VectorTileFeature_t227912335_CustomAttributesCacheGenerator_U3CIdU3E
 static void VectorTileFeature_t227912335_CustomAttributesCacheGenerator_U3CGeometryTypeU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[0];
-		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
+		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
 	}
 	{
-		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[1];
-		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
+		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
 	}
 }
 static void VectorTileFeature_t227912335_CustomAttributesCacheGenerator_U3CGeometryCommandsU3Ek__BackingField(CustomAttributesCache* cache)
@@ -36188,12 +36188,12 @@ static void VectorTileLayer_t3116575590_CustomAttributesCacheGenerator(CustomAtt
 static void VectorTileLayer_t3116575590_CustomAttributesCacheGenerator_U3CDataU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[0];
-		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
+		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
 	}
 	{
-		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[1];
-		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
+		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
 	}
 }
 static void VectorTileLayer_t3116575590_CustomAttributesCacheGenerator_U3CNameU3Ek__BackingField(CustomAttributesCache* cache)
@@ -36221,23 +36221,23 @@ static void VectorTileLayer_t3116575590_CustomAttributesCacheGenerator_U3CVersio
 static void VectorTileLayer_t3116575590_CustomAttributesCacheGenerator_U3CExtentU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[0];
-		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
-	}
-	{
-		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[1];
-		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
-	}
-}
-static void VectorTileLayer_t3116575590_CustomAttributesCacheGenerator_U3C_FeaturesDataU3Ek__BackingField(CustomAttributesCache* cache)
-{
-	{
 		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[0];
 		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
 	}
 	{
 		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[1];
 		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
+	}
+}
+static void VectorTileLayer_t3116575590_CustomAttributesCacheGenerator_U3C_FeaturesDataU3Ek__BackingField(CustomAttributesCache* cache)
+{
+	{
+		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
+	}
+	{
+		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
 	}
 }
 static void VectorTileLayer_t3116575590_CustomAttributesCacheGenerator_U3CValuesU3Ek__BackingField(CustomAttributesCache* cache)
@@ -36536,12 +36536,12 @@ static void Configuration_t3096111654_CustomAttributesCacheGenerator_Configurati
 static void Contour_t3591652972_CustomAttributesCacheGenerator_U3CPointsU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[0];
-		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
+		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
 	}
 	{
-		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[1];
-		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
+		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
 	}
 }
 static void Contour_t3591652972_CustomAttributesCacheGenerator_Contour_get_Points_m769371392(CustomAttributesCache* cache)
@@ -36583,12 +36583,12 @@ static void Edge_t805845059_CustomAttributesCacheGenerator_U3CP1U3Ek__BackingFie
 static void Edge_t805845059_CustomAttributesCacheGenerator_U3CLabelU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[0];
-		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
+		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
 	}
 	{
-		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[1];
-		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
+		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
 	}
 }
 static void Edge_t805845059_CustomAttributesCacheGenerator_Edge_get_P0_m537281398(CustomAttributesCache* cache)
@@ -36784,12 +36784,12 @@ static void Vertex_t3430001018_CustomAttributesCacheGenerator(CustomAttributesCa
 static void Log_t587848786_CustomAttributesCacheGenerator_U3CVerboseU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[0];
-		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
+		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[0];
+		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
 	}
 	{
-		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[1];
-		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
+		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[1];
+		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
 	}
 }
 static void Log_t587848786_CustomAttributesCacheGenerator_Log_get_Verbose_m46474907(CustomAttributesCache* cache)
@@ -36898,12 +36898,12 @@ static void ConstraintOptions_t2163317251_CustomAttributesCacheGenerator_U3CConv
 static void ConstraintOptions_t2163317251_CustomAttributesCacheGenerator_U3CSegmentSplittingU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[0];
-		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
+		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
 	}
 	{
-		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[1];
-		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
+		DebuggerBrowsableAttribute_t1386379234 * tmp = (DebuggerBrowsableAttribute_t1386379234 *)cache->attributes[1];
+		DebuggerBrowsableAttribute__ctor_m3729055103(tmp, 0LL, NULL);
 	}
 }
 static void ConstraintOptions_t2163317251_CustomAttributesCacheGenerator_ConstraintOptions_get_UseRegions_m2479028169(CustomAttributesCache* cache)

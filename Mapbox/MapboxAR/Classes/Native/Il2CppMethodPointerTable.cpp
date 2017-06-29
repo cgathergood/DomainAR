@@ -20777,6 +20777,8 @@ extern "C" void ModeSwitcher_Start_m3082032181 ();
 extern "C" void ModeSwitcher_Update_m4068949590 ();
 extern "C" void ModeSwitcher_EnableBallCreation_m2999743005 ();
 extern "C" void ModeSwitcher_OnGUI_m558458371 ();
+extern "C" void ObjectManagerScript__ctor_m1102503756 ();
+extern "C" void ObjectManagerScript_btnClick_m1609257266 ();
 extern "C" void ParticlePainter__ctor_m3797515404 ();
 extern "C" void ParticlePainter_Start_m240231480 ();
 extern "C" void ParticlePainter_ARFrameUpdated_m3328436002 ();
@@ -21639,7 +21641,7 @@ extern "C" void BoxSliderEvent__ctor_m304261805 ();
 extern "C" void UnityARAmbient__ctor_m3700524047 ();
 extern "C" void UnityARAmbient_Start_m303369171 ();
 extern "C" void UnityARAmbient_Update_m2066148092 ();
-extern const Il2CppMethodPointer g_MethodPointers[21625] = 
+extern const Il2CppMethodPointer g_MethodPointers[21627] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -42404,6 +42406,8 @@ extern const Il2CppMethodPointer g_MethodPointers[21625] =
 	ModeSwitcher_Update_m4068949590,
 	ModeSwitcher_EnableBallCreation_m2999743005,
 	ModeSwitcher_OnGUI_m558458371,
+	ObjectManagerScript__ctor_m1102503756,
+	ObjectManagerScript_btnClick_m1609257266,
 	ParticlePainter__ctor_m3797515404,
 	ParticlePainter_Start_m240231480,
 	ParticlePainter_ARFrameUpdated_m3328436002,
