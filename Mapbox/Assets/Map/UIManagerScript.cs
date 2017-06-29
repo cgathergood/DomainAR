@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class UIManagerScript : MonoBehaviour {
 
 	void onStart() {
@@ -17,6 +18,11 @@ public class UIManagerScript : MonoBehaviour {
 	public void StartMenu() 
 	{
 		SceneManager.LoadScene("MainMenu");
+	}
+
+	public void StartHouse()
+	{
+		SceneManager.LoadScene ("HouseDemo");
 	}
 
 	public void Exit() 
