@@ -226,6 +226,7 @@
 #include "mscorlib_System_Collections_Generic_Dictionary_2_E3601534125.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_22361573779.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_2_g38854645.h"
+#include "AssemblyU2DCSharp_Spin3764633552.h"
 #include "AssemblyU2DCSharp_SpinObject1310746699.h"
 #include "AssemblyU2DCSharp_SVBoxSlider1173082351.h"
 #include "UnityEngine_UnityEngine_RectTransform3349966182.h"
@@ -309,7 +310,6 @@
 #include "mscorlib_System_Collections_Generic_List_1_Enumerato62918606.h"
 #include "mscorlib_System_Collections_Generic_List_1_Enumera3323043860.h"
 #include "mscorlib_System_Collections_Generic_List_1_Enumera1145763427.h"
-#include "AssemblyU2DCSharp_TriangleNet_LocateResult4168096189.h"
 
 // Mapbox.Unity.Telemetry.TelemetryDummy
 struct TelemetryDummy_t4023756181;
@@ -607,6 +607,8 @@ struct Camera_t189460977;
 struct ParticleU5BU5D_t574222242;
 // PoiMarkerHelper
 struct PoiMarkerHelper_t3084835138;
+// Spin
+struct Spin_t3764633552;
 // SpinObject
 struct SpinObject_t1310746699;
 // SVBoxSlider
@@ -1342,7 +1344,6 @@ extern Il2CppCodeGenString* _stringLiteral372029336;
 extern const uint32_t PoiMarkerHelper_OnMouseUpAsButton_m644541356_MetadataUsageId;
 extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1307534077;
-extern Il2CppCodeGenString* _stringLiteral1307534078;
 extern const uint32_t SpinObject_OnMouseDrag_m3233627936_MetadataUsageId;
 extern Il2CppClass* RectTransform_t3349966182_il2cpp_TypeInfo_var;
 extern const uint32_t SVBoxSlider_get_rectTransform_m3427717911_MetadataUsageId;
@@ -3592,14 +3593,16 @@ extern "C"  void Debug_Log_m920475918 (Il2CppObject * __this /* static, unused *
 #define Enumerator_MoveNext_m22426832(__this, method) ((  bool (*) (Enumerator_t1629285963 *, const MethodInfo*))Enumerator_MoveNext_m3349738440_gshared)(__this, method)
 // System.Void System.Collections.Generic.Dictionary`2/Enumerator<System.String,System.Object>::Dispose()
 #define Enumerator_Dispose_m977331043(__this, method) ((  void (*) (Enumerator_t1629285963 *, const MethodInfo*))Enumerator_Dispose_m1905011127_gshared)(__this, method)
-// System.Single UnityEngine.Input::GetAxis(System.String)
-extern "C"  float Input_GetAxis_m2098048324 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::get_up()
 extern "C"  Vector3_t2243707580  Vector3_get_up_m2725403797 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Time::get_deltaTime()
+extern "C"  float Time_get_deltaTime_m2233168104 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::Rotate(UnityEngine.Vector3,System.Single)
+extern "C"  void Transform_Rotate_m882843932 (Transform_t3275118058 * __this, Vector3_t2243707580  p0, float p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Input::GetAxis(System.String)
+extern "C"  float Input_GetAxis_m2098048324 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::RotateAround(UnityEngine.Vector3,System.Single)
 extern "C"  void Transform_RotateAround_m1954941243 (Transform_t3275118058 * __this, Vector3_t2243707580  p0, float p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Vector3 UnityEngine.Vector3::get_right()
-extern "C"  Vector3_t2243707580  Vector3_get_right_m1884123822 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.UI.BoxSlider>()
 #define Component_GetComponent_TisBoxSlider_t1871650694_m3168588160(__this, method) ((  BoxSlider_t1871650694 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.UI.RawImage>()
@@ -3662,8 +3665,6 @@ extern "C"  Vector3_t2243707580  Input_get_mousePosition_m146923508 (Il2CppObjec
 extern "C"  int32_t Screen_get_height_m1051800773 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Clamp(System.Single,System.Single,System.Single)
 extern "C"  float Mathf_Clamp_m2354025655 (Il2CppObject * __this /* static, unused */, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Single UnityEngine.Time::get_deltaTime()
-extern "C"  float Time_get_deltaTime_m2233168104 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2 UnityEngine.Vector2::Lerp(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
 extern "C"  Vector2_t2243707579  Vector2_Lerp_m1511850087 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579  p0, Vector2_t2243707579  p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Euler(System.Single,System.Single,System.Single)
@@ -40101,11 +40102,33 @@ IL_0055:
 		return;
 	}
 }
+// System.Void Spin::.ctor()
+extern "C"  void Spin__ctor_m1657456431 (Spin_t3764633552 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_speed_2((10.0f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Spin::Update()
+extern "C"  void Spin_Update_m4062915630 (Spin_t3764633552 * __this, const MethodInfo* method)
+{
+	{
+		Transform_t3275118058 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_1 = Vector3_get_up_m2725403797(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_2 = __this->get_speed_2();
+		float L_3 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Transform_Rotate_m882843932(L_0, L_1, ((float)((float)L_2*(float)L_3)), /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void SpinObject::.ctor()
 extern "C"  void SpinObject__ctor_m1646503862 (SpinObject_t1310746699 * __this, const MethodInfo* method)
 {
 	{
-		__this->set_rotSpeed_2((20.0f));
+		__this->set_rotSpeed_2((10.0f));
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -40120,25 +40143,16 @@ extern "C"  void SpinObject_OnMouseDrag_m3233627936 (SpinObject_t1310746699 * __
 		s_Il2CppMethodInitialized = true;
 	}
 	float V_0 = 0.0f;
-	float V_1 = 0.0f;
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		float L_0 = Input_GetAxis_m2098048324(NULL /*static, unused*/, _stringLiteral1307534077, /*hidden argument*/NULL);
 		float L_1 = __this->get_rotSpeed_2();
 		V_0 = ((float)((float)((float)((float)L_0*(float)L_1))*(float)(0.0174532924f)));
-		float L_2 = Input_GetAxis_m2098048324(NULL /*static, unused*/, _stringLiteral1307534078, /*hidden argument*/NULL);
-		float L_3 = __this->get_rotSpeed_2();
-		V_1 = ((float)((float)((float)((float)L_2*(float)L_3))*(float)(0.0174532924f)));
-		Transform_t3275118058 * L_4 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_5 = Vector3_get_up_m2725403797(NULL /*static, unused*/, /*hidden argument*/NULL);
-		float L_6 = V_0;
-		NullCheck(L_4);
-		Transform_RotateAround_m1954941243(L_4, L_5, ((-L_6)), /*hidden argument*/NULL);
-		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_8 = Vector3_get_right_m1884123822(NULL /*static, unused*/, /*hidden argument*/NULL);
-		float L_9 = V_1;
-		NullCheck(L_7);
-		Transform_RotateAround_m1954941243(L_7, L_8, L_9, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_2 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_3 = Vector3_get_up_m2725403797(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_4 = V_0;
+		NullCheck(L_2);
+		Transform_RotateAround_m1954941243(L_2, L_3, ((-L_4)), /*hidden argument*/NULL);
 		return;
 	}
 }

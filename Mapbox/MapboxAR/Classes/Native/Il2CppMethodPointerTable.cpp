@@ -15596,6 +15596,10 @@ extern "C" void Transform_Translate_m423862381 ();
 extern "C" void Transform_Translate_m1198703821 ();
 extern "C" void Transform_Rotate_m2612876682 ();
 extern "C" void Transform_Rotate_m2449860094 ();
+extern "C" void Transform_RotateAroundInternal_m2303097692 ();
+extern "C" void Transform_INTERNAL_CALL_RotateAroundInternal_m552507884 ();
+extern "C" void Transform_Rotate_m882843932 ();
+extern "C" void Transform_Rotate_m4292615347 ();
 extern "C" void Transform_TransformDirection_m1639585047 ();
 extern "C" void Transform_INTERNAL_CALL_TransformDirection_m2899991790 ();
 extern "C" void Transform_TransformPoint_m3272254198 ();
@@ -20783,6 +20787,8 @@ extern "C" void ParticlePainter_U3CStartU3Em__0_m3078015875 ();
 extern "C" void PoiMarkerHelper__ctor_m3466213237 ();
 extern "C" void PoiMarkerHelper_Set_m3854319986 ();
 extern "C" void PoiMarkerHelper_OnMouseUpAsButton_m644541356 ();
+extern "C" void Spin__ctor_m1657456431 ();
+extern "C" void Spin_Update_m4062915630 ();
 extern "C" void SpinObject__ctor_m1646503862 ();
 extern "C" void SpinObject_OnMouseDrag_m3233627936 ();
 extern "C" void SVBoxSlider__ctor_m2623596066 ();
@@ -21633,7 +21639,7 @@ extern "C" void BoxSliderEvent__ctor_m304261805 ();
 extern "C" void UnityARAmbient__ctor_m3700524047 ();
 extern "C" void UnityARAmbient_Start_m303369171 ();
 extern "C" void UnityARAmbient_Update_m2066148092 ();
-extern const Il2CppMethodPointer g_MethodPointers[21619] = 
+extern const Il2CppMethodPointer g_MethodPointers[21625] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -37217,6 +37223,10 @@ extern const Il2CppMethodPointer g_MethodPointers[21619] =
 	Transform_Translate_m1198703821,
 	Transform_Rotate_m2612876682,
 	Transform_Rotate_m2449860094,
+	Transform_RotateAroundInternal_m2303097692,
+	Transform_INTERNAL_CALL_RotateAroundInternal_m552507884,
+	Transform_Rotate_m882843932,
+	Transform_Rotate_m4292615347,
 	Transform_TransformDirection_m1639585047,
 	Transform_INTERNAL_CALL_TransformDirection_m2899991790,
 	Transform_TransformPoint_m3272254198,
@@ -42404,6 +42414,8 @@ extern const Il2CppMethodPointer g_MethodPointers[21619] =
 	PoiMarkerHelper__ctor_m3466213237,
 	PoiMarkerHelper_Set_m3854319986,
 	PoiMarkerHelper_OnMouseUpAsButton_m644541356,
+	Spin__ctor_m1657456431,
+	Spin_Update_m4062915630,
 	SpinObject__ctor_m1646503862,
 	SpinObject_OnMouseDrag_m3233627936,
 	SVBoxSlider__ctor_m2623596066,

@@ -38,6 +38,7 @@
 #include "UnityEngine_UnityEngine_Matrix4x42933234003.h"
 #include "UnityEngine_UnityEngine_Space4278750806.h"
 #include "mscorlib_System_Single2076509932.h"
+#include "UnityEngine_UnityEngine_Component3819376471.h"
 #include "UnityEngine_UnityEngine_Transform_Enumerator1251553160.h"
 #include "UnityEngine_UnityEngine_UICharInfo3056636800.h"
 #include "UnityEngine_UnityEngine_UILineInfo3621277874.h"
@@ -103,6 +104,8 @@ struct TrackedReference_t1045890189;
 struct Transform_t3275118058;
 // UnityEngine.Object
 struct Object_t1021602117;
+// UnityEngine.Component
+struct Component_t3819376471;
 // System.Collections.IEnumerator
 struct IEnumerator_t1466026749;
 // UnityEngine.Transform/Enumerator
@@ -531,6 +534,14 @@ extern "C"  Quaternion_t4030073918  Quaternion_Inverse_m3931399088 (Il2CppObject
 extern "C"  void Transform_set_rotation_m3411284563 (Transform_t3275118058 * __this, Quaternion_t4030073918  ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::Rotate(UnityEngine.Vector3,UnityEngine.Space)
 extern "C"  void Transform_Rotate_m2612876682 (Transform_t3275118058 * __this, Vector3_t2243707580  ___eulerAngles0, int32_t ___relativeTo1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::INTERNAL_CALL_RotateAroundInternal(UnityEngine.Transform,UnityEngine.Vector3&,System.Single)
+extern "C"  void Transform_INTERNAL_CALL_RotateAroundInternal_m552507884 (Il2CppObject * __this /* static, unused */, Transform_t3275118058 * ___self0, Vector3_t2243707580 * ___axis1, float ___angle2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::Rotate(UnityEngine.Vector3,System.Single,UnityEngine.Space)
+extern "C"  void Transform_Rotate_m4292615347 (Transform_t3275118058 * __this, Vector3_t2243707580  ___axis0, float ___angle1, int32_t ___relativeTo2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Transform UnityEngine.Component::get_transform()
+extern "C"  Transform_t3275118058 * Component_get_transform_m2697483695 (Component_t3819376471 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::RotateAroundInternal(UnityEngine.Vector3,System.Single)
+extern "C"  void Transform_RotateAroundInternal_m2303097692 (Transform_t3275118058 * __this, Vector3_t2243707580  ___axis0, float ___angle1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::INTERNAL_CALL_TransformDirection(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
 extern "C"  void Transform_INTERNAL_CALL_TransformDirection_m2899991790 (Il2CppObject * __this /* static, unused */, Transform_t3275118058 * ___self0, Vector3_t2243707580 * ___direction1, Vector3_t2243707580 * ___value2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::INTERNAL_CALL_TransformPoint(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
@@ -1836,6 +1847,69 @@ extern "C"  void Transform_Rotate_m2449860094 (Transform_t3275118058 * __this, f
 		Vector3__ctor_m2638739322(&L_3, L_0, L_1, L_2, /*hidden argument*/NULL);
 		int32_t L_4 = ___relativeTo3;
 		Transform_Rotate_m2612876682(__this, L_3, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Transform::RotateAroundInternal(UnityEngine.Vector3,System.Single)
+extern "C"  void Transform_RotateAroundInternal_m2303097692 (Transform_t3275118058 * __this, Vector3_t2243707580  ___axis0, float ___angle1, const MethodInfo* method)
+{
+	{
+		float L_0 = ___angle1;
+		Transform_INTERNAL_CALL_RotateAroundInternal_m552507884(NULL /*static, unused*/, __this, (&___axis0), L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Transform::INTERNAL_CALL_RotateAroundInternal(UnityEngine.Transform,UnityEngine.Vector3&,System.Single)
+extern "C"  void Transform_INTERNAL_CALL_RotateAroundInternal_m552507884 (Il2CppObject * __this /* static, unused */, Transform_t3275118058 * ___self0, Vector3_t2243707580 * ___axis1, float ___angle2, const MethodInfo* method)
+{
+	typedef void (*Transform_INTERNAL_CALL_RotateAroundInternal_m552507884_ftn) (Transform_t3275118058 *, Vector3_t2243707580 *, float);
+	static Transform_INTERNAL_CALL_RotateAroundInternal_m552507884_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Transform_INTERNAL_CALL_RotateAroundInternal_m552507884_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Transform::INTERNAL_CALL_RotateAroundInternal(UnityEngine.Transform,UnityEngine.Vector3&,System.Single)");
+	_il2cpp_icall_func(___self0, ___axis1, ___angle2);
+}
+// System.Void UnityEngine.Transform::Rotate(UnityEngine.Vector3,System.Single)
+extern "C"  void Transform_Rotate_m882843932 (Transform_t3275118058 * __this, Vector3_t2243707580  ___axis0, float ___angle1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		V_0 = 1;
+		Vector3_t2243707580  L_0 = ___axis0;
+		float L_1 = ___angle1;
+		int32_t L_2 = V_0;
+		Transform_Rotate_m4292615347(__this, L_0, L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Transform::Rotate(UnityEngine.Vector3,System.Single,UnityEngine.Space)
+extern "C"  void Transform_Rotate_m4292615347 (Transform_t3275118058 * __this, Vector3_t2243707580  ___axis0, float ___angle1, int32_t ___relativeTo2, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = ___relativeTo2;
+		if ((!(((uint32_t)L_0) == ((uint32_t)1))))
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_2 = ___axis0;
+		NullCheck(L_1);
+		Vector3_t2243707580  L_3 = Transform_TransformDirection_m1639585047(L_1, L_2, /*hidden argument*/NULL);
+		float L_4 = ___angle1;
+		Transform_RotateAroundInternal_m2303097692(__this, L_3, ((float)((float)L_4*(float)(0.0174532924f))), /*hidden argument*/NULL);
+		goto IL_0034;
+	}
+
+IL_0026:
+	{
+		Vector3_t2243707580  L_5 = ___axis0;
+		float L_6 = ___angle1;
+		Transform_RotateAroundInternal_m2303097692(__this, L_5, ((float)((float)L_6*(float)(0.0174532924f))), /*hidden argument*/NULL);
+	}
+
+IL_0034:
+	{
 		return;
 	}
 }

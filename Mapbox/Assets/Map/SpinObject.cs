@@ -4,7 +4,7 @@ using UnityEngine;
 
 	public class SpinObject : MonoBehaviour
 	{
-		float rotSpeed = 20;
+		public float rotSpeed = 10;
 
 		void OnMouseDrag()
 		{
