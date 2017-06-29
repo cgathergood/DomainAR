@@ -3567,8 +3567,6 @@ extern "C"  void Transform_Rotate_m882843932 (Transform_t3275118058 * __this, Ve
 extern "C"  float Input_GetAxis_m2098048324 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::RotateAround(UnityEngine.Vector3,System.Single)
 extern "C"  void Transform_RotateAround_m1954941243 (Transform_t3275118058 * __this, Vector3_t2243707580  p0, float p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Vector3 UnityEngine.Vector3::get_right()
-extern "C"  Vector3_t2243707580  Vector3_get_right_m1884123822 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.UI.BoxSlider>()
 #define Component_GetComponent_TisBoxSlider_t1871650694_m3168588160(__this, method) ((  BoxSlider_t1871650694 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.UI.RawImage>()
@@ -40120,11 +40118,6 @@ extern "C"  void SpinObject_OnMouseDrag_m3233627936 (SpinObject_t1310746699 * __
 		float L_6 = V_0;
 		NullCheck(L_4);
 		Transform_RotateAround_m1954941243(L_4, L_5, ((-L_6)), /*hidden argument*/NULL);
-		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_8 = Vector3_get_right_m1884123822(NULL /*static, unused*/, /*hidden argument*/NULL);
-		float L_9 = V_1;
-		NullCheck(L_7);
-		Transform_RotateAround_m1954941243(L_7, L_8, L_9, /*hidden argument*/NULL);
 		return;
 	}
 }
