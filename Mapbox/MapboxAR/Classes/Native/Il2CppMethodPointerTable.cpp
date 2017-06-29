@@ -15609,6 +15609,8 @@ extern "C" void Transform_get_lossyScale_m1638545862 ();
 extern "C" void Transform_INTERNAL_get_lossyScale_m3027364225 ();
 extern "C" void Transform_IsChildOf_m10844547 ();
 extern "C" void Transform_GetEnumerator_m3479720613 ();
+extern "C" void Transform_RotateAround_m1954941243 ();
+extern "C" void Transform_INTERNAL_CALL_RotateAround_m1628411655 ();
 extern "C" void Transform_GetChild_m3838588184 ();
 extern "C" void Enumerator__ctor_m147705785 ();
 extern "C" void Enumerator_get_Current_m2520481711 ();
@@ -20781,6 +20783,8 @@ extern "C" void ParticlePainter_U3CStartU3Em__0_m3078015875 ();
 extern "C" void PoiMarkerHelper__ctor_m3466213237 ();
 extern "C" void PoiMarkerHelper_Set_m3854319986 ();
 extern "C" void PoiMarkerHelper_OnMouseUpAsButton_m644541356 ();
+extern "C" void SpinObject__ctor_m1646503862 ();
+extern "C" void SpinObject_OnMouseDrag_m3233627936 ();
 extern "C" void SVBoxSlider__ctor_m2623596066 ();
 extern "C" void SVBoxSlider_get_rectTransform_m3427717911 ();
 extern "C" void SVBoxSlider_Awake_m1174811035 ();
@@ -21584,6 +21588,7 @@ extern "C" void UIManagerScript__ctor_m143475163 ();
 extern "C" void UIManagerScript_onStart_m2254827226 ();
 extern "C" void UIManagerScript_StartMap_m2070598187 ();
 extern "C" void UIManagerScript_StartMenu_m989597970 ();
+extern "C" void UIManagerScript_StartHouse_m1334055999 ();
 extern "C" void UIManagerScript_Exit_m1982892195 ();
 extern "C" void BoxSlider__ctor_m1006728114 ();
 extern "C" void BoxSlider_get_handleRect_m2621304777 ();
@@ -21628,7 +21633,7 @@ extern "C" void BoxSliderEvent__ctor_m304261805 ();
 extern "C" void UnityARAmbient__ctor_m3700524047 ();
 extern "C" void UnityARAmbient_Start_m303369171 ();
 extern "C" void UnityARAmbient_Update_m2066148092 ();
-extern const Il2CppMethodPointer g_MethodPointers[21614] = 
+extern const Il2CppMethodPointer g_MethodPointers[21619] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -37225,6 +37230,8 @@ extern const Il2CppMethodPointer g_MethodPointers[21614] =
 	Transform_INTERNAL_get_lossyScale_m3027364225,
 	Transform_IsChildOf_m10844547,
 	Transform_GetEnumerator_m3479720613,
+	Transform_RotateAround_m1954941243,
+	Transform_INTERNAL_CALL_RotateAround_m1628411655,
 	Transform_GetChild_m3838588184,
 	Enumerator__ctor_m147705785,
 	Enumerator_get_Current_m2520481711,
@@ -42397,6 +42404,8 @@ extern const Il2CppMethodPointer g_MethodPointers[21614] =
 	PoiMarkerHelper__ctor_m3466213237,
 	PoiMarkerHelper_Set_m3854319986,
 	PoiMarkerHelper_OnMouseUpAsButton_m644541356,
+	SpinObject__ctor_m1646503862,
+	SpinObject_OnMouseDrag_m3233627936,
 	SVBoxSlider__ctor_m2623596066,
 	SVBoxSlider_get_rectTransform_m3427717911,
 	SVBoxSlider_Awake_m1174811035,
@@ -43200,6 +43209,7 @@ extern const Il2CppMethodPointer g_MethodPointers[21614] =
 	UIManagerScript_onStart_m2254827226,
 	UIManagerScript_StartMap_m2070598187,
 	UIManagerScript_StartMenu_m989597970,
+	UIManagerScript_StartHouse_m1334055999,
 	UIManagerScript_Exit_m1982892195,
 	BoxSlider__ctor_m1006728114,
 	BoxSlider_get_handleRect_m2621304777,

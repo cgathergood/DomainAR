@@ -16,16 +16,18 @@
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
-#include "AssemblyU2DCSharp_TriangleNet_Logging_LogItem1968516465.h"
-#include "AssemblyU2DCSharp_TriangleNet_Logging_LogLevel842636714.h"
-#include "mscorlib_System_String2029220233.h"
+#include "AssemblyU2DCSharp_TriangleNet_Log587848786.h"
 #include "mscorlib_System_Void1841601450.h"
-#include "mscorlib_System_DateTime693205669.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen1337637597.h"
 #include "mscorlib_System_Object2689449295.h"
+#include "mscorlib_System_Boolean3825574718.h"
+#include "AssemblyU2DCSharp_TriangleNet_Logging_LogItem1968516465.h"
+#include "mscorlib_System_String2029220233.h"
+#include "AssemblyU2DCSharp_TriangleNet_Logging_LogLevel842636714.h"
+#include "mscorlib_System_DateTime693205669.h"
 #include "AssemblyU2DCSharp_TriangleNet_Mesh1414352559.h"
 #include "AssemblyU2DCSharp_TriangleNet_Configuration3096111654.h"
 #include "AssemblyU2DCSharp_TriangleNet_Behavior3353801546.h"
-#include "mscorlib_System_Boolean3825574718.h"
 #include "mscorlib_System_Double4078015681.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g2437826653.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g4221418462.h"
@@ -195,18 +197,26 @@
 #include "UnityEngine_UnityEngine_Light494725636.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_UnityEngine_XR_iOS_U1130867170.h"
 
+// TriangleNet.Log
+struct Log_t587848786;
+// System.Collections.Generic.List`1<TriangleNet.Logging.LogItem>
+struct List_1_t1337637597;
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_t2058570427;
+// System.Object
+struct Il2CppObject;
+// TriangleNet.Logging.ILog`1<TriangleNet.Logging.LogItem>
+struct ILog_1_t846826848;
 // TriangleNet.Logging.LogItem
 struct LogItem_t1968516465;
 // System.String
 struct String_t;
-// System.Object
-struct Il2CppObject;
+// System.Collections.Generic.IList`1<TriangleNet.Logging.LogItem>
+struct IList_1_t2509457066;
 // TriangleNet.Mesh
 struct Mesh_t1414352559;
 // TriangleNet.Configuration
 struct Configuration_t3096111654;
-// TriangleNet.Logging.ILog`1<TriangleNet.Logging.LogItem>
-struct ILog_1_t846826848;
 // TriangleNet.Behavior
 struct Behavior_t3353801546;
 // System.Collections.Generic.Dictionary`2<System.Int32,TriangleNet.Geometry.Vertex>
@@ -225,8 +235,6 @@ struct Func_1_t348874681;
 struct Stack_1_t1262568142;
 // System.Collections.Generic.List`1<TriangleNet.Geometry.Point>
 struct List_1_t3788314186;
-// System.Collections.Generic.List`1<System.Object>
-struct List_1_t2058570427;
 // System.Collections.Generic.List`1<TriangleNet.Geometry.RegionPointer>
 struct List_1_t1611033753;
 // System.Func`1<TriangleNet.IPredicates>
@@ -563,11 +571,26 @@ struct UnityARAmbient_t680084560;
 struct Light_t494725636;
 // UnityEngine.XR.iOS.UnityARSessionNativeInterface
 struct UnityARSessionNativeInterface_t1130867170;
+extern Il2CppClass* Log_t587848786_il2cpp_TypeInfo_var;
+extern const uint32_t Log__cctor_m3277602295_MetadataUsageId;
+extern Il2CppClass* List_1_t1337637597_il2cpp_TypeInfo_var;
+extern const MethodInfo* List_1__ctor_m2463646456_MethodInfo_var;
+extern const uint32_t Log__ctor_m424755986_MetadataUsageId;
+extern const uint32_t Log_get_Verbose_m46474907_MetadataUsageId;
+extern const uint32_t Log_set_Verbose_m1185176334_MetadataUsageId;
+extern const uint32_t Log_get_Instance_m1592105300_MetadataUsageId;
+extern const MethodInfo* List_1_Add_m456366284_MethodInfo_var;
+extern const uint32_t Log_Add_m2632602248_MetadataUsageId;
+extern const MethodInfo* List_1_Clear_m762889935_MethodInfo_var;
+extern const uint32_t Log_Clear_m3243208965_MetadataUsageId;
+extern Il2CppClass* LogItem_t1968516465_il2cpp_TypeInfo_var;
+extern const uint32_t Log_Info_m2271351110_MetadataUsageId;
+extern const uint32_t Log_Warning_m351551964_MetadataUsageId;
+extern const uint32_t Log_Error_m1686434066_MetadataUsageId;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern const uint32_t LogItem__ctor_m2480765244_MetadataUsageId;
 extern Il2CppClass* DateTime_t693205669_il2cpp_TypeInfo_var;
 extern const uint32_t LogItem__ctor_m317284016_MetadataUsageId;
-extern Il2CppClass* Log_t587848786_il2cpp_TypeInfo_var;
 extern Il2CppClass* Behavior_t3353801546_il2cpp_TypeInfo_var;
 extern Il2CppClass* Dictionary_2_t2437826653_il2cpp_TypeInfo_var;
 extern Il2CppClass* Dictionary_2_t4221418462_il2cpp_TypeInfo_var;
@@ -1257,6 +1280,8 @@ extern Il2CppCodeGenString* _stringLiteral4253222387;
 extern const uint32_t UIManagerScript_StartMap_m2070598187_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral442195652;
 extern const uint32_t UIManagerScript_StartMenu_m989597970_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral2093721991;
+extern const uint32_t UIManagerScript_StartHouse_m1334055999_MetadataUsageId;
 extern Il2CppClass* BoxSliderEvent_t1774115848_il2cpp_TypeInfo_var;
 extern Il2CppClass* Selectable_t1490392188_il2cpp_TypeInfo_var;
 extern const uint32_t BoxSlider__ctor_m1006728114_MetadataUsageId;
@@ -2022,14 +2047,18 @@ public:
 };
 
 
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
+extern "C"  void List_1__ctor_m310736118_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.List`1<System.Object>::Add(!0)
+extern "C"  void List_1_Add_m4157722533_gshared (List_1_t2058570427 * __this, Il2CppObject * p0, const MethodInfo* method);
+// System.Void System.Collections.Generic.List`1<System.Object>::Clear()
+extern "C"  void List_1_Clear_m4254626809_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::.ctor()
 extern "C"  void Dictionary_2__ctor_m1868603968_gshared (Dictionary_2_t1697274930 * __this, const MethodInfo* method);
 // !0 System.Func`1<System.Object>::Invoke()
 extern "C"  Il2CppObject * Func_1_Invoke_m1637440397_gshared (Func_1_t348874681 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.Stack`1<TriangleNet.Topology.Otri>::.ctor()
 extern "C"  void Stack_1__ctor_m3129719101_gshared (Stack_1_t1262568142 * __this, const MethodInfo* method);
-// System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
-extern "C"  void List_1__ctor_m310736118_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
 // System.Collections.Generic.Dictionary`2/ValueCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::get_Values()
 extern "C"  ValueCollection_t400334773 * Dictionary_2_get_Values_m41521588_gshared (Dictionary_2_t1697274930 * __this, const MethodInfo* method);
 // System.Int32 System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::get_Count()
@@ -2044,8 +2073,6 @@ extern "C"  bool Enumerator_MoveNext_m1091131935_gshared (Enumerator_t3383807694
 extern "C"  void Enumerator_Dispose_m2369319718_gshared (Enumerator_t3383807694 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::Clear()
 extern "C"  void Dictionary_2_Clear_m899854001_gshared (Dictionary_2_t1697274930 * __this, const MethodInfo* method);
-// System.Void System.Collections.Generic.List`1<System.Object>::Clear()
-extern "C"  void List_1_Clear_m4254626809_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.Stack`1<TriangleNet.Topology.Otri>::Clear()
 extern "C"  void Stack_1_Clear_m3402138698_gshared (Stack_1_t1262568142 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::Add(!0,!1)
@@ -2062,8 +2089,6 @@ extern "C"  Otri_t174839988  Stack_1_Peek_m1141110940_gshared (Stack_1_t12625681
 extern "C"  bool Dictionary_2_Remove_m2771612799_gshared (Dictionary_2_t1697274930 * __this, int32_t p0, const MethodInfo* method);
 // System.Boolean System.Collections.Generic.List`1<System.Object>::Remove(!0)
 extern "C"  bool List_1_Remove_m3164383811_gshared (List_1_t2058570427 * __this, Il2CppObject * p0, const MethodInfo* method);
-// System.Void System.Collections.Generic.List`1<System.Object>::Add(!0)
-extern "C"  void List_1_Add_m4157722533_gshared (List_1_t2058570427 * __this, Il2CppObject * p0, const MethodInfo* method);
 // System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
 extern "C"  int32_t List_1_get_Count_m2375293942_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::AddRange(System.Collections.Generic.IEnumerable`1<!0>)
@@ -2209,10 +2234,20 @@ extern "C"  void UnityEvent_2_Invoke_m4237217379_gshared (UnityEvent_2_t20166571
 // System.Void UnityEngine.Events.UnityEvent`2<System.Single,System.Single>::.ctor()
 extern "C"  void UnityEvent_2__ctor_m731674732_gshared (UnityEvent_2_t2016657100 * __this, const MethodInfo* method);
 
-// System.Void TriangleNet.Logging.LogItem::.ctor(TriangleNet.Logging.LogLevel,System.String,System.String)
-extern "C"  void LogItem__ctor_m317284016 (LogItem_t1968516465 * __this, int32_t ___level0, String_t* ___message1, String_t* ___info2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void TriangleNet.Log::.ctor()
+extern "C"  void Log__ctor_m424755986 (Log_t587848786 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Collections.Generic.List`1<TriangleNet.Logging.LogItem>::.ctor()
+#define List_1__ctor_m2463646456(__this, method) ((  void (*) (List_1_t1337637597 *, const MethodInfo*))List_1__ctor_m310736118_gshared)(__this, method)
 // System.Void System.Object::.ctor()
 extern "C"  void Object__ctor_m2551263788 (Il2CppObject * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Collections.Generic.List`1<TriangleNet.Logging.LogItem>::Add(!0)
+#define List_1_Add_m456366284(__this, p0, method) ((  void (*) (List_1_t1337637597 *, LogItem_t1968516465 *, const MethodInfo*))List_1_Add_m4157722533_gshared)(__this, p0, method)
+// System.Void System.Collections.Generic.List`1<TriangleNet.Logging.LogItem>::Clear()
+#define List_1_Clear_m762889935(__this, method) ((  void (*) (List_1_t1337637597 *, const MethodInfo*))List_1_Clear_m4254626809_gshared)(__this, method)
+// System.Void TriangleNet.Logging.LogItem::.ctor(TriangleNet.Logging.LogLevel,System.String)
+extern "C"  void LogItem__ctor_m2480765244 (LogItem_t1968516465 * __this, int32_t ___level0, String_t* ___message1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void TriangleNet.Logging.LogItem::.ctor(TriangleNet.Logging.LogLevel,System.String,System.String)
+extern "C"  void LogItem__ctor_m317284016 (LogItem_t1968516465 * __this, int32_t ___level0, String_t* ___message1, String_t* ___info2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.DateTime System.DateTime::get_Now()
 extern "C"  DateTime_t693205669  DateTime_get_Now_m24136300 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TriangleNet.Mesh::Initialize()
@@ -3630,6 +3665,193 @@ extern "C"  void Light_set_intensity_m1790590300 (Light_t494725636 * __this, flo
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void TriangleNet.Log::.cctor()
+extern "C"  void Log__cctor_m3277602295 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Log__cctor_m3277602295_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Log_t587848786 * L_0 = (Log_t587848786 *)il2cpp_codegen_object_new(Log_t587848786_il2cpp_TypeInfo_var);
+		Log__ctor_m424755986(L_0, /*hidden argument*/NULL);
+		((Log_t587848786_StaticFields*)Log_t587848786_il2cpp_TypeInfo_var->static_fields)->set_instance_3(L_0);
+		return;
+	}
+}
+// System.Void TriangleNet.Log::.ctor()
+extern "C"  void Log__ctor_m424755986 (Log_t587848786 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Log__ctor_m424755986_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		List_1_t1337637597 * L_0 = (List_1_t1337637597 *)il2cpp_codegen_object_new(List_1_t1337637597_il2cpp_TypeInfo_var);
+		List_1__ctor_m2463646456(L_0, /*hidden argument*/List_1__ctor_m2463646456_MethodInfo_var);
+		__this->set_log_1(L_0);
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean TriangleNet.Log::get_Verbose()
+extern "C"  bool Log_get_Verbose_m46474907 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Log_get_Verbose_m46474907_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Log_t587848786_il2cpp_TypeInfo_var);
+		bool L_0 = ((Log_t587848786_StaticFields*)Log_t587848786_il2cpp_TypeInfo_var->static_fields)->get_U3CVerboseU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void TriangleNet.Log::set_Verbose(System.Boolean)
+extern "C"  void Log_set_Verbose_m1185176334 (Il2CppObject * __this /* static, unused */, bool ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Log_set_Verbose_m1185176334_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		bool L_0 = ___value0;
+		IL2CPP_RUNTIME_CLASS_INIT(Log_t587848786_il2cpp_TypeInfo_var);
+		((Log_t587848786_StaticFields*)Log_t587848786_il2cpp_TypeInfo_var->static_fields)->set_U3CVerboseU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+// TriangleNet.Logging.ILog`1<TriangleNet.Logging.LogItem> TriangleNet.Log::get_Instance()
+extern "C"  Il2CppObject* Log_get_Instance_m1592105300 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Log_get_Instance_m1592105300_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Log_t587848786_il2cpp_TypeInfo_var);
+		Log_t587848786 * L_0 = ((Log_t587848786_StaticFields*)Log_t587848786_il2cpp_TypeInfo_var->static_fields)->get_instance_3();
+		return L_0;
+	}
+}
+// System.Void TriangleNet.Log::Add(TriangleNet.Logging.LogItem)
+extern "C"  void Log_Add_m2632602248 (Log_t587848786 * __this, LogItem_t1968516465 * ___item0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Log_Add_m2632602248_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		List_1_t1337637597 * L_0 = __this->get_log_1();
+		LogItem_t1968516465 * L_1 = ___item0;
+		NullCheck(L_0);
+		List_1_Add_m456366284(L_0, L_1, /*hidden argument*/List_1_Add_m456366284_MethodInfo_var);
+		return;
+	}
+}
+// System.Void TriangleNet.Log::Clear()
+extern "C"  void Log_Clear_m3243208965 (Log_t587848786 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Log_Clear_m3243208965_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		List_1_t1337637597 * L_0 = __this->get_log_1();
+		NullCheck(L_0);
+		List_1_Clear_m762889935(L_0, /*hidden argument*/List_1_Clear_m762889935_MethodInfo_var);
+		return;
+	}
+}
+// System.Void TriangleNet.Log::Info(System.String)
+extern "C"  void Log_Info_m2271351110 (Log_t587848786 * __this, String_t* ___message0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Log_Info_m2271351110_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		List_1_t1337637597 * L_0 = __this->get_log_1();
+		String_t* L_1 = ___message0;
+		LogItem_t1968516465 * L_2 = (LogItem_t1968516465 *)il2cpp_codegen_object_new(LogItem_t1968516465_il2cpp_TypeInfo_var);
+		LogItem__ctor_m2480765244(L_2, 0, L_1, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		List_1_Add_m456366284(L_0, L_2, /*hidden argument*/List_1_Add_m456366284_MethodInfo_var);
+		return;
+	}
+}
+// System.Void TriangleNet.Log::Warning(System.String,System.String)
+extern "C"  void Log_Warning_m351551964 (Log_t587848786 * __this, String_t* ___message0, String_t* ___location1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Log_Warning_m351551964_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		List_1_t1337637597 * L_0 = __this->get_log_1();
+		String_t* L_1 = ___message0;
+		String_t* L_2 = ___location1;
+		LogItem_t1968516465 * L_3 = (LogItem_t1968516465 *)il2cpp_codegen_object_new(LogItem_t1968516465_il2cpp_TypeInfo_var);
+		LogItem__ctor_m317284016(L_3, 1, L_1, L_2, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		List_1_Add_m456366284(L_0, L_3, /*hidden argument*/List_1_Add_m456366284_MethodInfo_var);
+		return;
+	}
+}
+// System.Void TriangleNet.Log::Error(System.String,System.String)
+extern "C"  void Log_Error_m1686434066 (Log_t587848786 * __this, String_t* ___message0, String_t* ___location1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Log_Error_m1686434066_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		List_1_t1337637597 * L_0 = __this->get_log_1();
+		String_t* L_1 = ___message0;
+		String_t* L_2 = ___location1;
+		LogItem_t1968516465 * L_3 = (LogItem_t1968516465 *)il2cpp_codegen_object_new(LogItem_t1968516465_il2cpp_TypeInfo_var);
+		LogItem__ctor_m317284016(L_3, 2, L_1, L_2, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		List_1_Add_m456366284(L_0, L_3, /*hidden argument*/List_1_Add_m456366284_MethodInfo_var);
+		return;
+	}
+}
+// System.Collections.Generic.IList`1<TriangleNet.Logging.LogItem> TriangleNet.Log::get_Data()
+extern "C"  Il2CppObject* Log_get_Data_m2601704952 (Log_t587848786 * __this, const MethodInfo* method)
+{
+	{
+		List_1_t1337637597 * L_0 = __this->get_log_1();
+		return L_0;
+	}
+}
+// TriangleNet.Logging.LogLevel TriangleNet.Log::get_Level()
+extern "C"  int32_t Log_get_Level_m1510745950 (Log_t587848786 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_level_2();
+		return L_0;
+	}
+}
 // System.Void TriangleNet.Logging.LogItem::.ctor(TriangleNet.Logging.LogLevel,System.String)
 extern "C"  void LogItem__ctor_m2480765244 (LogItem_t1968516465 * __this, int32_t ___level0, String_t* ___message1, const MethodInfo* method)
 {
@@ -65560,6 +65782,20 @@ extern "C"  void UIManagerScript_StartMenu_m989597970 (UIManagerScript_t13597746
 	}
 	{
 		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, _stringLiteral442195652, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UIManagerScript::StartHouse()
+extern "C"  void UIManagerScript_StartHouse_m1334055999 (UIManagerScript_t1359774682 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UIManagerScript_StartHouse_m1334055999_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, _stringLiteral2093721991, /*hidden argument*/NULL);
 		return;
 	}
 }

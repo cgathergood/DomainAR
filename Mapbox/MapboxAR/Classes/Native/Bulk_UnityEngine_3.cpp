@@ -541,6 +541,8 @@ extern "C"  void Transform_INTERNAL_CALL_InverseTransformPoint_m69330567 (Il2Cpp
 extern "C"  void Transform_INTERNAL_get_lossyScale_m3027364225 (Transform_t3275118058 * __this, Vector3_t2243707580 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform/Enumerator::.ctor(UnityEngine.Transform)
 extern "C"  void Enumerator__ctor_m147705785 (Enumerator_t1251553160 * __this, Transform_t3275118058 * ___outer0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::INTERNAL_CALL_RotateAround(UnityEngine.Transform,UnityEngine.Vector3&,System.Single)
+extern "C"  void Transform_INTERNAL_CALL_RotateAround_m1628411655 (Il2CppObject * __this /* static, unused */, Transform_t3275118058 * ___self0, Vector3_t2243707580 * ___axis1, float ___angle2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
 extern "C"  Transform_t3275118058 * Transform_GetChild_m3838588184 (Transform_t3275118058 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Transform::get_childCount()
@@ -2011,6 +2013,24 @@ IL_000d:
 		Il2CppObject * L_1 = V_0;
 		return L_1;
 	}
+}
+// System.Void UnityEngine.Transform::RotateAround(UnityEngine.Vector3,System.Single)
+extern "C"  void Transform_RotateAround_m1954941243 (Transform_t3275118058 * __this, Vector3_t2243707580  ___axis0, float ___angle1, const MethodInfo* method)
+{
+	{
+		float L_0 = ___angle1;
+		Transform_INTERNAL_CALL_RotateAround_m1628411655(NULL /*static, unused*/, __this, (&___axis0), L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Transform::INTERNAL_CALL_RotateAround(UnityEngine.Transform,UnityEngine.Vector3&,System.Single)
+extern "C"  void Transform_INTERNAL_CALL_RotateAround_m1628411655 (Il2CppObject * __this /* static, unused */, Transform_t3275118058 * ___self0, Vector3_t2243707580 * ___axis1, float ___angle2, const MethodInfo* method)
+{
+	typedef void (*Transform_INTERNAL_CALL_RotateAround_m1628411655_ftn) (Transform_t3275118058 *, Vector3_t2243707580 *, float);
+	static Transform_INTERNAL_CALL_RotateAround_m1628411655_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Transform_INTERNAL_CALL_RotateAround_m1628411655_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Transform::INTERNAL_CALL_RotateAround(UnityEngine.Transform,UnityEngine.Vector3&,System.Single)");
+	_il2cpp_icall_func(___self0, ___axis1, ___angle2);
 }
 // UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
 extern "C"  Transform_t3275118058 * Transform_GetChild_m3838588184 (Transform_t3275118058 * __this, int32_t ___index0, const MethodInfo* method)

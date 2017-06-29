@@ -148,7 +148,7 @@ class SpriteRenderer;
 class TrailRenderer; 
 class Rigidbody; 
 class Rigidbody2D; 
-namespace TextRenderingPrivate { class TextMesh; } 
+namespace TextRenderingPrivate { class TextMesh; } template <> void RegisterClass<TextRenderingPrivate::TextMesh>();
 class Transform; template <> void RegisterClass<Transform>();
 namespace UI { class RectTransform; } template <> void RegisterClass<UI::RectTransform>();
 class Tree; 
@@ -164,7 +164,7 @@ class AudioMixerGroup;
 class AudioMixerGroupController; 
 class AudioMixerSnapshot; 
 class AudioMixerSnapshotController; 
-class Avatar; 
+class Avatar; template <> void RegisterClass<Avatar>();
 class AvatarMask; 
 class BillboardAsset; 
 class ComputeShader; 
@@ -248,7 +248,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 69 non stripped classes
+	//Total: 71 non stripped classes
 	//0. Behaviour
 	RegisterClass<Behaviour>();
 	//1. Unity::Component
@@ -377,15 +377,19 @@ RegisterBuiltinTypes();
 	RegisterClass<AudioListener>();
 	//63. AudioBehaviour
 	RegisterClass<AudioBehaviour>();
-	//64. RenderSettings
+	//64. TextRenderingPrivate::TextMesh
+	RegisterClass<TextRenderingPrivate::TextMesh>();
+	//65. RenderSettings
 	RegisterClass<RenderSettings>();
-	//65. FlareLayer
+	//66. FlareLayer
 	RegisterClass<FlareLayer>();
-	//66. CapsuleCollider
+	//67. CapsuleCollider
 	RegisterClass<CapsuleCollider>();
-	//67. LightmapSettings
+	//68. LightmapSettings
 	RegisterClass<LightmapSettings>();
-	//68. LightProbes
+	//69. LightProbes
 	RegisterClass<LightProbes>();
+	//70. Avatar
+	RegisterClass<Avatar>();
 
 }

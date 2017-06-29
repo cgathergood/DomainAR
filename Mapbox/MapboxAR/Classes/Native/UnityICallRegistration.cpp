@@ -2718,6 +2718,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Transform_INTERNAL_CALL_InverseTransformPoint();
 		Register_UnityEngine_Transform_INTERNAL_CALL_InverseTransformPoint();
 
+		//System.Void UnityEngine.Transform::INTERNAL_CALL_RotateAround(UnityEngine.Transform,UnityEngine.Vector3&,System.Single)
+		void Register_UnityEngine_Transform_INTERNAL_CALL_RotateAround();
+		Register_UnityEngine_Transform_INTERNAL_CALL_RotateAround();
+
 		//System.Void UnityEngine.Transform::INTERNAL_CALL_TransformDirection(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_INTERNAL_CALL_TransformDirection();
 		Register_UnityEngine_Transform_INTERNAL_CALL_TransformDirection();
