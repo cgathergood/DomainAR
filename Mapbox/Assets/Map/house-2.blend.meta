@@ -1,0 +1,249 @@
+fileFormatVersion: 2
+guid: c3cbc3c18f9294740a176d121ec2fff4
+timeCreated: 1498718878
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Baseboard
+    100002: Baseboard_001
+    100004: CTRL_Baseboard
+    100006: CTRL_Hole
+    100008: CTRL_Hole_001
+    100010: CTRL_Hole_002
+    100012: Door
+    100014: Door_Group
+    100016: DoorFrame
+    100018: Floor
+    100020: Floor_001
+    100022: Handle
+    100024: Handle_001
+    100026: Handle_002
+    100028: Handle_003
+    100030: Handle_Back
+    100032: Handle_Front
+    100034: //RootNode
+    100036: Room
+    100038: Room_001
+    100040: Stairs
+    100042: Window_Group
+    100044: Window_Group_001
+    100046: Window_L
+    100048: Window_L_001
+    100050: Window_R
+    100052: Window_R_001
+    100054: WindowFrame
+    100056: WindowFrame_001
+    100058: Windows_Sill
+    100060: Windows_Sill_001
+    400000: Baseboard
+    400002: Baseboard_001
+    400004: CTRL_Baseboard
+    400006: CTRL_Hole
+    400008: CTRL_Hole_001
+    400010: CTRL_Hole_002
+    400012: Door
+    400014: Door_Group
+    400016: DoorFrame
+    400018: Floor
+    400020: Floor_001
+    400022: Handle
+    400024: Handle_001
+    400026: Handle_002
+    400028: Handle_003
+    400030: Handle_Back
+    400032: Handle_Front
+    400034: //RootNode
+    400036: Room
+    400038: Room_001
+    400040: Stairs
+    400042: Window_Group
+    400044: Window_Group_001
+    400046: Window_L
+    400048: Window_L_001
+    400050: Window_R
+    400052: Window_R_001
+    400054: WindowFrame
+    400056: WindowFrame_001
+    400058: Windows_Sill
+    400060: Windows_Sill_001
+    2300000: Baseboard
+    2300002: Baseboard_001
+    2300004: CTRL_Baseboard
+    2300006: CTRL_Hole
+    2300008: CTRL_Hole_001
+    2300010: CTRL_Hole_002
+    2300012: Door
+    2300014: DoorFrame
+    2300016: Floor
+    2300018: Floor_001
+    2300020: Handle
+    2300022: Handle_001
+    2300024: Handle_002
+    2300026: Handle_003
+    2300028: Handle_Back
+    2300030: Handle_Front
+    2300032: Room
+    2300034: Room_001
+    2300036: Stairs
+    2300038: Window_L
+    2300040: Window_L_001
+    2300042: Window_R
+    2300044: Window_R_001
+    2300046: WindowFrame
+    2300048: WindowFrame_001
+    2300050: Windows_Sill
+    2300052: Windows_Sill_001
+    3300000: Baseboard
+    3300002: Baseboard_001
+    3300004: CTRL_Baseboard
+    3300006: CTRL_Hole
+    3300008: CTRL_Hole_001
+    3300010: CTRL_Hole_002
+    3300012: Door
+    3300014: DoorFrame
+    3300016: Floor
+    3300018: Floor_001
+    3300020: Handle
+    3300022: Handle_001
+    3300024: Handle_002
+    3300026: Handle_003
+    3300028: Handle_Back
+    3300030: Handle_Front
+    3300032: Room
+    3300034: Room_001
+    3300036: Stairs
+    3300038: Window_L
+    3300040: Window_L_001
+    3300042: Window_R
+    3300044: Window_R_001
+    3300046: WindowFrame
+    3300048: WindowFrame_001
+    3300050: Windows_Sill
+    3300052: Windows_Sill_001
+    4300000: Stairs
+    4300002: Room
+    4300004: Floor
+    4300006: Baseboard
+    4300008: CTRL_Hole_002
+    4300010: WindowFrame_001
+    4300012: Windows_Sill_001
+    4300014: Window_R_001
+    4300016: Handle_003
+    4300018: Window_L_001
+    4300020: Handle_002
+    4300022: CTRL_Hole_001
+    4300024: WindowFrame
+    4300026: Windows_Sill
+    4300028: Window_R
+    4300030: Handle_001
+    4300032: Window_L
+    4300034: Handle
+    4300036: CTRL_Baseboard
+    4300038: CTRL_Hole
+    4300040: DoorFrame
+    4300042: Door
+    4300044: Handle_Back
+    4300046: Handle_Front
+    4300048: Room_001
+    4300050: Floor_001
+    4300052: Baseboard_001
+    6400000: Baseboard
+    6400002: Baseboard_001
+    6400004: CTRL_Baseboard
+    6400006: CTRL_Hole
+    6400008: CTRL_Hole_001
+    6400010: CTRL_Hole_002
+    6400012: Door
+    6400014: DoorFrame
+    6400016: Floor
+    6400018: Floor_001
+    6400020: Handle
+    6400022: Handle_001
+    6400024: Handle_002
+    6400026: Handle_003
+    6400028: Handle_Back
+    6400030: Handle_Front
+    6400032: Room
+    6400034: Room_001
+    6400036: Stairs
+    6400038: Window_L
+    6400040: Window_L_001
+    6400042: Window_R
+    6400044: Window_R_001
+    6400046: WindowFrame
+    6400048: WindowFrame_001
+    6400050: Windows_Sill
+    6400052: Windows_Sill_001
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

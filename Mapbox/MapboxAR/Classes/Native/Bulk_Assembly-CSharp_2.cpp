@@ -1343,6 +1343,7 @@ extern Il2CppCodeGenString* _stringLiteral372029336;
 extern const uint32_t PoiMarkerHelper_OnMouseUpAsButton_m644541356_MetadataUsageId;
 extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1307534077;
+extern Il2CppCodeGenString* _stringLiteral1307534078;
 extern const uint32_t SpinObject_OnMouseDrag_m3233627936_MetadataUsageId;
 extern Il2CppClass* RectTransform_t3349966182_il2cpp_TypeInfo_var;
 extern const uint32_t SVBoxSlider_get_rectTransform_m3427717911_MetadataUsageId;
@@ -3566,6 +3567,8 @@ extern "C"  void Transform_Rotate_m882843932 (Transform_t3275118058 * __this, Ve
 extern "C"  float Input_GetAxis_m2098048324 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::RotateAround(UnityEngine.Vector3,System.Single)
 extern "C"  void Transform_RotateAround_m1954941243 (Transform_t3275118058 * __this, Vector3_t2243707580  p0, float p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Vector3::get_right()
+extern "C"  Vector3_t2243707580  Vector3_get_right_m1884123822 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.UI.BoxSlider>()
 #define Component_GetComponent_TisBoxSlider_t1871650694_m3168588160(__this, method) ((  BoxSlider_t1871650694 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.UI.RawImage>()
@@ -40088,7 +40091,7 @@ extern "C"  void Spin_Update_m4062915630 (Spin_t3764633552 * __this, const Metho
 extern "C"  void SpinObject__ctor_m1646503862 (SpinObject_t1310746699 * __this, const MethodInfo* method)
 {
 	{
-		__this->set_rotSpeed_2((10.0f));
+		__this->set_rotSpeed_2((15.0f));
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -40103,16 +40106,25 @@ extern "C"  void SpinObject_OnMouseDrag_m3233627936 (SpinObject_t1310746699 * __
 		s_Il2CppMethodInitialized = true;
 	}
 	float V_0 = 0.0f;
+	float V_1 = 0.0f;
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		float L_0 = Input_GetAxis_m2098048324(NULL /*static, unused*/, _stringLiteral1307534077, /*hidden argument*/NULL);
 		float L_1 = __this->get_rotSpeed_2();
 		V_0 = ((float)((float)((float)((float)L_0*(float)L_1))*(float)(0.0174532924f)));
-		Transform_t3275118058 * L_2 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_3 = Vector3_get_up_m2725403797(NULL /*static, unused*/, /*hidden argument*/NULL);
-		float L_4 = V_0;
-		NullCheck(L_2);
-		Transform_RotateAround_m1954941243(L_2, L_3, ((-L_4)), /*hidden argument*/NULL);
+		float L_2 = Input_GetAxis_m2098048324(NULL /*static, unused*/, _stringLiteral1307534078, /*hidden argument*/NULL);
+		float L_3 = __this->get_rotSpeed_2();
+		V_1 = ((float)((float)((float)((float)L_2*(float)L_3))*(float)(0.0174532924f)));
+		Transform_t3275118058 * L_4 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_5 = Vector3_get_up_m2725403797(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_6 = V_0;
+		NullCheck(L_4);
+		Transform_RotateAround_m1954941243(L_4, L_5, ((-L_6)), /*hidden argument*/NULL);
+		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_8 = Vector3_get_right_m1884123822(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_9 = V_1;
+		NullCheck(L_7);
+		Transform_RotateAround_m1954941243(L_7, L_8, L_9, /*hidden argument*/NULL);
 		return;
 	}
 }
